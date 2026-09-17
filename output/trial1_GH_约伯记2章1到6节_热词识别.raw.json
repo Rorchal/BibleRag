@@ -1,0 +1,57 @@
+{
+  "chapters": [
+    {
+      "title": "约伯记二章经文与祷告",
+      "sections": [
+        {
+          "title": "诵读经文",
+          "paragraphs": [
+            {"start": 1, "end": 13},
+            {"start": 14, "end": 18}
+          ]
+        },
+        {
+          "title": "讲道引言与分段",
+          "paragraphs": [
+            {"start": 19, "end": 23},
+            {"start": 24, "end": 31},
+            {"start": 32, "end": 34}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "约伯的苦难与属灵征战",
+      "sections": [
+        {
+          "title": "约伯的处境与敬畏",
+          "paragraphs": [
+            {"start": 35, "end": 40},
+            {"start": 41, "end": 48},
+            {"start": 49, "end": 54},
+            {"start": 55, "end": 62},
+            {"start": 63, "end": 65}
+          ]
+        },
+        {
+          "title": "天使与撒旦的位分",
+          "paragraphs": [
+            {"start": 66, "end": 73},
+            {"start": 74, "end": 83},
+            {"start": 84, "end": 89},
+            {"start": 90, "end": 95},
+            {"start": 96, "end": 105},
+            {"start": 106, "end": 110}
+          ]
+        },
+        {
+          "title": "上帝权柄下的对话",
+          "paragraphs": [
+            {"start": 111, "end": 115},
+            {"start": 116, "end": 120}
+          ]
+        }
+      ]
+    }
+  ]
+}

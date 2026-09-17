@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "ok": true,
+    "secs": 4.3,
+    "usage": {
+      "prompt_tokens": 2608,
+      "total_tokens": 3020,
+      "completion_tokens": 412,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0
+    },
+    "id": "58413c0bb5ca424d933b4a8fe86968f2",
+    "finish_reason": "stop"
+  },
+  "verify": {
+    "ok": true,
+    "issues": [],
+    "covered": 120,
+    "coverage_rate": 1.0,
+    "text_identical": true,
+    "orig_chars": 2924,
+    "rebuilt_chars": 2924
+  },
+  "paragraphs": [
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文与祷告",
+      "section": 1,
+      "section_title": "诵读经文",
+      "start": 1,
+      "end": 13
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文与祷告",
+      "section": 1,
+      "section_title": "诵读经文",
+      "start": 14,
+      "end": 18
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文与祷告",
+      "section": 2,
+      "section_title": "讲道引言与分段",
+      "start": 19,
+      "end": 23
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文与祷告",
+      "section": 2,
+      "section_title": "讲道引言与分段",
+      "start": 24,
+      "end": 31
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文与祷告",
+      "section": 2,
+      "section_title": "讲道引言与分段",
+      "start": 32,
+      "end": 34
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 1,
+      "section_title": "约伯的处境与敬畏",
+      "start": 35,
+      "end": 40
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 1,
+      "section_title": "约伯的处境与敬畏",
+      "start": 41,
+      "end": 48
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 1,
+      "section_title": "约伯的处境与敬畏",
+      "start": 49,
+      "end": 54
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 1,
+      "section_title": "约伯的处境与敬畏",
+      "start": 55,
+      "end": 62
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 1,
+      "section_title": "约伯的处境与敬畏",
+      "start": 63,
+      "end": 65
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 66,
+      "end": 73
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 74,
+      "end": 83
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 84,
+      "end": 89
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 90,
+      "end": 95
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 96,
+      "end": 105
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 2,
+      "section_title": "天使与撒旦的位分",
+      "start": 106,
+      "end": 110
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 3,
+      "section_title": "上帝权柄下的对话",
+      "start": 111,
+      "end": 115
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "约伯的苦难与属灵征战",
+      "section": 3,
+      "section_title": "上帝权柄下的对话",
+      "start": 116,
+      "end": 120
+    }
+  ]
+}

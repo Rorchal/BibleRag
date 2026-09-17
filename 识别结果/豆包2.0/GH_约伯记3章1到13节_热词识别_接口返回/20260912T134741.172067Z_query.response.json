@@ -1,0 +1,17 @@
+{
+  "received_at": "2026-09-12T13:47:41.172101+00:00",
+  "stage": "query",
+  "endpoint": "https://openspeech.bytedance.com/api/v3/auc/bigmodel/query",
+  "request_id": "b363a44a-bfb8-4535-b535-19471316146b",
+  "http_status": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "38",
+    "Date": "Sat, 12 Sep 2026 13:47:41 GMT",
+    "X-Tt-Logid": "202609122147414EF6B0ED84224226EF6F",
+    "X-Api-Request-Id": "b363a44a-bfb8-4535-b535-19471316146b",
+    "X-Api-Status-Code": "20000001",
+    "X-Api-Message": "[Processing in progress] Handle response: Start Processing"
+  },
+  "body_text": "{\"audio_info\":{},\"result\":{\"text\":\"\"}}"
+}

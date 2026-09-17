@@ -1,0 +1,1 @@
+{"model": "Deepseek-v4-flash", "messages": [{"role": "user", "content": "你好，请用一句话介绍一下自己"}], "max_tokens": 200}

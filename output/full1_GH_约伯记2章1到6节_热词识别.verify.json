@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "ok": true,
+    "secs": 13.6,
+    "usage": {
+      "prompt_tokens": 14414,
+      "total_tokens": 15348,
+      "completion_tokens": 934,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "reasoning_tokens": 0
+    },
+    "id": "32d70ef15a21455289617f46e0e8152a",
+    "finish_reason": "stop"
+  },
+  "verify": {
+    "ok": true,
+    "issues": [],
+    "covered": 795,
+    "coverage_rate": 1.0,
+    "text_identical": true,
+    "orig_chars": 18645,
+    "rebuilt_chars": 18645
+  },
+  "paragraphs": [
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文诵读与祷告",
+      "section": 1,
+      "section_title": "诵读经文",
+      "start": 1,
+      "end": 13
+    },
+    {
+      "chapter": 1,
+      "chapter_title": "约伯记二章经文诵读与祷告",
+      "section": 2,
+      "section_title": "祷告与引言",
+      "start": 14,
+      "end": 18
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 1,
+      "section_title": "约伯的持守与得胜",
+      "start": 19,
+      "end": 23
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 1,
+      "section_title": "约伯的持守与得胜",
+      "start": 24,
+      "end": 34
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 1,
+      "section_title": "约伯的持守与得胜",
+      "start": 35,
+      "end": 54
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 1,
+      "section_title": "约伯的持守与得胜",
+      "start": 55,
+      "end": 65
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 2,
+      "section_title": "天上的场景与撒旦的位分",
+      "start": 66,
+      "end": 88
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 2,
+      "section_title": "天上的场景与撒旦的位分",
+      "start": 89,
+      "end": 110
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 2,
+      "section_title": "天上的场景与撒旦的位分",
+      "start": 111,
+      "end": 145
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 3,
+      "section_title": "约伯的纯正与上帝的见证",
+      "start": 146,
+      "end": 172
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 3,
+      "section_title": "约伯的纯正与上帝的见证",
+      "start": 173,
+      "end": 200
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 3,
+      "section_title": "约伯的纯正与上帝的见证",
+      "start": 201,
+      "end": 234
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 4,
+      "section_title": "魔鬼的计谋与纯正的重要性",
+      "start": 235,
+      "end": 264
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 4,
+      "section_title": "魔鬼的计谋与纯正的重要性",
+      "start": 265,
+      "end": 285
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 5,
+      "section_title": "全副军装的意义",
+      "start": 286,
+      "end": 307
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 5,
+      "section_title": "全副军装的意义",
+      "start": 308,
+      "end": 336
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 5,
+      "section_title": "全副军装的意义",
+      "start": 337,
+      "end": 371
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 6,
+      "section_title": "军装的组成与真理核心",
+      "start": 372,
+      "end": 416
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 6,
+      "section_title": "军装的组成与真理核心",
+      "start": 417,
+      "end": 436
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 7,
+      "section_title": "祷告的方向与讲台事奉",
+      "start": 437,
+      "end": 473
+    },
+    {
+      "chapter": 2,
+      "chapter_title": "属灵征战的实质与军装",
+      "section": 7,
+      "section_title": "祷告的方向与讲台事奉",
+      "start": 474,
+      "end": 486
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 1,
+      "section_title": "撒旦的观察与攻击",
+      "start": 487,
+      "end": 510
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 1,
+      "section_title": "撒旦的观察与攻击",
+      "start": 511,
+      "end": 556
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 1,
+      "section_title": "撒旦的观察与攻击",
+      "start": 557,
+      "end": 584
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 2,
+      "section_title": "上帝的限制与约伯的痛苦",
+      "start": 585,
+      "end": 611
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 2,
+      "section_title": "上帝的限制与约伯的痛苦",
+      "start": 612,
+      "end": 639
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 3,
+      "section_title": "护理教义的整全性",
+      "start": 640,
+      "end": 664
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 3,
+      "section_title": "护理教义的整全性",
+      "start": 665,
+      "end": 689
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 3,
+      "section_title": "护理教义的整全性",
+      "start": 690,
+      "end": 709
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 4,
+      "section_title": "真正的信仰与不变应许",
+      "start": 710,
+      "end": 737
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "约伯肉体的苦难与上帝的护理",
+      "section": 4,
+      "section_title": "真正的信仰与不变应许",
+      "start": 738,
+      "end": 746
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "结语与劝勉",
+      "section": 1,
+      "section_title": "上帝赐平安的意念",
+      "start": 747,
+      "end": 769
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "结语与劝勉",
+      "section": 2,
+      "section_title": "回到使徒的道中",
+      "start": 770,
+      "end": 791
+    },
+    {
+      "chapter": 4,
+      "chapter_title": "结语与劝勉",
+      "section": 3,
+      "section_title": "祷告结束",
+      "start": 792,
+      "end": 795
+    }
+  ]
+}

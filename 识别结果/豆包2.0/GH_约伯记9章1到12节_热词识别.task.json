@@ -1,0 +1,44 @@
+{
+  "request_id": "8c6ad99c-ef1e-455f-adde-a9c889a959eb",
+  "app_id": "8915908243",
+  "audio_url": "http://oracle.878786.xyz:29900/files/GH_%E7%BA%A6%E4%BC%AF%E8%AE%B09%E7%AB%A01%E5%88%B012%E8%8A%82.m4a",
+  "resource_id": "volc.seedasr.auc",
+  "mode": "hotwords",
+  "status": "complete",
+  "created_at": "2026-09-12T15:47:17.016986+00:00",
+  "request": {
+    "user": {
+      "uid": "job-sermon-transcription"
+    },
+    "audio": {
+      "url": "http://oracle.878786.xyz:29900/files/GH_%E7%BA%A6%E4%BC%AF%E8%AE%B09%E7%AB%A01%E5%88%B012%E8%8A%82.m4a",
+      "format": "mp4"
+    },
+    "request": {
+      "model_name": "bigmodel",
+      "enable_itn": true,
+      "enable_punc": true,
+      "enable_ddc": false,
+      "show_utterances": true,
+      "corpus": {
+        "context": "{\"hotwords\": [{\"word\": \"约伯\"}, {\"word\": \"约伯记\"}, {\"word\": \"乌斯\"}, {\"word\": \"以利法\"}, {\"word\": \"提幔\"}, {\"word\": \"比勒达\"}, {\"word\": \"书亚\"}, {\"word\": \"琐法\"}, {\"word\": \"拿玛\"}, {\"word\": \"以利户\"}, {\"word\": \"巴拉迦\"}, {\"word\": \"布西\"}, {\"word\": \"示巴\"}, {\"word\": \"迦勒底\"}, {\"word\": \"耶和华\"}, {\"word\": \"撒但\"}]}"
+      }
+    }
+  },
+  "http_status": 200,
+  "code": "20000000",
+  "message": "OK",
+  "logid": "20260912235204040E50A3A05611FC6C75",
+  "response_body": "{}",
+  "completed_at": "2026-09-12T15:52:16.468373+00:00",
+  "last_result_received_at": "2026-09-12T15:52:16.468373+00:00",
+  "characters": 20519,
+  "raw_response_path": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\GH_约伯记9章1到12节_热词识别_接口返回\\20260912T155216.321538Z_query.response.json",
+  "timing_files": {
+    "segments": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\GH_约伯记9章1到12节_热词识别.segments.json",
+    "timed_text": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\GH_约伯记9章1到12节_热词识别_带时间.txt",
+    "subtitles": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\GH_约伯记9章1到12节_热词识别.srt",
+    "table": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\GH_约伯记9章1到12节_热词识别_时间对照.md",
+    "segment_count": 779
+  }
+}

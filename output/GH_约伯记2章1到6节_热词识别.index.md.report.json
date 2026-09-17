@@ -1,0 +1,332 @@
+{
+  "file": "GH_约伯记2章1到6节_热词识别.txt",
+  "mode": "index",
+  "window": 40,
+  "model": "qwen3:8b",
+  "total_lines": 795,
+  "chunks": 20,
+  "chunks_ok": 20,
+  "pass_rate": 1.0,
+  "elapsed_s": 110.5,
+  "reports": [
+    {
+      "ok": true,
+      "titles": [
+        "宣读经文",
+        "分两个方面来讲",
+        "属灵的灾难源头",
+        "第一层"
+      ],
+      "paragraphs": 7,
+      "orig_chars": 1079,
+      "model_chars": 1079,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 1,
+      "lines": 40,
+      "secs": 5.3
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯的变化",
+        "神的众子"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 933,
+      "model_chars": 933,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 2,
+      "lines": 40,
+      "secs": 3.5
+    },
+    {
+      "ok": true,
+      "titles": [
+        "天使的职责",
+        "与民间宗教的差异",
+        "撒旦的堕落",
+        "堕落后的本质",
+        "仍在上帝权柄下",
+        "对话的重复性"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 910,
+      "model_chars": 910,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 3,
+      "lines": 40,
+      "secs": 6.7
+    },
+    {
+      "ok": true,
+      "titles": [
+        "撒但的有限性",
+        "耶和华的权柄",
+        "圣经的重复与多出",
+        "约伯的正直"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 984,
+      "model_chars": 984,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 4,
+      "lines": 40,
+      "secs": 5.5
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯的持守纯正",
+        "约伯的得胜方式",
+        "第一点：约伯得胜",
+        "属灵征战的方式"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 959,
+      "model_chars": 959,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 5,
+      "lines": 40,
+      "secs": 5.9
+    },
+    {
+      "ok": true,
+      "titles": [
+        "属灵征战的实质",
+        "伊甸园的攻击",
+        "魔鬼的真正目的",
+        "死人复活的见证"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 927,
+      "model_chars": 927,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 6,
+      "lines": 40,
+      "secs": 5.1
+    },
+    {
+      "ok": true,
+      "titles": [
+        "耶稣的复活",
+        "鬼的轨迹",
+        "持守纯正",
+        "魔鬼的手段",
+        "保护纯正"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 990,
+      "model_chars": 990,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 7,
+      "lines": 40,
+      "secs": 6.0
+    },
+    {
+      "ok": true,
+      "titles": [
+        "提醒不要相信纯正",
+        "讲解军装的意义",
+        "站立得稳是赢法",
+        "军装抵挡诡计"
+      ],
+      "paragraphs": 10,
+      "orig_chars": 962,
+      "model_chars": 962,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 8,
+      "lines": 40,
+      "secs": 6.9
+    },
+    {
+      "ok": true,
+      "titles": [
+        "军装的定义",
+        "军装的性质",
+        "属灵气的攻击",
+        "属血气的征战"
+      ],
+      "paragraphs": 7,
+      "orig_chars": 767,
+      "model_chars": 767,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 9,
+      "lines": 40,
+      "secs": 5.8
+    },
+    {
+      "ok": true,
+      "titles": [
+        "军装是什么",
+        "真理和道",
+        "圣灵的宝剑"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 866,
+      "model_chars": 866,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 10,
+      "lines": 40,
+      "secs": 4.5
+    },
+    {
+      "ok": true,
+      "titles": [
+        "军装的比喻",
+        "第二部分",
+        "可预见的问题"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 822,
+      "model_chars": 822,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 11,
+      "lines": 40,
+      "secs": 4.5
+    },
+    {
+      "ok": true,
+      "titles": [
+        "保罗的教导",
+        "明确的祷告方向",
+        "领袖的道路"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 982,
+      "model_chars": 982,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 12,
+      "lines": 40,
+      "secs": 4.4
+    },
+    {
+      "ok": true,
+      "titles": [
+        "第二层，第二步",
+        "对全人类共同弱点的观察",
+        "魔鬼怎么评价我们的"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 888,
+      "model_chars": 888,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 13,
+      "lines": 40,
+      "secs": 4.7
+    },
+    {
+      "ok": true,
+      "titles": [
+        "人类的生存逻辑",
+        "魔鬼的第二轮攻击",
+        "约伯的纯粹性"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 881,
+      "model_chars": 881,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 14,
+      "lines": 40,
+      "secs": 4.4
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯的信仰考验",
+        "上帝的信仰重要性",
+        "生命的权柄归属",
+        "痛苦与生命的关联"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1016,
+      "model_chars": 1016,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 15,
+      "lines": 40,
+      "secs": 5.3
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯记第三章",
+        "上帝的护理",
+        "护理的软弱"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 947,
+      "model_chars": 947,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 16,
+      "lines": 40,
+      "secs": 4.2
+    },
+    {
+      "ok": true,
+      "titles": [
+        "对上帝护理的怀疑",
+        "引用海德堡药理问答",
+        "护理的定义",
+        "护理的全面性",
+        "护理的益处",
+        "护理与撒旦的关系",
+        "护理的现实表现",
+        "护理的整全描述",
+        "对护理的质疑",
+        "圣徒对护理的理解"
+      ],
+      "paragraphs": 13,
+      "orig_chars": 1005,
+      "model_chars": 1005,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 17,
+      "lines": 40,
+      "secs": 12.4
+    },
+    {
+      "ok": true,
+      "titles": [
+        "顺境与患难",
+        "约伯的妻子的辱骂",
+        "真正的基督徒在信啥",
+        "对上帝的信",
+        "相信上帝的意念",
+        "相信什么"
+      ],
+      "paragraphs": 7,
+      "orig_chars": 845,
+      "model_chars": 845,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 18,
+      "lines": 40,
+      "secs": 7.1
+    },
+    {
+      "ok": true,
+      "titles": [
+        "上帝保护我们的方式",
+        "耶利米书29章10~13节",
+        "耶和华的意念"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1018,
+      "model_chars": 1018,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 19,
+      "lines": 40,
+      "secs": 4.8
+    },
+    {
+      "ok": true,
+      "titles": [
+        "回溯到约伯哈"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 860,
+      "model_chars": 860,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 20,
+      "lines": 35,
+      "secs": 3.4
+    }
+  ]
+}

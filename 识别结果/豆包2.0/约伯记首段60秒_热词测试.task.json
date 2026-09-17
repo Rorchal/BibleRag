@@ -1,0 +1,44 @@
+{
+  "request_id": "81bea0c3-73d6-45cf-93d8-228b13a06f4e",
+  "app_id": "8915908243",
+  "audio_url": "http://oracle.878786.xyz:29900/files/job01-first60s.mp3",
+  "resource_id": "volc.seedasr.auc",
+  "mode": "hotwords",
+  "status": "complete",
+  "created_at": "2026-09-12T12:57:26.985893+00:00",
+  "request": {
+    "user": {
+      "uid": "job-sermon-transcription"
+    },
+    "audio": {
+      "url": "http://oracle.878786.xyz:29900/files/job01-first60s.mp3",
+      "format": "mp3"
+    },
+    "request": {
+      "model_name": "bigmodel",
+      "enable_itn": true,
+      "enable_punc": true,
+      "enable_ddc": false,
+      "show_utterances": true,
+      "corpus": {
+        "context": "{\"hotwords\": [{\"word\": \"约伯\"}, {\"word\": \"约伯记\"}, {\"word\": \"乌斯\"}, {\"word\": \"以利法\"}, {\"word\": \"提幔\"}, {\"word\": \"比勒达\"}, {\"word\": \"书亚\"}, {\"word\": \"琐法\"}, {\"word\": \"拿玛\"}, {\"word\": \"以利户\"}, {\"word\": \"巴拉迦\"}, {\"word\": \"布西\"}, {\"word\": \"示巴\"}, {\"word\": \"迦勒底\"}, {\"word\": \"耶和华\"}, {\"word\": \"撒但\"}]}"
+      }
+    }
+  },
+  "http_status": 200,
+  "code": "20000000",
+  "message": "OK",
+  "logid": "2026091221335671B4971376201602B8F1",
+  "response_body": "{}",
+  "completed_at": "2026-09-12T12:57:40.878824+00:00",
+  "characters": 307,
+  "last_result_received_at": "2026-09-12T13:33:56.680239+00:00",
+  "raw_response_path": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\约伯记首段60秒_热词测试_接口返回\\20260912T133356.676307Z_query.response.json",
+  "timing_files": {
+    "segments": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\约伯记首段60秒_热词测试.segments.json",
+    "timed_text": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\约伯记首段60秒_热词测试_带时间.txt",
+    "subtitles": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\约伯记首段60秒_热词测试.srt",
+    "table": "C:\\Users\\23695\\Documents\\ChatGPT\\讲道录音识别\\识别结果\\豆包2.0\\约伯记首段60秒_热词测试_时间对照.md",
+    "segment_count": 14
+  }
+}

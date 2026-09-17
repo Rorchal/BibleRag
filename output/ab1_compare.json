@@ -1,0 +1,1214 @@
+[
+  {
+    "key": "user",
+    "label": "你的提示词",
+    "meta": {
+      "ok": true,
+      "secs": 33.3,
+      "usage": {
+        "prompt_tokens": 17218,
+        "total_tokens": 20081,
+        "completion_tokens": 2863,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "id": "50ecd17d7e0e48a1a9ac7a47e41533ef",
+      "finish_reason": "stop"
+    },
+    "m": {
+      "chapters": 1,
+      "sections": 2,
+      "paragraphs": 27,
+      "len_min": 2,
+      "len_med": 30,
+      "len_max": 74,
+      "len_mean": 35.9,
+      "len_sd": 20.03,
+      "len_cv": 0.558,
+      "coverage": 1.0,
+      "text_identical": true,
+      "issues": [],
+      "sum_avg_len": 53.4,
+      "sum_with": 27,
+      "jiangyuan_rate": 1.0,
+      "kw_hit": 0.76,
+      "cue_filled": 27,
+      "cue_unique_rate": 1.0,
+      "doc_summary": "通过约伯记1:1-8节的讲解，讲员挑战了将信仰与今世祸福挂钩的错误观念，指出真正的智慧在于认识上帝的主权，并相信万事（包括苦难）都为信徒的救恩效力。"
+    },
+    "paragraphs": [
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 1,
+        "end": 25,
+        "summary": "讲员开场问候，宣读经文约伯记1:1-8，并带领祷告。",
+        "keywords": [
+          "开场",
+          "经文宣读",
+          "祷告"
+        ],
+        "cue": "讲员开始聚会，宣读经文并祷告，是独立段落。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 26,
+        "end": 48,
+        "summary": "讲员介绍讲道大纲，分为两个部分：约伯的现实背景（1-5节）和属灵背景（6-8节），并说明约伯是敬畏神、远离恶事的人。",
+        "keywords": [
+          "大纲",
+          "现实背景",
+          "属灵背景"
+        ],
+        "cue": "讲员说明讲道结构，引入两个部分。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 49,
+        "end": 80,
+        "summary": "讲员自我介绍，并说明服侍任务，强调约伯记是智慧书第一卷，主题是智慧而非苦难，并引出两个核心问题：世界上是否存在绝对的平安，以及上帝认可的信仰是否意味着远离灾祸。",
+        "keywords": [
+          "自我介绍",
+          "服侍任务",
+          "智慧书",
+          "平安",
+          "灾祸"
+        ],
+        "cue": "讲员介绍自己，并引出讲道要讨论的两个问题。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 81,
+        "end": 141,
+        "summary": "讲员开始讲解约伯记1-5节，强调约伯的“稳”与后面的灾难形成巨大落差，并指出约伯不是以色列人，而是更早时代的圣徒，耶和华是全地的主。",
+        "keywords": [
+          "约伯",
+          "稳固",
+          "落差",
+          "非以色列人",
+          "全地之主"
+        ],
+        "cue": "讲员开始详细讲解经文，介绍约伯的背景和1-5节的核心。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 142,
+        "end": 214,
+        "summary": "讲员分析约伯的“稳”体现在道德和信仰上：完全正直、远离恶事、敬畏神，排除了道德、法律和属灵上的风险因素。",
+        "keywords": [
+          "完全正直",
+          "远离恶事",
+          "敬畏神",
+          "风险因素"
+        ],
+        "cue": "讲员分析约伯的品格和信仰，排除风险因素。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 215,
+        "end": 280,
+        "summary": "讲员分析约伯的“硬实力”：人丁兴旺（7个儿子、3个女儿）、财富巨大（七千羊、三千骆驼等），在东方为至大，强调其抗风险能力极强。",
+        "keywords": [
+          "人丁兴旺",
+          "财富",
+          "东方为至大",
+          "硬实力"
+        ],
+        "cue": "讲员分析约伯的家庭和财富，强调其强大的抗风险能力。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 281,
+        "end": 354,
+        "summary": "讲员总结约伯的素描：经济富可敌国、地位东方为至大，家庭和睦，信仰教育顶级，强调其家庭看似无懈可击。",
+        "keywords": [
+          "富可敌国",
+          "地位",
+          "家庭和睦",
+          "信仰教育"
+        ],
+        "cue": "讲员总结约伯的各方面优势，强调其家庭的稳固。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 355,
+        "end": 399,
+        "summary": "讲员指出约伯记的冲击力：如此稳固的家庭却会家破人亡，且允许此事的是耶和华，强调约伯记是智慧书第一卷，能倒掉基督教的毒鸡汤。",
+        "keywords": [
+          "冲击力",
+          "家破人亡",
+          "耶和华",
+          "智慧书"
+        ],
+        "cue": "讲员强调约伯记的冲击力，并指出其智慧书地位。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 400,
+        "end": 427,
+        "summary": "讲员强调约伯记的答案：即使如此稳固的人也会出意外，最终能看守我们的是耶和华的篱笆，剩下的只有敬畏耶和华的智慧。",
+        "keywords": [
+          "出意外",
+          "耶和华的篱笆",
+          "智慧"
+        ],
+        "cue": "讲员回答“这样的人会不会出意外”的问题，并强调真正的依靠。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 428,
+        "end": 447,
+        "summary": "讲员强调需要预备好接受苦难，错误的期待会带来错误的信心，最终要么去掉福音，要么更改福音，而约伯的“持守纯正”是真正的智慧。",
+        "keywords": [
+          "预备",
+          "错误的期待",
+          "持守纯正",
+          "智慧"
+        ],
+        "cue": "讲员强调预备和持守纯正的重要性。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 448,
+        "end": 477,
+        "summary": "讲员引用约伯记2:9-10，强调“从神手里得福，也从神手里受祸”是信仰告白，并指出约伯的妻子在第二轮才崩溃。",
+        "keywords": [
+          "从神手里得福",
+          "受祸",
+          "信仰告白",
+          "约伯的妻子"
+        ],
+        "cue": "讲员引用经文，强调信仰告白。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 478,
+        "end": 546,
+        "summary": "讲员解释为什么用这个眼光看约伯记，引用罗马书8:28，强调万事互相效力，为救恩得益处，并区分两套福音：一套是只给福，一套是祸福都为救恩效力。",
+        "keywords": [
+          "万事互相效力",
+          "救恩",
+          "两套福音"
+        ],
+        "cue": "讲员解释信仰的核心，并对比两套福音。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景：绝对稳固的人生（1-5节）",
+        "section_summary": "",
+        "start": 547,
+        "end": 556,
+        "summary": "讲员总结1-5节：绝对的稳固，但约伯还是出意外，因此抗风险的支架都不算数，最终能看守我们的是耶和华的篱笆，剩下的是敬畏耶和华的知识和智慧。",
+        "keywords": [
+          "总结",
+          "稳固",
+          "意外",
+          "篱笆",
+          "智慧"
+        ],
+        "cue": "讲员总结1-5节的内容。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 557,
+        "end": 570,
+        "summary": "讲员过渡到第二部分，强调影响家庭和历史的不仅是物质，更是天上的属灵场景。",
+        "keywords": [
+          "过渡",
+          "属灵场景",
+          "天上"
+        ],
+        "cue": "讲员开始讲解第二部分，引入天上的场景。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 571,
+        "end": 604,
+        "summary": "讲员解释“神的众子”指天使，撒旦也在其中，但“也来在其中”暗示撒旦已不是神的众子，而是不协调的成员。",
+        "keywords": [
+          "神的众子",
+          "天使",
+          "撒旦",
+          "不协调"
+        ],
+        "cue": "讲员解释“神的众子”和撒旦的出现。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 605,
+        "end": 646,
+        "summary": "讲员解释耶和华主动询问撒旦“你从哪里来”不是搭讪，而是说话的授权，表明撒旦在上帝权下，没有授权不能开口。",
+        "keywords": [
+          "授权",
+          "撒旦",
+          "权柄",
+          "耶和华"
+        ],
+        "cue": "讲员解释耶和华询问撒旦的意义。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 647,
+        "end": 660,
+        "summary": "讲员强调撒旦完全在神的掌管之中，被限制，神的儿女因此可以在困境中也有安稳感。",
+        "keywords": [
+          "撒旦",
+          "限制",
+          "掌管",
+          "安稳"
+        ],
+        "cue": "讲员强调撒旦的限制和神的掌管。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 661,
+        "end": 730,
+        "summary": "讲员解释耶和华称赞约伯并非主动引魔鬼攻击，而是撒旦本来就在关注约伯，并论证撒旦不是全知全在，他需要走来走去观察。",
+        "keywords": [
+          "称赞",
+          "撒旦",
+          "全知",
+          "全在",
+          "观察"
+        ],
+        "cue": "讲员解释耶和华称赞约伯的原因，并论证撒旦的局限性。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 731,
+        "end": 767,
+        "summary": "讲员强调撒旦对约伯的评估两次出错，而上帝全知全能，对约伯的评价无误，因此撒旦不是全知全在的。",
+        "keywords": [
+          "撒旦",
+          "评估出错",
+          "上帝全知",
+          "无误"
+        ],
+        "cue": "讲员对比撒旦和上帝的知识。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 768,
+        "end": 789,
+        "summary": "讲员指出上帝从开始就了解约伯，而撒旦需要观察，并强调“一人受苦，二人亨通”是圣经中反复出现的主题。",
+        "keywords": [
+          "上帝了解",
+          "撒旦观察",
+          "一人受苦",
+          "恶人亨通"
+        ],
+        "cue": "讲员对比上帝和撒旦对约伯的了解，并引出主题。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 790,
+        "end": 813,
+        "summary": "讲员强调“一人可能受苦，恶人可能亨通”，并指出约伯记的结尾双倍得回祝福，但拉撒路至死未得回，因此真正的盼望是不可废去之福。",
+        "keywords": [
+          "一人受苦",
+          "恶人亨通",
+          "双倍祝福",
+          "不可废去之福"
+        ],
+        "cue": "讲员讨论“一人受苦，恶人亨通”的主题，并对比约伯和拉撒路。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 814,
+        "end": 849,
+        "summary": "讲员引用“好人不长命，王八活千年”的俗语，强调不能因灾难就怀疑信仰，也不能因顺遂就认可信仰，环境不是信仰的参考标准。",
+        "keywords": [
+          "好人不长命",
+          "王八活千年",
+          "环境",
+          "信仰"
+        ],
+        "cue": "讲员引用俗语，强调环境不是信仰的参考。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 850,
+        "end": 889,
+        "summary": "讲员举例说明，同一件事（如生病）会被不同人解释为上帝拦阻或撒旦拦阻，强调不要随私意解读环境，环境不是第一参考标准。",
+        "keywords": [
+          "举例",
+          "解读环境",
+          "私意",
+          "第一参考标准"
+        ],
+        "cue": "讲员举例说明解读环境的误区。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 890,
+        "end": 918,
+        "summary": "讲员强调不要做“属灵的懂王”，不要随意解读他人遭遇的属灵意义，并指出约伯的三个朋友就是这样的“懂王”。",
+        "keywords": [
+          "属灵的懂王",
+          "解读",
+          "约伯的朋友"
+        ],
+        "cue": "讲员警告不要做“属灵的懂王”。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 919,
+        "end": 942,
+        "summary": "讲员总结，具备智慧书的智慧，就能得到干净的皮袋子，装载新酒，并强调上帝圣言的准则才是第一鉴别标准，而不是环境。",
+        "keywords": [
+          "智慧",
+          "皮袋子",
+          "圣言",
+          "鉴别标准"
+        ],
+        "cue": "讲员总结智慧书的价值，并强调圣言的标准。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 943,
+        "end": 967,
+        "summary": "讲员用约翰福音9:1-3作为结束，强调苦难不一定与罪有关，而是为了显出神的作为，并提醒不要限定上帝的回答。",
+        "keywords": [
+          "约翰福音9章",
+          "苦难",
+          "神的作为",
+          "罪"
+        ],
+        "cue": "讲员用经文结束，强调苦难与神作为的关系。"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景：天上的场景（6-8节）",
+        "section_summary": "",
+        "start": 968,
+        "end": 969,
+        "summary": "讲员以祷告结束，开始看约伯记。",
+        "keywords": [
+          "祷告",
+          "结束"
+        ],
+        "cue": "讲员以祷告结束讲道。"
+      }
+    ],
+    "base": "C:\\project\\讲道rag\\output\\ab1_user_GH_伯1章1到8节20260104_热词识别"
+  },
+  {
+    "key": "mine",
+    "label": "我的改写版",
+    "meta": {
+      "ok": true,
+      "secs": 37.0,
+      "usage": {
+        "prompt_tokens": 17677,
+        "total_tokens": 20995,
+        "completion_tokens": 3318,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "id": "04e54eb6e44245d0bffa78ddbf9133b8",
+      "finish_reason": "stop"
+    },
+    "m": {
+      "chapters": 1,
+      "sections": 2,
+      "paragraphs": 38,
+      "len_min": 2,
+      "len_med": 26.5,
+      "len_max": 53,
+      "len_mean": 25.5,
+      "len_sd": 11.72,
+      "len_cv": 0.46,
+      "coverage": 1.0,
+      "text_identical": true,
+      "issues": [],
+      "sum_avg_len": 45.2,
+      "sum_with": 38,
+      "jiangyuan_rate": 0.974,
+      "kw_hit": 0.784,
+      "cue_filled": 38,
+      "cue_unique_rate": 1.0,
+      "doc_summary": "通过约伯记1章1-8节，讲员阐述约伯的绝对稳固与天上场景的对比，纠正将环境顺遂等同于上帝认可的信仰误区，强调真正的智慧是认识耶和华并持守纯正。"
+    },
+    "paragraphs": [
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 1,
+        "end": 5,
+        "summary": "讲员开场问候，宣布宣读约伯记1章1-8节经文，并说明将解释难解部分。",
+        "keywords": [
+          "约伯记",
+          "经文宣读"
+        ],
+        "cue": "开场问候并宣布经文"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 6,
+        "end": 24,
+        "summary": "诵读约伯记1章1-8节，描述约伯的完全正直、敬畏神、家产丰富、儿女众多，以及天上神的众子与撒旦的对话。",
+        "keywords": [
+          "约伯",
+          "完全正直",
+          "敬畏神",
+          "撒旦"
+        ],
+        "cue": "诵读经文"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 25,
+        "end": 33,
+        "summary": "讲员结束经文诵读，带领祷告，求神开通耳朵，赏赐知识，使会众认识神。",
+        "keywords": [
+          "祷告",
+          "知识"
+        ],
+        "cue": "经文后祷告"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 34,
+        "end": 48,
+        "summary": "讲员介绍讲道大纲：分两个部分，1-5节看约伯的现实背景（东方富户），6-8节看约伯的属灵背景（被撒旦控告但被神认可）。",
+        "keywords": [
+          "大纲",
+          "现实背景",
+          "属灵背景"
+        ],
+        "cue": "讲道大纲介绍"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 49,
+        "end": 63,
+        "summary": "讲员自我介绍（陈社炳），说明服侍任务，计划用约伯记开始，以消除教会中关注个人祸福而非国度的观念。",
+        "keywords": [
+          "陈社炳",
+          "服侍",
+          "约伯记"
+        ],
+        "cue": "自我介绍与服侍说明"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 64,
+        "end": 79,
+        "summary": "讲员强调约伯记是智慧书第一卷，主题是认识耶和华的智慧，而非仅苦难；提出两个问题：世上是否存在绝对平安，上帝认可的信仰是否远离灾祸。",
+        "keywords": [
+          "智慧书",
+          "平安",
+          "灾祸"
+        ],
+        "cue": "引入约伯记主题与问题"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 80,
+        "end": 87,
+        "summary": "讲员介绍约伯记成书最早，约伯生活在比亚伯拉罕更早的族长时代，是认识独一真神的古代圣徒。",
+        "keywords": [
+          "约伯记",
+          "成书",
+          "族长时代"
+        ],
+        "cue": "背景介绍"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 88,
+        "end": 114,
+        "summary": "讲员解释约伯不是以色列人，但耶和华是全地的主，在亚伯拉罕之前就有外邦人认识神，如麦基洗德和巴兰，纠正独一神信仰从摩西开始的误解。",
+        "keywords": [
+          "约伯",
+          "乌斯地",
+          "全地信仰",
+          "麦基洗德"
+        ],
+        "cue": "解释约伯身份与信仰背景"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 115,
+        "end": 140,
+        "summary": "讲员提问为何圣经记录约伯的概况，强调1-5节突出约伯的稳固，与后面灾难形成落差，为读者思考信心根基。",
+        "keywords": [
+          "约伯",
+          "稳固",
+          "落差"
+        ],
+        "cue": "解释1-5节的目的"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 141,
+        "end": 174,
+        "summary": "讲员提醒不要用上帝视角读经，应思考约伯的稳固，并讨论人们通常认为的灾祸风险因素：道德败坏、信仰污秽、抗风险能力低。",
+        "keywords": [
+          "上帝视角",
+          "风险因素",
+          "抗风险"
+        ],
+        "cue": "从解经转向应用"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 175,
+        "end": 211,
+        "summary": "讲员分析约伯完全正直、敬畏神、远离恶事，排除了道德、法律和信仰上的风险因素，强调约伯的稳健。",
+        "keywords": [
+          "约伯",
+          "正直",
+          "敬畏神",
+          "风险排除"
+        ],
+        "cue": "分析约伯的品格"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 212,
+        "end": 237,
+        "summary": "讲员讨论约伯的硬实力：七个儿子、三个女儿、七千羊、三千骆驼等，说明其财富和地位在东方为至大。",
+        "keywords": [
+          "约伯",
+          "财富",
+          "儿女",
+          "东方至大"
+        ],
+        "cue": "分析约伯的硬实力"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 238,
+        "end": 267,
+        "summary": "讲员解释约伯的财富象征：七千羊代表牧场利润，三千骆驼代表物流商贸，牛驴仆婢代表田产，强调其经济实力雄厚。",
+        "keywords": [
+          "约伯",
+          "财富",
+          "羊",
+          "骆驼",
+          "田产"
+        ],
+        "cue": "解释财富细节"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 268,
+        "end": 280,
+        "summary": "讲员强调约伯在东方为至大，非仅乌斯地，其强盛程度堪比君王，但后面却坐在炉灰中，形成强烈反差。",
+        "keywords": [
+          "约伯",
+          "东方至大",
+          "反差"
+        ],
+        "cue": "总结约伯的地位"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 281,
+        "end": 303,
+        "summary": "讲员总结约伯的素描：经济富可敌国、地位东方至大，这类人看似无风险，但约伯记将打破这种观念。",
+        "keywords": [
+          "约伯",
+          "素描",
+          "富可敌国"
+        ],
+        "cue": "总结约伯形象"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 304,
+        "end": 323,
+        "summary": "讲员回应豪门家庭有争端的观点，但约伯家兄弟姐妹和睦，常设宴同吃，无家庭矛盾。",
+        "keywords": [
+          "约伯",
+          "家庭和睦",
+          "豪门争端"
+        ],
+        "cue": "反驳豪门争端观点"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 324,
+        "end": 352,
+        "summary": "讲员强调约伯对儿女的信仰教育顶级，宴席后自洁献燔祭，怕儿女弃掉神，且常常如此。",
+        "keywords": [
+          "约伯",
+          "信仰教育",
+          "燔祭"
+        ],
+        "cue": "分析约伯的信仰看守"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 353,
+        "end": 379,
+        "summary": "讲员指出约伯家庭看似稳固，但后面家破人亡，且允许此事的是耶和华，强调约伯记的冲击力。",
+        "keywords": [
+          "约伯",
+          "家破人亡",
+          "耶和华"
+        ],
+        "cue": "转折到灾难"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 380,
+        "end": 410,
+        "summary": "讲员解释约伯记的智慧是倒掉虚假平安，认识到人生安稳的支柱可能瞬间倒塌，最终看守我们的是耶和华的篱笆和敬畏神的智慧。",
+        "keywords": [
+          "智慧",
+          "虚假平安",
+          "篱笆"
+        ],
+        "cue": "总结约伯记的智慧"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 411,
+        "end": 444,
+        "summary": "讲员解释身外之物与身内之物都可能失去，但敬畏神的真知识会存留，并强调持守纯正的重要性。",
+        "keywords": [
+          "身外之物",
+          "身内之物",
+          "纯正"
+        ],
+        "cue": "解释身内身外之物"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 445,
+        "end": 476,
+        "summary": "讲员引用约伯记2:9，回应信耶稣保平安的说法，强调从神手里得福也受祸，这是信仰告白。",
+        "keywords": [
+          "约伯记2:9",
+          "得福受祸",
+          "信仰告白"
+        ],
+        "cue": "引用经文回应"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 477,
+        "end": 511,
+        "summary": "讲员解释万事互相效力，为救恩得益处，强调今生祸福为永恒益处，信耶稣追求永恒福乐。",
+        "keywords": [
+          "万事互相效力",
+          "救恩",
+          "永恒福乐"
+        ],
+        "cue": "解释万事互相效力"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 512,
+        "end": 546,
+        "summary": "讲员对比两套福音：一套只给福，一套福祸都为救恩效力，强调选择后者，接受今生祸福。",
+        "keywords": [
+          "两套福音",
+          "救恩",
+          "选择"
+        ],
+        "cue": "对比两套福音"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 1,
+        "section_title": "约伯的现实背景（1-5节）",
+        "section_summary": "",
+        "start": 547,
+        "end": 556,
+        "summary": "讲员总结1-5节：约伯看似绝对稳固，但会出意外，抗风险支架不可靠，最终看守的是神的篱笆和智慧。",
+        "keywords": [
+          "总结",
+          "稳固",
+          "篱笆"
+        ],
+        "cue": "总结1-5节"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 557,
+        "end": 570,
+        "summary": "讲员过渡到第二部分6-8节，强调天上场景影响家庭和历史，物质支持脆弱，属灵领域影响大。",
+        "keywords": [
+          "天上场景",
+          "属灵领域"
+        ],
+        "cue": "过渡到第二部分"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 571,
+        "end": 604,
+        "summary": "讲员解释神的众子指天使，撒旦也在其中，但作者措辞暗示撒旦已不是神的众子，是集会的非合法成员。",
+        "keywords": [
+          "神的众子",
+          "撒旦",
+          "天使"
+        ],
+        "cue": "解释神的众子与撒旦"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 605,
+        "end": 646,
+        "summary": "讲员解释耶和华询问撒旦是授权，而非困惑，撒旦在神权下，没有授权不能说话。",
+        "keywords": [
+          "耶和华",
+          "撒旦",
+          "授权"
+        ],
+        "cue": "解释耶和华询问撒旦"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 647,
+        "end": 660,
+        "summary": "讲员强调撒旦完全在神掌管中，神给撒旦活动权限，但限制其能力，信徒在困境中也能安稳。",
+        "keywords": [
+          "撒旦",
+          "神权",
+          "限制"
+        ],
+        "cue": "解释撒旦的权限"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 661,
+        "end": 677,
+        "summary": "讲员提出选择题：耶和华主动引撒旦注意约伯，还是撒旦本来就在关注约伯，并准备用证据说明。",
+        "keywords": [
+          "耶和华",
+          "撒旦",
+          "约伯"
+        ],
+        "cue": "提出选择题"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 678,
+        "end": 730,
+        "summary": "讲员用证据说明魔鬼不是全知全能，受空间限制，撒旦需要走来走去，因此他一直在约伯身边观察。",
+        "keywords": [
+          "魔鬼",
+          "全知",
+          "空间限制",
+          "撒旦"
+        ],
+        "cue": "论证魔鬼的局限"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 731,
+        "end": 775,
+        "summary": "讲员指出撒旦对约伯的评估两次出错，而上帝全知无误，撒旦需要观察人，但上帝从开始就了解约伯。",
+        "keywords": [
+          "撒旦",
+          "评估",
+          "上帝全知"
+        ],
+        "cue": "对比撒旦与上帝"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 776,
+        "end": 810,
+        "summary": "讲员讨论上帝允许约伯受祸的原因，引出义人受苦、恶人亨通的怪象，并提醒不要被约伯记结尾双倍祝福误导。",
+        "keywords": [
+          "义人受苦",
+          "恶人亨通",
+          "双倍祝福"
+        ],
+        "cue": "讨论义人受苦"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 811,
+        "end": 849,
+        "summary": "讲员强调福音的核心是不可废去之福，而非今生顺遂，并批评用环境顺遂来评判信仰的错误。",
+        "keywords": [
+          "福音",
+          "不可废去之福",
+          "环境"
+        ],
+        "cue": "强调福音核心"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 850,
+        "end": 889,
+        "summary": "讲员举例说明同一件事被两拨人解释为神拦阻或撒旦拦阻，批评随私意解读环境，强调环境不是第一参考标准。",
+        "keywords": [
+          "环境解读",
+          "私意",
+          "第一参考标准"
+        ],
+        "cue": "举例批评环境解读"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 890,
+        "end": 918,
+        "summary": "讲员呼吁不要做属灵的懂王，不要随意解读他人遭遇，约伯的三个朋友就是反面例子。",
+        "keywords": [
+          "属灵懂王",
+          "约伯朋友"
+        ],
+        "cue": "呼吁不要做懂王"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 919,
+        "end": 942,
+        "summary": "讲员总结约伯记的信息：具备智慧书智慧，以神的话为根基，不靠环境，最大灾祸是心眼昏迷，最大祝福是认识真理。",
+        "keywords": [
+          "智慧",
+          "根基",
+          "真理"
+        ],
+        "cue": "总结约伯记信息"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 943,
+        "end": 967,
+        "summary": "讲员引用约翰福音9章1-3节，说明受苦不一定因罪，而是为显出神的作为，纠正祸福与罪的错误关联。",
+        "keywords": [
+          "约翰福音9章",
+          "神的作为",
+          "罪"
+        ],
+        "cue": "引用经文结束"
+      },
+      {
+        "chapter": 1,
+        "chapter_title": "约伯的现实背景与属灵背景",
+        "chapter_summary": "",
+        "section": 2,
+        "section_title": "约伯的属灵背景（6-8节）",
+        "section_summary": "",
+        "start": 968,
+        "end": 969,
+        "summary": "讲员以祷告结束，开始看约伯记。",
+        "keywords": [
+          "祷告",
+          "结束"
+        ],
+        "cue": "结束祷告"
+      }
+    ],
+    "base": "C:\\project\\讲道rag\\output\\ab1_mine_GH_伯1章1到8节20260104_热词识别"
+  }
+]

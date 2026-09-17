@@ -1,0 +1,715 @@
+{
+  "meta": {
+    "ok": true,
+    "secs": 26.7,
+    "usage": {
+      "prompt_tokens": 18854,
+      "total_tokens": 22145,
+      "completion_tokens": 3291,
+      "prompt_tokens_details": {
+        "cached_tokens": 18688
+      },
+      "reasoning_tokens": 0
+    },
+    "id": "c58e3e8f132e451abecf95a62f3cb46e",
+    "reasoning_effort": null,
+    "finish_reason": "stop"
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 25,
+      "title": "开场问候与诵读经文",
+      "trigger": "C",
+      "evidence": "行1「好，各位平安哦」—— 开场问候",
+      "confidence": 0.95
+    },
+    {
+      "no": 2,
+      "start": 26,
+      "end": 33,
+      "title": "祷告",
+      "trigger": "C",
+      "evidence": "行26「那我们先一起来祷告」—— 功能转换",
+      "confidence": 0.95
+    },
+    {
+      "no": 3,
+      "start": 34,
+      "end": 80,
+      "title": "引言:讲道框架与说明",
+      "trigger": "A",
+      "evidence": "行34「好，那今天呢，我们就分两个部分来讲」—— 显式宣告",
+      "confidence": 0.95
+    },
+    {
+      "no": 4,
+      "start": 81,
+      "end": 556,
+      "title": "第一部分:约伯的现实背景(1-5节)",
+      "trigger": "B",
+      "evidence": "行81「先看看约伯记1~5节」—— 论题转换",
+      "confidence": 0.95
+    },
+    {
+      "no": 5,
+      "start": 557,
+      "end": 922,
+      "title": "第二部分:约伯的属灵背景(6-8节)",
+      "trigger": "B",
+      "evidence": "行557「好，我们看第二节」—— 论题转换",
+      "confidence": 0.95
+    },
+    {
+      "no": 6,
+      "start": 923,
+      "end": 969,
+      "title": "收尾与结束祷告",
+      "trigger": "C",
+      "evidence": "行923「好，大体我们今天就到这里」—— 功能转换",
+      "confidence": 0.95
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 3,
+      "title": "开场问候与谦辞",
+      "chapter": 1
+    },
+    {
+      "no": "1.2",
+      "start": 4,
+      "end": 25,
+      "title": "诵读经文约伯记1:1-8",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 26,
+      "end": 33,
+      "title": "祷告内容",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 34,
+      "end": 48,
+      "title": "讲道分两部分",
+      "chapter": 3
+    },
+    {
+      "no": "3.2",
+      "start": 49,
+      "end": 54,
+      "title": "自我介绍与服侍任务",
+      "chapter": 3
+    },
+    {
+      "no": "3.3",
+      "start": 55,
+      "end": 67,
+      "title": "为何选约伯记",
+      "chapter": 3
+    },
+    {
+      "no": "3.4",
+      "start": 68,
+      "end": 80,
+      "title": "本讲要讨论的两个问题",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 81,
+      "end": 114,
+      "title": "约伯的身份与时代背景",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 115,
+      "end": 174,
+      "title": "约伯的稳固与风险因素",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 175,
+      "end": 223,
+      "title": "约伯的道德与信仰",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 224,
+      "end": 280,
+      "title": "约伯的财富与地位",
+      "chapter": 4
+    },
+    {
+      "no": "4.5",
+      "start": 281,
+      "end": 353,
+      "title": "约伯的总结与家庭和睦",
+      "chapter": 4
+    },
+    {
+      "no": "4.6",
+      "start": 354,
+      "end": 556,
+      "title": "约伯记的冲击与智慧",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 557,
+      "end": 604,
+      "title": "天上的场景与神的众子",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 605,
+      "end": 660,
+      "title": "耶和华询问撒旦的授权",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 661,
+      "end": 730,
+      "title": "耶和华称赞约伯与撒旦的局限",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 731,
+      "end": 810,
+      "title": "撒旦的评估与约伯的智慧",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 811,
+      "end": 889,
+      "title": "不可用环境判断信仰",
+      "chapter": 5
+    },
+    {
+      "no": "5.6",
+      "start": 890,
+      "end": 922,
+      "title": "不要做属灵的懂王",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 923,
+      "end": 967,
+      "title": "总结与经文结束",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 968,
+      "end": 969,
+      "title": "结束祷告",
+      "chapter": 6
+    }
+  ],
+  "paragraphs": [
+    {
+      "start": 1,
+      "end": 3,
+      "title": "问候与会众回应",
+      "section": "1.1",
+      "chapter": 1
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "title": "宣布诵读经文",
+      "section": "1.2",
+      "chapter": 1
+    },
+    {
+      "start": 9,
+      "end": 18,
+      "title": "约伯的敬虔与家产",
+      "section": "1.2",
+      "chapter": 1
+    },
+    {
+      "start": 19,
+      "end": 24,
+      "title": "天上场景与神的询问",
+      "section": "1.2",
+      "chapter": 1
+    },
+    {
+      "start": 25,
+      "end": 25,
+      "title": "结束诵读",
+      "section": "1.2",
+      "chapter": 1
+    },
+    {
+      "start": 26,
+      "end": 33,
+      "title": "祈求神赐福与开启耳朵",
+      "section": "2.1",
+      "chapter": 2
+    },
+    {
+      "start": 34,
+      "end": 36,
+      "title": "分两个部分来讲",
+      "section": "3.1",
+      "chapter": 3
+    },
+    {
+      "start": 37,
+      "end": 41,
+      "title": "第一部分:1-5节约伯的现实背景",
+      "section": "3.1",
+      "chapter": 3
+    },
+    {
+      "start": 42,
+      "end": 48,
+      "title": "第二部分:6-8节约伯的属灵背景",
+      "section": "3.1",
+      "chapter": 3
+    },
+    {
+      "start": 49,
+      "end": 54,
+      "title": "陈社炳与本年服侍方向",
+      "section": "3.2",
+      "chapter": 3
+    },
+    {
+      "start": 55,
+      "end": 58,
+      "title": "今日信仰关注个人多于国度",
+      "section": "3.3",
+      "chapter": 3
+    },
+    {
+      "start": 59,
+      "end": 63,
+      "title": "约伯记用来消除顽固观念",
+      "section": "3.3",
+      "chapter": 3
+    },
+    {
+      "start": 64,
+      "end": 67,
+      "title": "智慧书第一卷,主题是智慧",
+      "section": "3.3",
+      "chapter": 3
+    },
+    {
+      "start": 68,
+      "end": 73,
+      "title": "问题一:存不存在绝对的平安",
+      "section": "3.4",
+      "chapter": 3
+    },
+    {
+      "start": 74,
+      "end": 80,
+      "title": "问题二:被神认可是否远离灾祸",
+      "section": "3.4",
+      "chapter": 3
+    },
+    {
+      "start": 81,
+      "end": 87,
+      "title": "约伯记是最早写成的书",
+      "section": "4.1",
+      "chapter": 4
+    },
+    {
+      "start": 88,
+      "end": 98,
+      "title": "约伯不是以色列人",
+      "section": "4.1",
+      "chapter": 4
+    },
+    {
+      "start": 99,
+      "end": 106,
+      "title": "耶和华是全地的主",
+      "section": "4.1",
+      "chapter": 4
+    },
+    {
+      "start": 107,
+      "end": 114,
+      "title": "独一神信仰从最早就有",
+      "section": "4.1",
+      "chapter": 4
+    },
+    {
+      "start": 115,
+      "end": 121,
+      "title": "圣经细节非枉费",
+      "section": "4.2",
+      "chapter": 4
+    },
+    {
+      "start": 122,
+      "end": 128,
+      "title": "什么样的人不会出意外",
+      "section": "4.2",
+      "chapter": 4
+    },
+    {
+      "start": 129,
+      "end": 140,
+      "title": "约伯的稳与后面形成落差",
+      "section": "4.2",
+      "chapter": 4
+    },
+    {
+      "start": 141,
+      "end": 153,
+      "title": "不要用上帝视角读",
+      "section": "4.2",
+      "chapter": 4
+    },
+    {
+      "start": 154,
+      "end": 174,
+      "title": "风险因素与抗风险能力",
+      "section": "4.2",
+      "chapter": 4
+    },
+    {
+      "start": 175,
+      "end": 183,
+      "title": "约伯完全正直远离恶事",
+      "section": "4.3",
+      "chapter": 4
+    },
+    {
+      "start": 184,
+      "end": 195,
+      "title": "排除道德与属灵风险",
+      "section": "4.3",
+      "chapter": 4
+    },
+    {
+      "start": 196,
+      "end": 211,
+      "title": "约伯无任何不稳健因素",
+      "section": "4.3",
+      "chapter": 4
+    },
+    {
+      "start": 212,
+      "end": 223,
+      "title": "约伯是好人与硬实力",
+      "section": "4.3",
+      "chapter": 4
+    },
+    {
+      "start": 224,
+      "end": 237,
+      "title": "家庭成员与财富",
+      "section": "4.4",
+      "chapter": 4
+    },
+    {
+      "start": 238,
+      "end": 247,
+      "title": "7000羊的利润",
+      "section": "4.4",
+      "chapter": 4
+    },
+    {
+      "start": 248,
+      "end": 260,
+      "title": "3000骆驼的物流",
+      "section": "4.4",
+      "chapter": 4
+    },
+    {
+      "start": 261,
+      "end": 267,
+      "title": "牛驴仆婢的田产",
+      "section": "4.4",
+      "chapter": 4
+    },
+    {
+      "start": 268,
+      "end": 280,
+      "title": "东方为至大",
+      "section": "4.4",
+      "chapter": 4
+    },
+    {
+      "start": 281,
+      "end": 300,
+      "title": "约伯的素描与风险",
+      "section": "4.5",
+      "chapter": 4
+    },
+    {
+      "start": 301,
+      "end": 323,
+      "title": "豪门家庭无争端",
+      "section": "4.5",
+      "chapter": 4
+    },
+    {
+      "start": 324,
+      "end": 353,
+      "title": "信仰教育顶级",
+      "section": "4.5",
+      "chapter": 4
+    },
+    {
+      "start": 354,
+      "end": 379,
+      "title": "约伯的冲击与变化",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 380,
+      "end": 410,
+      "title": "智慧是倒掉毒鸡汤",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 411,
+      "end": 427,
+      "title": "身外之物与身内之物",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 428,
+      "end": 444,
+      "title": "正确的预设与持守纯正",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 445,
+      "end": 476,
+      "title": "从神手里得福也受祸",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 477,
+      "end": 511,
+      "title": "万事互相效力",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 512,
+      "end": 546,
+      "title": "两套福音的对比",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 547,
+      "end": 556,
+      "title": "总结1-5节",
+      "section": "4.6",
+      "chapter": 4
+    },
+    {
+      "start": 557,
+      "end": 571,
+      "title": "天上场景影响家庭",
+      "section": "5.1",
+      "chapter": 5
+    },
+    {
+      "start": 572,
+      "end": 581,
+      "title": "神的众子聚集",
+      "section": "5.1",
+      "chapter": 5
+    },
+    {
+      "start": 582,
+      "end": 604,
+      "title": "撒旦也在其中",
+      "section": "5.1",
+      "chapter": 5
+    },
+    {
+      "start": 605,
+      "end": 613,
+      "title": "耶和华主动询问",
+      "section": "5.2",
+      "chapter": 5
+    },
+    {
+      "start": 614,
+      "end": 629,
+      "title": "这是说话的授权",
+      "section": "5.2",
+      "chapter": 5
+    },
+    {
+      "start": 630,
+      "end": 646,
+      "title": "权柄的比喻",
+      "section": "5.2",
+      "chapter": 5
+    },
+    {
+      "start": 647,
+      "end": 660,
+      "title": "撒旦在权下",
+      "section": "5.2",
+      "chapter": 5
+    },
+    {
+      "start": 661,
+      "end": 677,
+      "title": "称赞约伯引魔鬼",
+      "section": "5.3",
+      "chapter": 5
+    },
+    {
+      "start": 678,
+      "end": 694,
+      "title": "魔鬼非全知全能",
+      "section": "5.3",
+      "chapter": 5
+    },
+    {
+      "start": 695,
+      "end": 704,
+      "title": "上帝的全在",
+      "section": "5.3",
+      "chapter": 5
+    },
+    {
+      "start": 705,
+      "end": 730,
+      "title": "撒旦受空间限制",
+      "section": "5.3",
+      "chapter": 5
+    },
+    {
+      "start": 731,
+      "end": 749,
+      "title": "撒旦两次评估出错",
+      "section": "5.4",
+      "chapter": 5
+    },
+    {
+      "start": 750,
+      "end": 765,
+      "title": "上帝全知无误",
+      "section": "5.4",
+      "chapter": 5
+    },
+    {
+      "start": 766,
+      "end": 780,
+      "title": "撒旦需要观察",
+      "section": "5.4",
+      "chapter": 5
+    },
+    {
+      "start": 781,
+      "end": 810,
+      "title": "一人受苦二人亨通",
+      "section": "5.4",
+      "chapter": 5
+    },
+    {
+      "start": 811,
+      "end": 829,
+      "title": "不可因灾难怀疑信仰",
+      "section": "5.5",
+      "chapter": 5
+    },
+    {
+      "start": 830,
+      "end": 849,
+      "title": "环境不是信仰标准",
+      "section": "5.5",
+      "chapter": 5
+    },
+    {
+      "start": 850,
+      "end": 878,
+      "title": "例子:腿摔断的两种解释",
+      "section": "5.5",
+      "chapter": 5
+    },
+    {
+      "start": 879,
+      "end": 889,
+      "title": "不要随私意解读",
+      "section": "5.5",
+      "chapter": 5
+    },
+    {
+      "start": 890,
+      "end": 907,
+      "title": "不要解读他人处境",
+      "section": "5.6",
+      "chapter": 5
+    },
+    {
+      "start": 908,
+      "end": 922,
+      "title": "约伯记避免愚昧",
+      "section": "5.6",
+      "chapter": 5
+    },
+    {
+      "start": 923,
+      "end": 935,
+      "title": "不靠环境辨别",
+      "section": "6.1",
+      "chapter": 6
+    },
+    {
+      "start": 936,
+      "end": 942,
+      "title": "最大灾祸与祝福",
+      "section": "6.1",
+      "chapter": 6
+    },
+    {
+      "start": 943,
+      "end": 967,
+      "title": "约翰福音9章结束",
+      "section": "6.1",
+      "chapter": 6
+    },
+    {
+      "start": 968,
+      "end": 969,
+      "title": "祷告开始",
+      "section": "6.2",
+      "chapter": 6
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 557,
+      "reason": "有「我们看第二部分」的宣告,但可能只是节内的细节推进"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "file": "GH_约伯记2章1到6节_热词识别.txt",
+  "mode": "index",
+  "window": 80,
+  "model": "qwen3:8b",
+  "total_lines": 795,
+  "chunks": 10,
+  "chunks_ok": 10,
+  "pass_rate": 1.0,
+  "elapsed_s": 45.3,
+  "reports": [
+    {
+      "ok": true,
+      "titles": [
+        "诵读经文",
+        "祷告与主题引入"
+      ],
+      "paragraphs": 6,
+      "orig_chars": 2012,
+      "model_chars": 2012,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 1,
+      "lines": 80,
+      "secs": 7.2
+    },
+    {
+      "ok": true,
+      "titles": [
+        "撒旦的堕落与限制",
+        "撒旦的权柄与限制"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 1894,
+      "model_chars": 1894,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 2,
+      "lines": 80,
+      "secs": 3.8
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯得胜的方式",
+        "属灵征战的实质"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 1886,
+      "model_chars": 1886,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 3,
+      "lines": 80,
+      "secs": 3.9
+    },
+    {
+      "ok": true,
+      "titles": [
+        "耶稣的复活与生命",
+        "持守纯正的重要性"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1952,
+      "model_chars": 1952,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 4,
+      "lines": 80,
+      "secs": 5.6
+    },
+    {
+      "ok": true,
+      "titles": [
+        "军装的定义",
+        "军装的具体内容"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 1633,
+      "model_chars": 1633,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 5,
+      "lines": 80,
+      "secs": 3.9
+    },
+    {
+      "ok": true,
+      "titles": [
+        "属灵征战的方式",
+        "祷告的方向"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1804,
+      "model_chars": 1804,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 6,
+      "lines": 80,
+      "secs": 4.0
+    },
+    {
+      "ok": true,
+      "titles": [
+        "撒旦的观察",
+        "以皮代皮的含义"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 1769,
+      "model_chars": 1769,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 7,
+      "lines": 80,
+      "secs": 3.6
+    },
+    {
+      "ok": true,
+      "titles": [
+        "约伯的痛苦与求死",
+        "上帝的护理"
+      ],
+      "paragraphs": 4,
+      "orig_chars": 1963,
+      "model_chars": 1963,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 8,
+      "lines": 80,
+      "secs": 3.9
+    },
+    {
+      "ok": true,
+      "titles": [
+        "护理的定义",
+        "护理的益处"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1850,
+      "model_chars": 1850,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 9,
+      "lines": 80,
+      "secs": 5.2
+    },
+    {
+      "ok": true,
+      "titles": [
+        "不变的意念",
+        "全副军装"
+      ],
+      "paragraphs": 5,
+      "orig_chars": 1878,
+      "model_chars": 1878,
+      "diff": "无差异（结构化模式下模型不接触正文）",
+      "chunk": 10,
+      "lines": 75,
+      "secs": 4.1
+    }
+  ]
+}
