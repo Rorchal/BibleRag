@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 说明：output/、logs/、state/、识别结果/ 目前仍在版本控制下，
+# 故意没有写进本文件。它们的去留见 docs/目录结构梳理.md 的 P1 / P5，
+# 决定之后再一并调整，避免「已入库但被 ignore」的含糊状态。
