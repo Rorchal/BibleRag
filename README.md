@@ -19,10 +19,12 @@ BibleRag/
 ├── README.md
 ├── .gitignore
 ├── docs/
-│   └── 目录结构梳理.md          # 目录审计报告 + 清理建议
+│   ├── 目录结构梳理.md          # 目录审计报告 + 清理建议
+│   └── v6提示词一致性问题.md    # v6 提示词内部三处冲突的复核
 │
 ├── ds_client.py                 # ★ 公共库：DeepSeek 网关客户端 + 结构校验 + 失败落盘
 ├── prompts_v5.py                # ★ 公共库：v5 提示词常量（被 v3.py 引用）
+├── prompts_v6.py                # ★ 公共库：v6 提示词常量（被 v3.py 引用）
 ├── segment.py                   # ★ 公共库 + 入口：本地 Ollama 小模型排版
 │
 ├── scan.py                      # 入口：定时增量扫描转写稿目录 → 调 segment 排版
@@ -30,7 +32,7 @@ BibleRag/
 ├── trial.py                     # 入口：单篇试跑「章/节/段 + 概要」
 ├── compare.py                   # 入口：A/B 对比两版提示词（user / mine）
 ├── noise.py                     # 入口：同参数连跑 N 次，量化重跑方差 + 边界投票
-├── v3.py                        # 入口：v3/v4/v5 提示词运行器（三级都带行号）
+├── v3.py                        # 入口：v4/v5/v6 提示词运行器（三级都带行号）
 ├── goldeval.py                  # 入口：以豆包结构为 gold，算边界 P/R/F1
 ├── raw_call.py                  # 入口：发一次调用，HTTP 响应原样落盘（排查用）
 │
@@ -107,15 +109,33 @@ python scan.py --watch --interval 900 --hours 24
 # 校验产物
 python check.py 识别结果/豆包2.0/<篇名>.txt output/<篇名>.md
 
-# 远程 DeepSeek：单篇试跑 / A-B 对比 / 噪声基线 / v5 提示词
+# 远程 DeepSeek：单篇试跑 / A-B 对比 / 噪声基线
 python trial.py <txt> --max-tokens 16000 --tag full2
 python compare.py <txt> --tag ab1
 python noise.py <txt> --runs 5 --variant mine
-python v3.py <txt> --prompt v5 --effort low --tag v5_low
 
-# 评测：以豆包结构为 gold
-python goldeval.py --gold output/gold_v2.md --pred output/v5_low_*.parsed.json --txt <txt>
+# v6 提示词跑约伯记 1 章 1-8 节（输出落 output/v6_v6_low_<篇名>.{raw,parsed}.json）
+export DS_KEY=<你的密钥>
+python v3.py 识别结果/豆包2.0/GH_伯1章1到8节20260104_热词识别.txt \
+  --prompt v6 --effort low --max-tokens 16000 --tag v6
+
+# 评测：gold 为 output/gold_v2.md（8 章 / 28 节 / 83 段，覆盖行 1-969）
+# --pred 必须写成「标签=路径」，可一次传多个做横向对比
+python goldeval.py --gold output/gold_v2.md \
+  --pred v6=output/v6_v6_low_GH_伯1章1到8节20260104_热词识别.parsed.json \
+         v5_low=output/v5_low_GH_伯1章1到8节20260104_热词识别.parsed.json \
+         v3_low=output/v3_low_GH_约伯记1章1到8节_热词识别.parsed.json \
+  --txt 识别结果/豆包2.0/GH_伯1章1到8节20260104_热词识别.txt
 ```
+
+现有五个方案对 `gold_v2.md` 的 baseline 存在 [`output/gold_v2_baseline.txt`](output/gold_v2_baseline.txt)，
+v6 跑完可直接对照。
+
+> **跑之前注意 `--effort low`。** `logs/api_failures.jsonl` 里两条 `empty_content`
+> 都是在这篇 969 行稿子上、`effort=low` 时产生的：模型把预算全烧在 `reasoning_content`
+> 里，`content` 返回空串，`ds_client` 判定失败且**不重试**。v3_low / v5_low 跑成功过，
+> 所以是概率问题不是必然。第一次跑建议先用 `--effort none`，或者把 `--max-tokens`
+> 提到 24000 以上再用 low。
 
 ## 环境变量
 

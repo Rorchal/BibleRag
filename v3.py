@@ -17,6 +17,7 @@ import sys
 
 import ds_client as ds
 import prompts_v5
+import prompts_v6
 
 SYSTEM_V3A = """你是中文长文本结构分析器。输入是按行编号的口语转写稿(讲座/讲道/课程录音),一行一句。
 你的任务:识别三级结构,输出每一级的起止行号。
@@ -173,10 +174,19 @@ def parse_v3(data: dict) -> dict:
         except (KeyError, TypeError, ValueError):
             continue
         chapters.append(c)
-        for se in ch.get("sections") or []:
+        subs = ch.get("sections") or []
+        if not subs and (ch.get("paragraphs") or []):
+            # FEWSHOT 的正确示范把 paragraphs 直接挂在 chapters 元素下，没有
+            # sections 层。模型照抄示范时走这条分支：合成一个覆盖全章的节，
+            # 并打上 synthesized 标记，避免整篇解析成 0 节 0 段。
+            subs = [{"no": f"{c['no']}.1", "start": c["start"], "end": c["end"],
+                     "title": c["title"], "paragraphs": ch["paragraphs"],
+                     "_synthesized": True}]
+        for se in subs:
             try:
                 s = {"no": se.get("no"), "start": int(se["start"]), "end": int(se["end"]),
-                     "title": str(se.get("title", "")).strip(), "chapter": c["no"]}
+                     "title": str(se.get("title", "")).strip(), "chapter": c["no"],
+                     "synthesized": bool(se.get("_synthesized"))}
             except (KeyError, TypeError, ValueError):
                 continue
             sections.append(s)
@@ -219,14 +229,17 @@ def main() -> int:
     ap.add_argument("--max-tokens", type=int, default=16000)
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--tag", default="v3")
-    ap.add_argument("--prompt", default="v4", choices=["v4", "v5"])
+    ap.add_argument("--prompt", default="v4", choices=["v4", "v5", "v6"])
     a = ap.parse_args()
 
     lines = ds.read_lines(a.path)
     lo, hi = 1, len(lines)
     numbered = "\n".join(f"{i} | {ln}" for i, ln in enumerate(lines, 1))
-    system, fewshot = ((SYSTEM_V3, FEWSHOT_V3) if a.prompt == "v4"
-                       else (prompts_v5.SYSTEM_V5, prompts_v5.FEWSHOT_V5))
+    system, fewshot = {
+        "v4": (SYSTEM_V3, FEWSHOT_V3),
+        "v5": (prompts_v5.SYSTEM_V5, prompts_v5.FEWSHOT_V5),
+        "v6": (prompts_v6.SYSTEM_V6, prompts_v6.FEWSHOT_V6),
+    }[a.prompt]
     user = USER_TMPL_V3.format(fewshot=fewshot, n=len(lines), lo=lo, hi=hi,
                                numbered=numbered)
 
@@ -281,7 +294,8 @@ def main() -> int:
         print("三级全部无缝覆盖，无问题")
 
     base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output",
-                        f"{a.tag}_{a.effort}_{os.path.splitext(os.path.basename(a.path))[0]}")
+                        f"{a.tag}_{a.prompt}_{a.effort}_"
+                        f"{os.path.splitext(os.path.basename(a.path))[0]}")
     io.open(base + ".raw.json", "w", encoding="utf-8").write(content)
     io.open(base + ".parsed.json", "w", encoding="utf-8").write(
         json.dumps({"meta": meta, "issues": issues, **st}, ensure_ascii=False, indent=2))
