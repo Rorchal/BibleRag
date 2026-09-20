@@ -20,7 +20,8 @@ BibleRag/
 ├── .gitignore
 ├── docs/
 │   ├── 目录结构梳理.md          # 目录审计报告 + 清理建议
-│   └── v6提示词一致性问题.md    # v6 提示词内部三处冲突的复核
+│   ├── v6提示词一致性问题.md    # v6 提示词内部三处冲突的复核
+│   └── v6评测结果.md            # v6 首次实跑 + 对 gold_v2 的评测
 │
 ├── ds_client.py                 # ★ 公共库：DeepSeek 网关客户端 + 结构校验 + 失败落盘
 ├── prompts_v5.py                # ★ 公共库：v5 提示词常量（被 v3.py 引用）
@@ -114,28 +115,44 @@ python trial.py <txt> --max-tokens 16000 --tag full2
 python compare.py <txt> --tag ab1
 python noise.py <txt> --runs 5 --variant mine
 
-# v6 提示词跑约伯记 1 章 1-8 节（输出落 output/v6_v6_low_<篇名>.{raw,parsed}.json）
-export DS_KEY=<你的密钥>
+# v6 提示词跑约伯记 1 章 1-8 节（输出落 output/v6_v6_none_<篇名>.{raw,parsed}.json）
+# 下面是 2026-09-20 实际跑通的那一条：官方端点 + deepseek-flash + 64000 token
+export DS_BASE=https://api.deepseek.com/chat/completions
+export DS_KEY=<你的官方平台密钥>       # sk- 开头
+export DS_MODEL=deepseek-flash
 python v3.py 识别结果/豆包2.0/GH_伯1章1到8节20260104_热词识别.txt \
-  --prompt v6 --effort low --max-tokens 16000 --tag v6
+  --prompt v6 --effort none --max-tokens 64000 --tag v6
 
 # 评测：gold 为 output/gold_v2.md（8 章 / 28 节 / 83 段，覆盖行 1-969）
 # --pred 必须写成「标签=路径」，可一次传多个做横向对比
 python goldeval.py --gold output/gold_v2.md \
-  --pred v6=output/v6_v6_low_GH_伯1章1到8节20260104_热词识别.parsed.json \
+  --pred v6=output/v6_v6_none_GH_伯1章1到8节20260104_热词识别.parsed.json \
          v5_low=output/v5_low_GH_伯1章1到8节20260104_热词识别.parsed.json \
+         v5_none=output/v5_none_GH_伯1章1到8节20260104_热词识别.parsed.json \
+         v4_none=output/v4_none_GH_伯1章1到8节20260104_热词识别.parsed.json \
          v3_low=output/v3_low_GH_约伯记1章1到8节_热词识别.parsed.json \
+         v3_none=output/v3_none_GH_约伯记1章1到8节_热词识别.parsed.json \
   --txt 识别结果/豆包2.0/GH_伯1章1到8节20260104_热词识别.txt
 ```
 
-现有五个方案对 `gold_v2.md` 的 baseline 存在 [`output/gold_v2_baseline.txt`](output/gold_v2_baseline.txt)，
-v6 跑完可直接对照。
+六个方案（v3/v4/v5/v6）对 `gold_v2.md` 的完整对照表在
+[`output/gold_v2_baseline.txt`](output/gold_v2_baseline.txt)，结果解读见
+[`docs/v6评测结果.md`](docs/v6评测结果.md)。
 
-> **跑之前注意 `--effort low`。** `logs/api_failures.jsonl` 里两条 `empty_content`
-> 都是在这篇 969 行稿子上、`effort=low` 时产生的：模型把预算全烧在 `reasoning_content`
-> 里，`content` 返回空串，`ds_client` 判定失败且**不重试**。v3_low / v5_low 跑成功过，
-> 所以是概率问题不是必然。第一次跑建议先用 `--effort none`，或者把 `--max-tokens`
-> 提到 24000 以上再用 low。
+> 注意：v6 那一行跑在**官方 `api.deepseek.com` 的 `deepseek-flash`** 上，其余五行跑在
+> **微信网关的 `Deepseek-v4-flash`** 上。两者是否同一模型无从证实，所以 v6 与其余行的
+> 差异里，提示词的贡献和模型的贡献目前分不开。
+
+> **跑之前注意 max_tokens，不只是 `--effort`。** `logs/api_failures.jsonl` 里的
+> `empty_content` 都是同一个失败：模型把预算全烧在 `reasoning_content` 里，`content`
+> 返回空串，`ds_client` 判定失败且**不重试**。
+>
+> 早先两条发生在网关的 `effort=low` 下，所以曾以为 `--effort none` 就能躲开。2026-09-20
+> 实测**不能**：官方端点的 `deepseek-flash` 默认就推理（一个 "回复：OK" 的请求也产生
+> 19 个 reasoning token），`--effort none` 只是不发 `reasoning_effort` 参数，拦不住推理。
+> v6 在 `--effort none --max-tokens 16000` 下照样 `finish=length` 空返回，提到 64000 后一次通过。
+>
+> 结论：无论哪个 effort，这篇 969 行稿子都给到 **32000 以上**再跑。详见 `docs/v6评测结果.md`。
 
 ## 环境变量
 
