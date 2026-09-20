@@ -297,6 +297,9 @@ def main() -> int:
                         f"{a.tag}_{a.prompt}_{a.effort}_"
                         f"{os.path.splitext(os.path.basename(a.path))[0]}")
     io.open(base + ".raw.json", "w", encoding="utf-8").write(content)
+    # 提示词版本写进 meta：文件名可能被改，meta 不会，评测时据此认人
+    meta["prompt"] = a.prompt
+    meta["tag"] = a.tag
     io.open(base + ".parsed.json", "w", encoding="utf-8").write(
         json.dumps({"meta": meta, "issues": issues, **st}, ensure_ascii=False, indent=2))
     print(f"\n输出：{base}.raw.json / .parsed.json")

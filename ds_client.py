@@ -21,7 +21,7 @@ import urllib.error
 import urllib.request
 
 BASE = os.environ.get("DS_BASE", "https://chatapi.weixin.qq.com/openai/v1/chat/completions")
-KEY = os.environ.get("DS_KEY", "SAXOLAgBEAEaIAgBEhwxNzg4MzUzMTQ3MTIwNjk2OTE4MUwvODEya2JTIhgIAxIUCAMSEBm7tuSsNFSnxQf9k0osKQ0=")
+KEY = os.environ.get("DS_KEY", "")  # 必填；不再内置默认密钥（旧默认值已泄露，见 docs/目录结构梳理.md P0）
 MODEL = os.environ.get("DS_MODEL", "Deepseek-v4-flash")
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -47,6 +47,12 @@ def chat(system: str, user: str, max_tokens: int = 4000, temperature: float = 0.
                       注意：thinking / enable_thinking / seed 这三个参数本网关
                       静默忽略（不报错也不生效），不要用。
     """
+    if not KEY:
+        raise RuntimeError(
+            "未设置环境变量 DS_KEY。本文件不再内置默认密钥——\n"
+            "  bash:       export DS_KEY=<你的密钥>\n"
+            "  PowerShell: $env:DS_KEY=\"<你的密钥>\"\n"
+            "注意：仓库历史里那条旧密钥已公开泄露，不要再用。")
     payload = {
         "model": MODEL,
         "messages": [{"role": "system", "content": system},

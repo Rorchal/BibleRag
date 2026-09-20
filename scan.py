@@ -29,10 +29,14 @@ from datetime import datetime, timedelta
 import segment
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC_DIR = os.environ.get(
-    "SERMON_SRC",
-    r"C:\Users\23695\Documents\ChatGPT\讲道录音识别\识别结果\豆包2.0")
-PATTERN = re.compile(r"^GH_约伯记\d+章\d+到\d+节_热词识别\.txt$")
+# 默认指向仓库内的转写稿目录；数据若移到别处，用 SERMON_SRC 覆盖。
+# （旧默认值是一台特定 Windows 机器的绝对路径，在其他机器上必然扫空目录）
+SRC_DIR = os.environ.get("SERMON_SRC", os.path.join(HERE, "识别结果", "豆包2.0"))
+# 旧正则 ^GH_约伯记\d+章\d+到\d+节_热词识别\.txt$ 只命中 32 篇里的 29 篇：
+# 跨章的「6章28节到7章2节」和用简称+日期的「伯1章1到8节20260104」都被静默跳过。
+PATTERN = re.compile(r"^GH_.*_热词识别\.txt$")
+# 长得像转写稿、但没被 PATTERN 命中的，记一行日志，避免再出现静默丢篇
+LOOSE = re.compile(r"^(?!.*_带时间\.txt$).*_热词(识别|测试)\.txt$")
 STATE = os.path.join(HERE, "state", "seen.json")
 OUT_DIR = os.path.join(HERE, "output")
 LOG = os.path.join(HERE, "state", "scan.log")
@@ -75,8 +79,11 @@ def find_increments(state: dict) -> tuple[list[str], list[str]]:
     if not os.path.isdir(SRC_DIR):
         log(f"目标目录不存在：{SRC_DIR}")
         return todo, empty
+    unmatched = []
     for name in sorted(os.listdir(SRC_DIR)):
         if not PATTERN.match(name):
+            if LOOSE.match(name):
+                unmatched.append(name)
             continue
         path = os.path.join(SRC_DIR, name)
         if not os.path.isfile(path):
@@ -90,6 +97,8 @@ def find_increments(state: dict) -> tuple[list[str], list[str]]:
         if prev and prev.get("sha1") == digest:
             continue
         todo.append(name)
+    if unmatched:
+        log(f"长得像转写稿但未被 PATTERN 命中，未处理：{', '.join(unmatched)}")
     return todo, empty
 
 

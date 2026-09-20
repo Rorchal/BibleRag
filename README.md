@@ -142,8 +142,8 @@ v6 跑完可直接对照。
 | 变量 | 用处 | 默认值 |
 | --- | --- | --- |
 | `DS_BASE` | DeepSeek 网关地址 | `https://chatapi.weixin.qq.com/openai/v1/chat/completions` |
-| `DS_KEY` | 网关密钥 | **代码里硬编码了真实密钥，必须吊销并改为必填，见审计报告** |
+| `DS_KEY` | 网关密钥 | **必填**，无默认值；缺失时 `chat()` 抛错。旧的硬编码密钥已移除，但仍在 git 历史里，**务必去网关后台吊销** |
 | `DS_MODEL` | 远程模型 | `Deepseek-v4-flash` |
 | `OLLAMA_HOST` | 本机 Ollama 地址 | `http://127.0.0.1:11434` |
 | `SERMON_MODEL` | 本地模型 | `qwen3:8b` |
-| `SERMON_SRC` | `scan.py` 扫描的源目录 | 写死的 Windows 绝对路径，**指向仓库外**，见审计报告 |
+| `SERMON_SRC` | `scan.py` 扫描的源目录 | `识别结果/豆包2.0`（仓库内）；数据移走时用它覆盖 |
