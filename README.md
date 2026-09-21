@@ -21,7 +21,8 @@ BibleRag/
 ├── docs/
 │   ├── 目录结构梳理.md          # 目录审计报告 + 清理建议
 │   ├── v6提示词一致性问题.md    # v6 提示词内部三处冲突的复核
-│   └── v6评测结果.md            # v6 首次实跑 + 对 gold_v2 的评测
+│   ├── v6评测结果.md            # v6 首次实跑 + 对 gold_v2 的评测
+│   └── v6_bad_cases.md          # v6 实跑 bad case 台账（只记录，不改提示词）
 │
 ├── ds_client.py                 # ★ 公共库：DeepSeek 网关客户端 + 结构校验 + 失败落盘
 ├── prompts_v5.py                # ★ 公共库：v5 提示词常量（被 v3.py 引用）
