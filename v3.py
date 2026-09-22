@@ -21,6 +21,7 @@ import prompts_v6
 import prompts_v7
 import prompts_v8
 import prompts_v9
+import prompts_v10
 
 SYSTEM_V3A = """你是中文长文本结构分析器。输入是按行编号的口语转写稿(讲座/讲道/课程录音),一行一句。
 你的任务:识别三级结构,输出每一级的起止行号。
@@ -232,7 +233,7 @@ def main() -> int:
     ap.add_argument("--max-tokens", type=int, default=16000)
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--tag", default="v3")
-    ap.add_argument("--prompt", default="v4", choices=["v4", "v5", "v6", "v7", "v8", "v9"])
+    ap.add_argument("--prompt", default="v4", choices=["v4", "v5", "v6", "v7", "v8", "v9", "v10"])
     a = ap.parse_args()
 
     lines = ds.read_lines(a.path)
@@ -245,6 +246,7 @@ def main() -> int:
         "v7": (prompts_v7.SYSTEM_V7, prompts_v7.FEWSHOT_V7),
         "v8": (prompts_v8.SYSTEM_V8, prompts_v8.FEWSHOT_V8),
         "v9": (prompts_v9.SYSTEM_V9, prompts_v9.FEWSHOT_V9),
+        "v10": (prompts_v10.SYSTEM_V10, prompts_v10.FEWSHOT_V10),
     }[a.prompt]
     user = USER_TMPL_V3.format(fewshot=fewshot, n=len(lines), lo=lo, hi=hi,
                                numbered=numbered)
