@@ -139,13 +139,31 @@ python goldeval.py --gold output/gold_v2.md \
   --txt 识别结果/豆包2.0/GH_伯1章1到8节20260104_热词识别.txt
 ```
 
-六个方案（v3/v4/v5/v6）对 `gold_v2.md` 的完整对照表在
-[`output/gold_v2_baseline.txt`](output/gold_v2_baseline.txt)，结果解读见
-[`docs/v6评测结果.md`](docs/v6评测结果.md)。
+### 评测基准：`output/gold_v3.md`
 
-> 注意：v6 那一行跑在**官方 `api.deepseek.com` 的 `deepseek-flash`** 上，其余五行跑在
-> **微信网关的 `Deepseek-v4-flash`** 上。两者是否同一模型无从证实，所以 v6 与其余行的
-> 差异里，提示词的贡献和模型的贡献目前分不开。
+**唯一基准是 `output/gold_v3.md`（章 8 / 节 43 / 段 113）。**
+完整对照表见 [`output/gold_v3_baseline.txt`](output/gold_v3_baseline.txt)。
+
+`output/gold.md`（6/30/87）与 `output/gold_v2.md`（8/28/83）是早期的两套参考切分，
+**已停用**，保留仅为记录。三套在节/段级彼此分歧很大（gold_v2 与 gold_v3 的
+WindowDiff 是 0.244 / 0.257），换基准会让排名整体翻转，所以不再并用——
+详见 [`docs/gold口径问题.md`](docs/gold口径问题.md)。
+
+以 gold_v3 为准的当前结论（WindowDiff 越低越好，n=5 取中位）：
+
+| 层级 | 最优 | WinDiff | 说明 |
+| --- | --- | ---: | --- |
+| 章 | `v5_low` | **0.000** | 8 个边界完全命中；但只跑过 1 次 |
+| 节 | `v8` | **0.220** | n=5，区间 0.185~0.264 |
+| 段 | `v8` | **0.222** | n=5，区间 0.197~0.286 |
+| 三级合计 | `v10` | **0.569** | n=5，唯一三级都不差的版本 |
+
+> 注意：v6~v10 跑在**官方 `api.deepseek.com` 的 `deepseek-flash`** 上，
+> v3/v4/v5 各行跑在**微信网关的 `Deepseek-v4-flash`** 上。两者是否同一模型无从证实，
+> 跨组比较时提示词与模型的贡献分不开。
+>
+> 另外同一提示词重跑方差很大（v6 五次段数 49~110），**单跑结果不可信**，
+> 比较务必按 n=5 取中位。硬失败率约 20%。
 
 > **跑之前注意 max_tokens，不只是 `--effort`。** `logs/api_failures.jsonl` 里的
 > `empty_content` 都是同一个失败：模型把预算全烧在 `reasoning_content` 里，`content`
