@@ -47,6 +47,15 @@ USER_SE = """{fewshot}
 
 把这一章切成「节」,no 用 "{no}.1"、"{no}.2" 这样的编号。只输出「节」的 json。"""
 
+USER_SE_NOTITLE = """{fewshot}
+
+━━━ 待处理的章 ━━━
+这是第 {no} 章,占行 {lo}..{hi},共 {n} 行。格式为「行号 | 内容」。
+
+{numbered}
+
+把这一章切成「节」,no 用 "{no}.1"、"{no}.2" 这样的编号。只输出「节」的 json。"""
+
 USER_PA = """{fewshot}
 
 ━━━ 待处理的节 ━━━
@@ -85,6 +94,9 @@ def main() -> int:
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--stop-after", default="pa", choices=["ch", "se", "pa"],
                     help="只跑到哪一级为止，用于分阶段验证")
+    ap.add_argument("--chapters", default=None,
+                    help="章直接读这个 gold markdown，跳过阶段一。"
+                         "只取行号区间，不把 gold 的章标题喂给模型（那是泄题）")
     a = ap.parse_args()
 
     lines = ds.read_lines(a.path)
@@ -92,7 +104,22 @@ def main() -> int:
     base_ctx = {"file": os.path.basename(a.path), "tag": a.tag}
     print(f"文件 {os.path.basename(a.path)}  {N} 行")
 
-    # ── 阶段一：章 ──────────────────────────────────────────────
+    # ── 阶段一：章（给了 --chapters 就跳过，直接用外部章）───────────
+    if a.chapters:
+        import goldeval
+        g = goldeval.parse_gold(a.chapters)
+        chapters = [{"no": c["no"], "start": c["start"], "end": c["end"],
+                     "title": "", "trigger": "", "evidence": "", "confidence": None}
+                    for c in g["chapters"]]
+        chapters.sort(key=lambda x: x["start"])
+        print(f"\n[1/3] 跳过切章，章读自 {os.path.basename(a.chapters)}："
+              f"{len(chapters)} 章，边界 {[c['start'] for c in chapters[1:]]}")
+        print("      （只取行号区间，章标题不喂给模型）")
+        unc = []
+        for m in v3.check_seamless(chapters, 1, N, "章"):
+            print("      -", m)
+        return _run_rest(a, lines, N, base_ctx, chapters, unc)
+
     print("\n[1/3] 切章…", flush=True)
     d = call(P.SYSTEM_CH,
              USER_CH.format(fewshot=P.FEWSHOT_CH, n=N, lo=1, hi=N,
@@ -117,6 +144,11 @@ def main() -> int:
     for m in issues:
         print("      -", m)
 
+    return _run_rest(a, lines, N, base_ctx, chapters, unc)
+
+
+def _run_rest(a, lines, N, base_ctx, chapters, unc):
+    """阶段二、三 + 校验落盘。章可来自阶段一，也可来自 --chapters。"""
     sections, paragraphs = [], []
 
     # ── 阶段二：节（逐章）────────────────────────────────────────
@@ -125,10 +157,12 @@ def main() -> int:
         for c in chapters:
             lo, hi = c["start"], c["end"]
             print(f"  第{c['no']}章 [{lo}-{hi}] {hi - lo + 1} 行", flush=True)
-            d = call(P.SYSTEM_SE,
-                     USER_SE.format(fewshot=P.FEWSHOT_SE, no=c["no"], title=c["title"],
-                                    lo=lo, hi=hi, n=hi - lo + 1,
-                                    numbered=numbered(lines, lo, hi)),
+            tmpl = USER_SE_NOTITLE if a.chapters else USER_SE
+            kw = dict(fewshot=P.FEWSHOT_SE, no=c["no"], lo=lo, hi=hi, n=hi - lo + 1,
+                      numbered=numbered(lines, lo, hi))
+            if not a.chapters:
+                kw["title"] = c["title"]
+            d = call(P.SYSTEM_SE, tmpl.format(**kw),
                      {**base_ctx, "stage": "se", "chapter": c["no"]}, a.max_tokens, a.temperature)
             got = []
             if d:
