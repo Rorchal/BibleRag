@@ -206,7 +206,9 @@ def main() -> int:
                   "calls": 1 + (len(chapters) if a.stop_after in ("se", "pa") else 0)
                            + (len(sections) if a.stop_after == "pa" else 0)},
          "issues": issues, "chapters": chapters, "sections": sections,
-         "paragraphs": paragraphs, "uncertain": unc},
+         # 只跑到节时不输出 paragraphs 键，避免下游把空列表当成「切了 0 段」
+         **({"paragraphs": paragraphs} if a.stop_after == "pa" else {}),
+         "uncertain": unc},
         ensure_ascii=False, indent=2))
     print(f"\n输出：{out}.parsed.json")
     return 0
