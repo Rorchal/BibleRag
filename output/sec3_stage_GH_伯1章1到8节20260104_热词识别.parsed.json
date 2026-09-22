@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "pipeline": "stage",
+    "tag": "sec3",
+    "stop_after": "se",
+    "calls": 9
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 25,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 3,
+      "start": 26,
+      "end": 33,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 4,
+      "start": 34,
+      "end": 79,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 5,
+      "start": 80,
+      "end": 556,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 6,
+      "start": 557,
+      "end": 922,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 7,
+      "start": 923,
+      "end": 967,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 8,
+      "start": 968,
+      "end": 969,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 3,
+      "title": "彼此问安；讲员谦称不敢当帮助，只愿用今天的话把神的话讲给大家听",
+      "chapter": 1,
+      "synthesized": false
+    },
+    {
+      "no": "2.1",
+      "start": 4,
+      "end": 8,
+      "title": "引言：宣布本周正道经文为约伯记1章1至8节，并说明难解之处会尽力解释",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "2.2",
+      "start": 9,
+      "end": 18,
+      "title": "诵读约伯记1章1至5节：约伯完全正直、敬畏神、远离恶事，家产丰厚，儿女轮流设摆筵席，约伯清早为他们献燔祭",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "2.3",
+      "start": 19,
+      "end": 25,
+      "title": "诵读约伯记1章6至8节：神的众子侍立在耶和华面前，撒但也在其中，耶和华问他从哪里来并称许约伯完全正直",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "3.1",
+      "start": 26,
+      "end": 33,
+      "title": "祷告：求主使会众在话语根基上崇拜，开通耳朵听福音与古旧信仰，并结出果子",
+      "chapter": 3,
+      "synthesized": false
+    },
+    {
+      "no": "4.1",
+      "start": 34,
+      "end": 48,
+      "title": "讲道分两部分：1至5节看约伯的现实背景是东方富户，6至8节看属灵背景与他被耶和华认可",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.2",
+      "start": 49,
+      "end": 54,
+      "title": "陈社炳自我介绍，服侍任务是把圣经福音与先知使徒教导抛开传统告诉会众，立为敬拜根基",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.3",
+      "start": 55,
+      "end": 67,
+      "title": "选约伯记的理由：当代教会信仰关注个人祸福而非国度，约伯记可消除顽固观念，主题是认识耶和华的智慧",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.4",
+      "start": 68,
+      "end": 79,
+      "title": "今天要讨论的两个问题：世界上是否存在绝对平安，被上帝认可的信仰是否意味着远离灾祸",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "5.1",
+      "start": 80,
+      "end": 87,
+      "title": "引导进入约伯记1至5节，看约伯近乎永久安稳的人生；约伯记是最早成书的书卷，约伯生活在比亚伯拉罕更早的年代",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.2",
+      "start": 88,
+      "end": 114,
+      "title": "约伯是乌斯地人而非以色列人；独一神信仰不始于摩西，麦基洗德、巴兰、该隐都认识耶和华，万族都知道",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.3",
+      "start": 115,
+      "end": 141,
+      "title": "约伯记1至5节记录约伯情况的用意：突出约伯的稳，与后文灾难形成巨大落差，引人思考信心的根基",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.4",
+      "start": 142,
+      "end": 174,
+      "title": "劝读者不带上帝视角读1至5节；世人眼中钱多人多资源多的家庭最不易出意外，并论及恶有恶报的观念",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.5",
+      "start": 175,
+      "end": 215,
+      "title": "第一节：约伯完全正直、敬畏神远离恶事，道德、司法与信仰层面的风险因素全部被排除",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.6",
+      "start": 216,
+      "end": 228,
+      "title": "约伯的硬实力之一是人丁兴旺：生了七个儿子和三个女儿",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.7",
+      "start": 229,
+      "end": 280,
+      "title": "第三节：约伯的财富与地位，七千羊、三千骆驼、五百对牛、五百母驴与众多仆婢，为东方至大",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.8",
+      "start": 281,
+      "end": 304,
+      "title": "总结约伯的素描：经济富可敌国、具国际影响力；反问此人有无风险，并提出豪门争产的疑虑",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.9",
+      "start": 305,
+      "end": 323,
+      "title": "回应豪门苦楚之说：第四节儿女轮流设筵并请三个姐妹同吃，约伯家其乐融融并无争端",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.10",
+      "start": 324,
+      "end": 354,
+      "title": "第五节：约伯对儿女的信仰教育也是顶级，宴席过后清早按人数献燔祭并叫他们自洁，且常常这样行",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.11",
+      "start": 355,
+      "end": 367,
+      "title": "约伯记的冲击力：如此强盛的家族竟家破人亡，允许此事的正是耶和华；约伯记列于智慧书第一卷",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.12",
+      "start": 368,
+      "end": 404,
+      "title": "读懂约伯记可倒掉虚假平安的鸡汤；按钱多、虔诚、家庭和睦来评估人生稳健度，这样的人仍会出意外",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.13",
+      "start": 405,
+      "end": 427,
+      "title": "一切安稳支架都会瞬间倒塌，真正看守人的是耶和华圈上的篱笆；身外身内之物尽失后只剩敬畏耶和华的知识智慧",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.14",
+      "start": 428,
+      "end": 444,
+      "title": "须在约伯记开头预备好正确的预设，因为错误期待带来错误信心，只能去掉或更改福音；约伯却持守纯正",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.15",
+      "start": 445,
+      "end": 476,
+      "title": "以约伯记二章九节从神手里得福也受祸，回应信耶稣保平安之说；约伯太太经历两轮灾难后才崩溃",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.16",
+      "start": 477,
+      "end": 511,
+      "title": "第一层结尾：罗马书万事互相效力为使救恩得益处；今生福祸短暂，永恒的福乐与永恒的咒诅长存",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.17",
+      "start": 512,
+      "end": 546,
+      "title": "两套截然不同的福音：上帝只赐福不降祸，对比上帝使福祸都为儿女救恩效力；约伯三友据此误判约伯",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.18",
+      "start": 547,
+      "end": 556,
+      "title": "总结约伯记1至5节：约伯方方面面绝对稳固却仍出意外，一切抗风险的支架都会顷刻失去",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "6.1",
+      "start": 557,
+      "end": 571,
+      "title": "讲道进入第二部分6至8节，把镜头从地上转到天上，天上的场景影响家庭与国家历史",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.2",
+      "start": 572,
+      "end": 581,
+      "title": "神的众子指众天使，聚集在耶和华面前如同君王听政的早朝",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.3",
+      "start": 582,
+      "end": 604,
+      "title": "撒旦为何也来在其中：作者措辞暗示撒旦已不属神的众子，是集会中不协调的成员",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.4",
+      "start": 605,
+      "end": 647,
+      "title": "第七节耶和华询问撒旦不是搭讪而是说话的授权，撒旦自始至终在上帝权柄之下",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.5",
+      "start": 648,
+      "end": 660,
+      "title": "上帝出于荣耀目的给撒旦有限活动权限，信徒因邪恶受限制而能在困境中安稳",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.6",
+      "start": 661,
+      "end": 677,
+      "title": "第八节上帝主动称赞约伯，是否等于引魔鬼攻击义人的两种可能",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.7",
+      "start": 678,
+      "end": 711,
+      "title": "魔鬼不是全知全能全在，撒旦受空间限制须在地上走来走去，只有耶和华全知全能全在",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.8",
+      "start": 712,
+      "end": 730,
+      "title": "撒旦因受空间限制必须走到约伯身边，因此了解约伯家中的情况",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.9",
+      "start": 731,
+      "end": 751,
+      "title": "撒旦两次质疑约伯敬畏神的动机都出错，上帝对约伯的评价全然无误",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.10",
+      "start": 752,
+      "end": 776,
+      "title": "撒旦靠观察积累知识且会出错，上帝从起初就全知，撒旦永远在上帝权下不能与他掰手腕",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.11",
+      "start": 777,
+      "end": 793,
+      "title": "上帝两次允许约伯受祸，义人受苦恶人亨通是约伯记要讨论的主题",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.12",
+      "start": 794,
+      "end": 822,
+      "title": "宗教以保佑顺遂灵验为招牌，福音不是解脱苦难；拉撒路与中国谚语印证义人受苦",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.13",
+      "start": 823,
+      "end": 850,
+      "title": "不能因遭遇灾难怀疑信仰，也不能因顺遂认可信仰，处境不能解释信仰的纯正",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.14",
+      "start": 851,
+      "end": 889,
+      "title": "举例讲道人腿断拉肚子，两拨人分别解为上帝拦阻与撒但拦阻，显明私意解读环境的愚昧",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.15",
+      "start": 890,
+      "end": 922,
+      "title": "不可做属灵的懂王替人解读处境，天上的场景不可企及，智慧书的智慧使人安稳",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "7.1",
+      "start": 923,
+      "end": 939,
+      "title": "第一鉴别标准不是环境顺遂或不顺，而是上帝圣言即圣经66卷，人的安全感当建立在此根基上",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "7.2",
+      "start": 940,
+      "end": 942,
+      "title": "人所能遭遇的最大灾祸是心眼昏迷不明白真道，最大祝福是上帝带人进入真理并赐永恒福乐",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "7.3",
+      "start": 943,
+      "end": 967,
+      "title": "以约翰福音9章1至3节结束：生来瞎眼与罪无关，是要显出神的作为，门徒限定耶稣的回答为父母之罪或本人之罪",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "8.1",
+      "start": 968,
+      "end": 969,
+      "title": "祷告并宣布遵照神的话开始查考约伯记",
+      "chapter": 8,
+      "synthesized": false
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 25,
+      "reason": "「这周我们只分享到这个部分为止」像是收束全章的话，也可能是天廷场景诵读的一部分"
+    },
+    {
+      "line": 55,
+      "reason": "教会关注个人而非国度，可能是选约伯记理由的引言，也可能自成一小节"
+    },
+    {
+      "line": 66,
+      "reason": "约伯记是智慧书第一卷、主题是认识耶和华，可能与前面选约伯记的理由同属一节，也可能另起一节"
+    },
+    {
+      "line": 648,
+      "reason": "从说话的授权论证转到上帝荣耀的目的与信徒的安稳感，可能是新论题也可能是同一论题的收束"
+    },
+    {
+      "line": 776,
+      "reason": "既是上一节关于上帝认可约伯的结论，又引出下一节关于上帝为何允许约伯受祸"
+    },
+    {
+      "line": 814,
+      "reason": "中国谚语好人不长命王八活千年，可能另起一节印证义人受苦，也可能是福音不是解脱苦难的延续"
+    },
+    {
+      "line": 940,
+      "reason": "行940至942讨论最大灾祸与最大祝福，像是行923至939结论的延伸，也可能属于同一收束单元而非独立一节"
+    }
+  ]
+}
