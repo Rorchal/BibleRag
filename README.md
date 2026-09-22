@@ -22,11 +22,14 @@ BibleRag/
 │   ├── 目录结构梳理.md          # 目录审计报告 + 清理建议
 │   ├── v6提示词一致性问题.md    # v6 提示词内部三处冲突的复核
 │   ├── v6评测结果.md            # v6 首次实跑 + 对 gold_v2 的评测
-│   └── v6_bad_cases.md          # v6 实跑 bad case 台账（只记录，不改提示词）
+│   ├── v6_bad_cases.md          # v6 实跑 bad case 台账
+│   └── v7v8改造复盘.md          # v7/v8 提示词改造结果：两版都不如 v6
 │
 ├── ds_client.py                 # ★ 公共库：DeepSeek 网关客户端 + 结构校验 + 失败落盘
 ├── prompts_v5.py                # ★ 公共库：v5 提示词常量（被 v3.py 引用）
 ├── prompts_v6.py                # ★ 公共库：v6 提示词常量（被 v3.py 引用）
+├── prompts_v7.py                # ★ 公共库：v7 提示词（改造失败，见复盘）
+├── prompts_v8.py                # ★ 公共库：v8 提示词（由 v6 程序化改写）
 ├── segment.py                   # ★ 公共库 + 入口：本地 Ollama 小模型排版
 │
 ├── scan.py                      # 入口：定时增量扫描转写稿目录 → 调 segment 排版
@@ -34,7 +37,7 @@ BibleRag/
 ├── trial.py                     # 入口：单篇试跑「章/节/段 + 概要」
 ├── compare.py                   # 入口：A/B 对比两版提示词（user / mine）
 ├── noise.py                     # 入口：同参数连跑 N 次，量化重跑方差 + 边界投票
-├── v3.py                        # 入口：v4/v5/v6 提示词运行器（三级都带行号）
+├── v3.py                        # 入口：v4~v8 提示词运行器（三级都带行号）
 ├── goldeval.py                  # 入口：以豆包结构为 gold，算边界 P/R/F1
 ├── raw_call.py                  # 入口：发一次调用，HTTP 响应原样落盘（排查用）
 │
