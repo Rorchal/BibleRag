@@ -1,0 +1,487 @@
+{
+  "meta": {
+    "pipeline": "stage",
+    "tag": "rd5",
+    "stop_after": "se",
+    "calls": 9
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 25,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 3,
+      "start": 26,
+      "end": 33,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 4,
+      "start": 34,
+      "end": 79,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 5,
+      "start": 80,
+      "end": 556,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 6,
+      "start": 557,
+      "end": 922,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 7,
+      "start": 923,
+      "end": 967,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    },
+    {
+      "no": 8,
+      "start": 968,
+      "end": 969,
+      "title": "",
+      "trigger": "",
+      "evidence": "",
+      "confidence": null
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 3,
+      "title": "问候平安，并说明自己不敢当帮助者，只是把神的话用今天的话讲给大家听",
+      "chapter": 1,
+      "synthesized": false
+    },
+    {
+      "no": "2.1",
+      "start": 4,
+      "end": 8,
+      "title": "宣布本周正道经文为约伯记一章1至8节，并预告将尽力解释其中难解之处",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "2.2",
+      "start": 9,
+      "end": 24,
+      "title": "诵读约伯记一章1至8节：约伯完全正直、儿女设摆筵席献燔祭，以及神与撒但的对话",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "2.3",
+      "start": 25,
+      "end": 25,
+      "title": "讲者说明本周的分享只到所读约伯记一章的这一部分为止",
+      "chapter": 2,
+      "synthesized": false
+    },
+    {
+      "no": "3.1",
+      "start": 26,
+      "end": 33,
+      "title": "会前祷告：求神以话语为根基得荣耀，开通众人耳朵认识真道并多结果子",
+      "chapter": 3,
+      "synthesized": false
+    },
+    {
+      "no": "4.1",
+      "start": 34,
+      "end": 48,
+      "title": "讲道分两部分：1至5节看约伯的现实背景，6至8节看属灵背景与耶和华的认可",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.2",
+      "start": 49,
+      "end": 54,
+      "title": "陈社炳自我介绍，服侍任务是抛开传统宣讲福音并立定敬拜根基",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.3",
+      "start": 55,
+      "end": 67,
+      "title": "选约伯记的理由：教会关注个人祸福而非国度，约伯记能消除顽固观念且主题是认识耶和华的智慧",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "4.4",
+      "start": 68,
+      "end": 79,
+      "title": "本讲要讨论的两个问题：世上是否存在绝对平安，上帝认可的信仰是否远离灾祸",
+      "chapter": 4,
+      "synthesized": false
+    },
+    {
+      "no": "5.1",
+      "start": 80,
+      "end": 87,
+      "title": "约伯记背景介绍：这卷书成书最早，约伯生活在比亚伯拉罕更早的年代",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.2",
+      "start": 88,
+      "end": 114,
+      "title": "约伯是乌斯地人而非以色列人，独一神信仰并非从摩西开始，麦基洗德、巴兰、该隐都认识耶和华",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.3",
+      "start": 115,
+      "end": 141,
+      "title": "约伯记一章1至5节先交代约伯人生的绝对稳固，与后文完全不安稳的处境形成巨大落差",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.4",
+      "start": 142,
+      "end": 174,
+      "title": "读1至5节应先放下上帝视角，列举人生动荡的风险因素与家庭的抗风险能力",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.5",
+      "start": 175,
+      "end": 214,
+      "title": "约伯记一章1节：约伯完全正直、敬畏神、远离恶事，道德伦理与信仰两方面的风险因素都排除",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.6",
+      "start": 215,
+      "end": 228,
+      "title": "约伯记一章2节：约伯生七子三女，人丁兴旺构成家庭抗风险的第二把锁",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.7",
+      "start": 229,
+      "end": 267,
+      "title": "约伯记一章3节：约伯的财富产业，七千羊、三千骆驼、五百对牛、五百母驴与许多仆婢",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.8",
+      "start": 268,
+      "end": 280,
+      "title": "约伯在东方为至大，其强盛与日后坐在炉灰中的巨大落差",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.9",
+      "start": 281,
+      "end": 304,
+      "title": "总结约伯其人：经济富可敌国、地位东方为至大，道德信仰硬实力皆无风险",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.10",
+      "start": 305,
+      "end": 323,
+      "title": "约伯记一章4节：约伯儿女设摆筵席、兄弟姐妹和睦，豪门争端在这个家庭并不存在",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.11",
+      "start": 324,
+      "end": 353,
+      "title": "约伯记一章5节：约伯清早为儿女献燔祭、叫他们自洁，对家庭的信仰看守是顶配",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.12",
+      "start": 354,
+      "end": 380,
+      "title": "约伯记的冲击力：如此强盛的家族竟家破人亡，允许此事的是耶和华，此卷列于智慧书首卷",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.13",
+      "start": 381,
+      "end": 404,
+      "title": "约伯记要倒掉虚假的平安与基督教的鸡汤，这样稳固的人照样会出意外",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.14",
+      "start": 405,
+      "end": 427,
+      "title": "人生安稳的支架可能瞬间失去，真正看守人的是耶和华为信徒圈上的四面篱笆",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.15",
+      "start": 428,
+      "end": 444,
+      "title": "要在读约伯记之初就预备好，错误的期待带来错误的信心，结局只能去掉或更改福音",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.16",
+      "start": 445,
+      "end": 476,
+      "title": "从神手里得福也从神手里受祸，约伯以此回应妻子与信耶稣保平安的说法",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.17",
+      "start": 477,
+      "end": 511,
+      "title": "罗马书万事互相效力为救恩得益处，今生福祸终会过去，永恒的福乐与咒诅不会废去",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.18",
+      "start": 512,
+      "end": 546,
+      "title": "两套截然不同的福音：上帝只赐福，对比上帝使福祸都为儿女的救恩效力",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "5.19",
+      "start": 547,
+      "end": 556,
+      "title": "总结约伯记一章1至5节：绝对稳固的约伯仍遭意外，最终存留的是敬畏耶和华的知识与智慧",
+      "chapter": 5,
+      "synthesized": false
+    },
+    {
+      "no": "6.1",
+      "start": 557,
+      "end": 571,
+      "title": "讲道第二部分6至8节：从地上可见的约伯转向天上的场景，天上属灵领域的争战在影响历史中的人",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.2",
+      "start": 572,
+      "end": 581,
+      "title": "神的众子指众天使，他们在耶和华面前聚集，如同君王听政的早朝",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.3",
+      "start": 582,
+      "end": 604,
+      "title": "撒旦也来在其中：他原为堕落天使，已不属神的众子，是集会中不协调的成员",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.4",
+      "start": 605,
+      "end": 646,
+      "title": "耶和华问撒旦从哪里来不是搭讪，而是发言的授权，撒旦自始至终在上帝权下，以皇帝早朝有事启奏类比",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.5",
+      "start": 647,
+      "end": 660,
+      "title": "上帝出于荣耀的目的给撒旦有限的活动权限，信徒因确知神掌管邪恶而在困境中得安稳",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.6",
+      "start": 661,
+      "end": 677,
+      "title": "第八节耶和华称赞约伯，需要判断是上帝主动叫撒旦注意约伯，还是撒旦本来就在关注约伯",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.7",
+      "start": 678,
+      "end": 704,
+      "title": "唯有耶和华全知全能全在，魔鬼受空间限制，在东方就不在西方，需往返走动",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.8",
+      "start": 705,
+      "end": 730,
+      "title": "撒旦说自己从地上往返而来，因受空间限制需走到约伯身边，故他对约伯的了解靠观察而非全知",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.9",
+      "start": 731,
+      "end": 757,
+      "title": "撒旦两次质疑约伯敬畏神的动机，两次评估都出错，上帝对约伯全然敬畏的评价毫无差错",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.10",
+      "start": 758,
+      "end": 775,
+      "title": "撒旦虽厉害却永远在上帝权下，不可能与上帝掰手腕；上帝从起初就完全知道约伯，不像人需日久见人心",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.11",
+      "start": 776,
+      "end": 792,
+      "title": "上帝允许约伯受祸；义人受苦、恶人亨通是约伯记讨论的主题，圣经诚实记载这处境",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.12",
+      "start": 793,
+      "end": 821,
+      "title": "各宗教以保佑顺遂为招牌，但福音是不可废去之福；约伯双倍得回，拉撒路却至死未得回",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.13",
+      "start": 822,
+      "end": 850,
+      "title": "不能因灾难怀疑信仰，也不能因顺遂认可信仰，用当下处境解释信仰的实质是误区",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.14",
+      "start": 851,
+      "end": 889,
+      "title": "举例：一次腿断腹泻被解读为上帝拦阻或撒旦拦阻，两种解释出自私意，人身上的事未必与上帝旨意相关",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "6.15",
+      "start": 890,
+      "end": 922,
+      "title": "不要做属灵的懂王，传道人无法解读别人家庭的属灵事实，约伯三友正是这种人，智慧书的智慧使人安稳",
+      "chapter": 6,
+      "synthesized": false
+    },
+    {
+      "no": "7.1",
+      "start": 923,
+      "end": 936,
+      "title": "环境顺逆不是辨别神旨意的标准，上帝圣言66卷才是最高准则与行事根基",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "7.2",
+      "start": 937,
+      "end": 942,
+      "title": "靠圣经知道上帝对你的真实想法，最大灾祸是心眼昏迷，最大祝福是进入真理与永恒福乐",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "7.3",
+      "start": 943,
+      "end": 947,
+      "title": "提出疑问：上帝认可又不刑罚管教的人为何受祸，宣布用最后一段经文作结束",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "7.4",
+      "start": 948,
+      "end": 967,
+      "title": "约翰福音九章1至3节生来瞎眼者与罪无关，乃为显明神的作为，颠覆祸福与罪的想当然认知",
+      "chapter": 7,
+      "synthesized": false
+    },
+    {
+      "no": "8.1",
+      "start": 968,
+      "end": 969,
+      "title": "讲员带领祷告，并说明遵照神的话开始进入约伯记的讲解",
+      "chapter": 8,
+      "synthesized": false
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 630,
+      "reason": "皇帝早朝有事启奏的类比，可能是6.4同一论题内的举例（段），也可能是独立的一节"
+    },
+    {
+      "line": 647,
+      "reason": "上帝给撒旦有限权限并转入困境中安稳的应用，可能是6.4论证的收束，也可能是新的一节"
+    },
+    {
+      "line": 923,
+      "reason": "「大体我们今天就到这里」像是上一论题的收尾，也可能是本次结尾问答的开场，按过渡句规则归入后一块"
+    },
+    {
+      "line": 940,
+      "reason": "最大灾祸与最大祝福的总结既像7.2的收束，也像引出下文讨论受苦的引子"
+    }
+  ]
+}
