@@ -97,6 +97,8 @@ def main() -> int:
     ap.add_argument("--chapters", default=None,
                     help="章直接读这个 gold markdown，跳过阶段一。"
                          "只取行号区间，不把 gold 的章标题喂给模型（那是泄题）")
+    ap.add_argument("--se-prompt", default="base", choices=["base", "read"],
+                    help="节阶段的 SYSTEM：base=SYSTEM_SE；read=SYSTEM_SE_READ（多一条诵读经文整段 1 节）")
     a = ap.parse_args()
 
     lines = ds.read_lines(a.path)
@@ -162,7 +164,8 @@ def _run_rest(a, lines, N, base_ctx, chapters, unc):
                       numbered=numbered(lines, lo, hi))
             if not a.chapters:
                 kw["title"] = c["title"]
-            d = call(P.SYSTEM_SE, tmpl.format(**kw),
+            se_sys = P.SYSTEM_SE_READ if a.se_prompt == "read" else P.SYSTEM_SE
+            d = call(se_sys, tmpl.format(**kw),
                      {**base_ctx, "stage": "se", "chapter": c["no"]}, a.max_tokens, a.temperature)
             got = []
             if d:
