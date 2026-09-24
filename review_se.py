@@ -7,7 +7,7 @@ user 消息按其「三、user 消息模板」拼。流程见该文件「零、�
 用法：
     export DS_BASE=https://api.deepseek.com/chat/completions
     export DS_KEY=<你的密钥>
-    export DS_MODEL=deepseek-v4-pro
+    export DS_MODEL=deepseek-flash      # 只用 flash，见 CLAUDE.md
     python review_se.py <原文 txt> <切节 parsed.json> --tag rv1
 """
 from __future__ import annotations
