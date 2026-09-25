@@ -84,7 +84,7 @@ def numbered(lines, lo, hi):
 
 def call(system, user, ctx, a):
     content, meta = ds.chat(system, user, max_tokens=a.max_tokens, temperature=a.temperature,
-                            timeout=900, ctx=ctx)
+                            timeout=1800, ctx=ctx, reasoning_effort=a.effort)
     data = ds.parse_json(content) if content else None
     rec = {"usage": meta.get("usage") or {}, "secs": meta.get("secs"),
            "finish_reason": meta.get("finish_reason"), "error": meta.get("error")}
@@ -120,6 +120,8 @@ def main() -> int:
     ap.add_argument("--tag", required=True)
     ap.add_argument("--max-tokens", type=int, default=64000)
     ap.add_argument("--temperature", type=float, default=0.2)
+    ap.add_argument("--effort", default=None, choices=["low", "high", "max"],
+                    help="思考强度；不传则用模型默认（deepseek-flash 默认 high）")
     a = ap.parse_args()
 
     lines = ds.read_lines(a.path)
@@ -173,7 +175,7 @@ def main() -> int:
     out = os.path.join(ROOT, "output", f"{a.tag}_se_v2_{a.mode}_{os.path.splitext(os.path.basename(a.path))[0]}.parsed.json")
     io.open(out, "w", encoding="utf-8").write(json.dumps(
         {"meta": {"pipeline": f"se_v2_{a.mode}", "tag": a.tag, "model": ds.MODEL,
-                  "temperature": a.temperature, "tokens": tok, "calls": calls},
+                  "temperature": a.temperature, "effort": a.effort, "tokens": tok, "calls": calls},
          "issues": issues, "chapters": chapters, "sections": sections, "uncertain": unc},
         ensure_ascii=False, indent=2))
     return 0 if sections else 2
