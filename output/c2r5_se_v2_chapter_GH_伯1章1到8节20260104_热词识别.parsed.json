@@ -1,0 +1,536 @@
+{
+  "meta": {
+    "pipeline": "se_v2_chapter",
+    "tag": "c2r5",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "tokens": {
+      "prompt": 40445,
+      "completion": 42655
+    },
+    "calls": [
+      {
+        "usage": {
+          "prompt_tokens": 2987,
+          "completion_tokens": 280,
+          "total_tokens": 3267,
+          "prompt_tokens_details": {
+            "cached_tokens": 2816
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192
+          },
+          "prompt_cache_hit_tokens": 2816,
+          "prompt_cache_miss_tokens": 171
+        },
+        "secs": 2.5,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 1
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3286,
+          "completion_tokens": 1037,
+          "total_tokens": 4323,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 821
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 598
+        },
+        "secs": 6.3,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 2
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3082,
+          "completion_tokens": 135,
+          "total_tokens": 3217,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 72
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 394
+        },
+        "secs": 2.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 3
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3847,
+          "completion_tokens": 3372,
+          "total_tokens": 7219,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3135
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 1159
+        },
+        "secs": 17.1,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 4
+      },
+      {
+        "usage": {
+          "prompt_tokens": 11358,
+          "completion_tokens": 16474,
+          "total_tokens": 27832,
+          "prompt_tokens_details": {
+            "cached_tokens": 11136
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 15240
+          },
+          "prompt_cache_hit_tokens": 11136,
+          "prompt_cache_miss_tokens": 222
+        },
+        "secs": 78.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 5
+      },
+      {
+        "usage": {
+          "prompt_tokens": 9276,
+          "completion_tokens": 19363,
+          "total_tokens": 28639,
+          "prompt_tokens_details": {
+            "cached_tokens": 9088
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 18471
+          },
+          "prompt_cache_hit_tokens": 9088,
+          "prompt_cache_miss_tokens": 188
+        },
+        "secs": 92.5,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 6
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3648,
+          "completion_tokens": 1920,
+          "total_tokens": 5568,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1735
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 960
+        },
+        "secs": 11.1,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 7
+      },
+      {
+        "usage": {
+          "prompt_tokens": 2961,
+          "completion_tokens": 74,
+          "total_tokens": 3035,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 33
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 273
+        },
+        "secs": 1.2,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 8
+      }
+    ]
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 25
+    },
+    {
+      "no": 3,
+      "start": 26,
+      "end": 33
+    },
+    {
+      "no": 4,
+      "start": 34,
+      "end": 79
+    },
+    {
+      "no": 5,
+      "start": 80,
+      "end": 556
+    },
+    {
+      "no": 6,
+      "start": 557,
+      "end": 922
+    },
+    {
+      "no": 7,
+      "start": 923,
+      "end": 967
+    },
+    {
+      "no": 8,
+      "start": 968,
+      "end": 969
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 3,
+      "title": "开场问候与自我介绍：讲者自谦不敢当帮助，只求把神的话用今天的话讲给众人听",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 4,
+      "end": 8,
+      "title": "讲员引入本周正道经文约伯记一章1至8节，宣告坦然诵读并对难解部分尽量解释",
+      "chapter": 2
+    },
+    {
+      "no": "2.2",
+      "start": 9,
+      "end": 18,
+      "title": "约伯记1章1至5节：乌斯地约伯完全正直、敬畏神远离恶事，生七子三女，家产丰厚为东方至大，常为儿女自洁并献燔祭",
+      "chapter": 2
+    },
+    {
+      "no": "2.3",
+      "start": 19,
+      "end": 25,
+      "title": "约伯记1章6至8节：神的众子与撒但一同侍立在耶和华面前，耶和华问撒但从何而来，并称许仆人约伯完全正直敬畏神",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 26,
+      "end": 33,
+      "title": "祷告求神使会众以圣经话语为根基敬拜，开通耳朵听道，赐下使徒福音与真信心，奉耶稣基督圣名祈求",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 34,
+      "end": 48,
+      "title": "约伯记1章1至5节约伯的现实背景是东方富户，6至8节是他敬畏神远离恶事、蒙耶和华认可的属灵背景",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 49,
+      "end": 63,
+      "title": "讲者陈社炳自我介绍与服侍任务：抛开传统把先知使徒的福音传给会众作敬拜根基，借约伯记预备他们领受真道的智慧",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 64,
+      "end": 67,
+      "title": "读约伯记不是要先认识苦难：约伯记是智慧书第一卷，其大主题是认识耶和华的智慧",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 68,
+      "end": 79,
+      "title": "本章两个问题：世界上是否存在绝对的平安，上帝认可的信仰是否意味着远离灾祸，以调整对祸福的归类",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 80,
+      "end": 114,
+      "title": "约伯记成书最早，约伯是乌斯地人非以色列人；亚伯拉罕之前麦基洗德、巴兰、该隐等外邦人已认识耶和华，旧约并非只有以色列人信神",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 115,
+      "end": 140,
+      "title": "约伯记1章1-5节先交代约伯的稳固，与后面家破人亡的处境形成落差；按今天眼光，钱多、人多、资源多的人家似乎绝不会出意外",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 141,
+      "end": 174,
+      "title": "读约伯记1章1-5节不应带上帝视角，而要先思考自己对神信心的根基；按今天眼光列举人生风险因素：抗风险能力与恶有恶报，认为抗风险强者最平安",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 175,
+      "end": 211,
+      "title": "约伯记1章1节：约伯完全正直、敬畏神、远离恶事，排除道德、司法、错误信仰等一切遭灾风险，其敬畏连耶和华都认可",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 212,
+      "end": 267,
+      "title": "约伯的硬实力：第二、三节显示人丁兴旺有七子三女，财富有七千羊、三千骆驼、五百对牛、五百母驴与许多仆婢，牧场、物流与田产产业极其丰厚",
+      "chapter": 5
+    },
+    {
+      "no": "5.6",
+      "start": 268,
+      "end": 303,
+      "title": "约伯在东方为至大、经济富可敌国，按今天眼光毫无风险、随时能平事，1-5节给人绝不出意外的印象，但后来却坐在炉灰中",
+      "chapter": 5
+    },
+    {
+      "no": "5.7",
+      "start": 304,
+      "end": 323,
+      "title": "有人以豪门家庭争夺家产为风险，但约伯记1章4节显示其儿女常一同设宴吃喝，家庭其乐融融，没有豪门争端",
+      "chapter": 5
+    },
+    {
+      "no": "5.8",
+      "start": 324,
+      "end": 353,
+      "title": "约伯记1章5节：约伯在宴席后叫儿女自洁、按数目献燔祭，恐怕他们犯罪弃掉神，且常常如此，家庭信仰教育也是顶配",
+      "chapter": 5
+    },
+    {
+      "no": "5.9",
+      "start": 354,
+      "end": 363,
+      "title": "约伯记的冲击力：如此稳固富有的家族竟家破人亡，唯一活口满身烂疮躺在炉灰中，而允许撒但攻击的正是他们全家敬畏的耶和华",
+      "chapter": 5
+    },
+    {
+      "no": "5.10",
+      "start": 364,
+      "end": 399,
+      "title": "约伯记作为智慧书第一卷要倒掉虚假平安：按1章1-5节标准，约伯钱多、人多、虔诚、家庭团结，似乎内外无懈可击，但约伯记告诉我们会出意外",
+      "chapter": 5
+    },
+    {
+      "no": "5.11",
+      "start": 400,
+      "end": 427,
+      "title": "约伯记的答案：作为安稳支柱的资源都可能瞬间失去，真正护住人的是耶和华圈上的四维篱笆；身外与身内之物失去后，剩下敬畏神的真知识与真智慧",
+      "chapter": 5
+    },
+    {
+      "no": "5.12",
+      "start": 428,
+      "end": 444,
+      "title": "需要在约伯记一开始就预备好：正确预设才不会在苦难年岁弃掉神；错误期待带来错误信心，只剩去掉福音或更改福音两条危险的路；约伯持守纯正",
+      "chapter": 5
+    },
+    {
+      "no": "5.13",
+      "start": 445,
+      "end": 476,
+      "title": "面对信耶稣保平安的说法，约伯记2章9节回应：从神手里得福，也从神手里受祸；约伯太太第二轮才崩溃；无人为得祸来信耶稣",
+      "chapter": 5
+    },
+    {
+      "no": "5.14",
+      "start": 477,
+      "end": 511,
+      "title": "第一层结尾以罗马书万事互相效力解释：受福受祸都为救恩效力；跟随耶稣不是为今生保平安，而是追求永恒福乐，今生暂存福祸终会清空，永恒福乐与咒诅不会过去",
+      "chapter": 5
+    },
+    {
+      "no": "5.15",
+      "start": 512,
+      "end": 546,
+      "title": "两套截然不同的福音：一套信耶稣只有祝福没有灾祸，一套从神手里得福也得祸、万事为救恩效力；约伯三友持第一套而认定他受苦必是犯罪；短暂降祸可促成永久祝福",
+      "chapter": 5
+    },
+    {
+      "no": "5.16",
+      "start": 547,
+      "end": 556,
+      "title": "约伯记1章1-5节总结：约伯绝对稳固却仍出意外，原来认为的抗风险支架都不算数、会顷刻失去；最终看守人的是耶和华的篱笆，剩下的只有敬畏神积累的知识与智慧",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 557,
+      "end": 571,
+      "title": "约伯记1章1-5节可见的财富家庭之外，6-8节天上关乎家庭的事才是影响历史的关键，转折点始于第6节",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 572,
+      "end": 604,
+      "title": "约伯记1章6节神的众子即众天使聚集在耶和华面前如君王早朝，撒但也来在其中，显示他已不是神的众子",
+      "chapter": 6
+    },
+    {
+      "no": "6.3",
+      "start": 605,
+      "end": 660,
+      "title": "约伯记1章7节耶和华问撒但从哪里来，不是搭讪而是发言的授权，撒但自始至终在上帝的权柄之下",
+      "chapter": 6
+    },
+    {
+      "no": "6.4",
+      "start": 661,
+      "end": 678,
+      "title": "约伯记1章8节上帝称赞约伯，是主动引撒但攻击义人，还是撒但本就在关注约伯？两种可能的解读",
+      "chapter": 6
+    },
+    {
+      "no": "6.5",
+      "start": 679,
+      "end": 719,
+      "title": "撒但既不全知也不全在，受空间限制须在地上走来走去，唯有耶和华全知全能全在",
+      "chapter": 6
+    },
+    {
+      "no": "6.6",
+      "start": 720,
+      "end": 757,
+      "title": "撒但既非全在，就须亲临约伯身边观察，他对约伯的两次评估都出错，上帝对约伯的评断却毫无差错",
+      "chapter": 6
+    },
+    {
+      "no": "6.7",
+      "start": 758,
+      "end": 776,
+      "title": "撒但是受造的天使，永远在上帝权下，不可与上帝掰腕子；上帝从起初就全知并认可约伯的敬畏",
+      "chapter": 6
+    },
+    {
+      "no": "6.8",
+      "start": 777,
+      "end": 793,
+      "title": "上帝两次允许约伯受祸令人不解，引出约伯记的主题：义人受苦、恶人亨通，三个朋友也持招灾即恶人的观点",
+      "chapter": 6
+    },
+    {
+      "no": "6.9",
+      "start": 794,
+      "end": 810,
+      "title": "各宗教与基督教的见证都以顺遂灵验为招牌，约伯记与拉撒路却表明义人可能受苦至死、未必得回福分",
+      "chapter": 6
+    },
+    {
+      "no": "6.10",
+      "start": 811,
+      "end": 821,
+      "title": "真正的福音是不可废去之福而非今世顺遂，好人不长命、坏人活千年的观察老祖宗早已有之",
+      "chapter": 6
+    },
+    {
+      "no": "6.11",
+      "start": 822,
+      "end": 849,
+      "title": "不可因遭遇灾祸怀疑自己或他人的信仰，也不可因顺遂认可信仰，处境与上帝是否认可无关",
+      "chapter": 6
+    },
+    {
+      "no": "6.12",
+      "start": 850,
+      "end": 889,
+      "title": "以讲道前腿摔断为例，两拨人各按私意解读环境，环境不应成为信仰的第一参考标准",
+      "chapter": 6
+    },
+    {
+      "no": "6.13",
+      "start": 890,
+      "end": 922,
+      "title": "传道人与信徒都不可做属灵懂王替人解读境遇，三个朋友将示范这种愚昧；约伯记的信息使人根基稳固",
+      "chapter": 6
+    },
+    {
+      "no": "7.1",
+      "start": 923,
+      "end": 942,
+      "title": "环境顺逆不是辨别上帝旨意的第一标准，上帝圣言六十六卷才是最高准则；人的安全感当建立其上，最大灾祸是心眼昏迷，最大祝福是进入真理",
+      "chapter": 7
+    },
+    {
+      "no": "7.2",
+      "start": 943,
+      "end": 967,
+      "title": "约翰福音九章生来瞎眼之人，门徒断定与罪有关，耶稣却说非这人非父母犯罪，乃要显明神的作为，祸福与罪的关系需重新调整",
+      "chapter": 7
+    },
+    {
+      "no": "8.1",
+      "start": 968,
+      "end": 969,
+      "title": "祷告并宣告遵照神的话开始查考约伯记",
+      "chapter": 8
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 3,
+      "reason": "自我介绍与说明讲道方式，可能自成一节，但全章仅3行，按规则整章可作一节"
+    },
+    {
+      "line": 25,
+      "reason": "“这周我们只分享到这个部分为止”是整章收尾句，可能应单独成节，也可能只是归属上一节的结束语"
+    },
+    {
+      "line": 64,
+      "reason": "只有4行的短节，既是承接上文约伯记的问答，也可能是引出下文两个问题的引子"
+    },
+    {
+      "line": 141,
+      "reason": "该行像是延续上一节关于信心根基的劝勉，也可能是新论题读经方法与风险因素的开头"
+    },
+    {
+      "line": 354,
+      "reason": "该行既收束家庭描述，又引出约伯记冲击力的新论题，归属可能影响节界"
+    },
+    {
+      "line": 679,
+      "reason": "介绍魔鬼属性像是在另起一个论题，但也可能只是第八节问答的答辩论据，故并入6.4而非另立一节"
+    },
+    {
+      "line": 776,
+      "reason": "这行总结撒但与上帝对比的论题，也可能是上帝为何允许约伯受祸这一新问题的引子，边界在两行之间"
+    },
+    {
+      "line": 890,
+      "reason": "从环境解读转向不可做属灵懂王，可能是新劝勉，也可能是同一劝勉的延续，故并入6.12之后另起6.13"
+    },
+    {
+      "line": 937,
+      "reason": "「我们靠什么知道上帝对你的真实想法？也是这卷书」可能仍是上文的同一论题(上帝圣言为准则)，也可能转入新的问题即如何确知上帝的心意"
+    }
+  ]
+}
