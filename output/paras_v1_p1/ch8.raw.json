@@ -1,0 +1,32 @@
+{
+ "id": "d3a8d585-a726-43fe-a8b3-0c86e108a392",
+ "object": "chat.completion",
+ "created": 1790396982,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 8, \"sections\": [{\"section\": \"8.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"落在遵照神的话、要开始看约伯记这件事上\", \"title\": \"以祷告作为开场，求神带领，并遵照神的话开始查考约伯记\"}], \"uncertain\": []}]}",
+    "reasoning_content": "The section has only 2 lines. Less than 6 lines, allowed to be one paragraph.\n\nCut: [968]. One paragraph 968-969.\n\nTitle must be 20-110 chars. Content: 祷告与开场，求神带领开始查考约伯记。\n\nending: 最后一行落在遵照神的话开始看约伯记。\n\nTitle: \"以祷告作为开场，求神带领，并遵照神的话开始查考约伯记\" — that's ~26 chars. Good and faithful.\n\nNote line 969 is cut off mid-sentence \"要开始看约伯的\". Keep it."
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 4222,
+  "completion_tokens": 221,
+  "total_tokens": 4443,
+  "prompt_tokens_details": {
+   "cached_tokens": 3840
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 128
+  },
+  "prompt_cache_hit_tokens": 3840,
+  "prompt_cache_miss_tokens": 382
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}
