@@ -1,0 +1,32 @@
+{
+ "id": "67a53aad-dc5a-4916-84fc-1291216fcd4e",
+ "object": "chat.completion",
+ "created": 1790403853,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 8, \"sections\": [{\"section\": \"8.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"以祷告开场，表示要遵照神的话开始查考约伯记\", \"title\": \"以祷告作为开场，求神带领，并遵照神的话开始查考约伯记\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有2行，不足6行，整节就是1段。cuts=[968]，paragraphs: start 968, end 969。标题：祷告与开场，遵照神的话开始查考约伯记。ending：落在\"开始看约伯的\"。\n\n注意标题不要写说话人。可以写「以祷告开场，求神带领，遵照神的话开始查考约伯记」。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 4738,
+  "completion_tokens": 180,
+  "total_tokens": 4918,
+  "prompt_tokens_details": {
+   "cached_tokens": 4352
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 85
+  },
+  "prompt_cache_hit_tokens": 4352,
+  "prompt_cache_miss_tokens": 386
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}
