@@ -1,0 +1,32 @@
+{
+ "id": "db0102f4-1450-47c7-8f8e-e965be15bf4e",
+ "object": "chat.completion",
+ "created": 1790430932,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 2, \"sections\": [{\"section\": \"2.1\", \"cuts\": [14], \"paragraphs\": [{\"start\": 14, \"end\": 18, \"ending\": \"末句以奉耶稣基督的圣名祈求收束\", \"title\": \"第二幕开场祷告：求神使圣灵开通耳朵，让众圣徒领受约伯记这卷古旧圣道及其蕴含的福音智慧，并求福音不致失落、救恩的果效在这里生发\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节 5 行，祷告，整节就是 1 段。写标题。\n\n标题：求神使圣灵开通耳朵，让众圣徒领受约伯记中古旧圣道所蕴含的福音智慧，并求福音不致失落、救恩的果效在此生发。\n\nending: 奉耶稣基督的圣名祈求。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7922,
+  "completion_tokens": 196,
+  "total_tokens": 8118,
+  "prompt_tokens_details": {
+   "cached_tokens": 7296
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 75
+  },
+  "prompt_cache_hit_tokens": 7296,
+  "prompt_cache_miss_tokens": 626
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

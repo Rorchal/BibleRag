@@ -1,0 +1,32 @@
+{
+ "id": "f0066bea-2e5d-4fcd-b852-669e07152f1f",
+ "object": "chat.completion",
+ "created": 1790430929,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1, 3, 6, 10, 13], \"paragraphs\": [{\"start\": 1, \"end\": 2, \"ending\": \"说明接着讲约伯记，本次诵读第二章1至5节\", \"title\": \"诵读本周证道经文前，交代仍要继续讲约伯记两周，本次诵读约伯记二章1至5节，即第二幕的内容\"}, {\"start\": 3, \"end\": 5, \"ending\": \"撒但答自己从地上走来走去、往返而来\", \"title\": \"约伯记2章记载又有一天神的众子侍立在耶和华面前，撒但也在其中；耶和华问撒但从哪里来，撒但答说从地上走来走去、往返而来\"}, {\"start\": 6, \"end\": 9, \"ending\": \"说约伯虽被激动攻击、无故毁灭，仍然持守纯正\", \"title\": \"耶和华问撒但是否用心查看他的仆人约伯，说地上再没有人像约伯完全正直、敬畏神、远离恶事；又指出撒但虽激动神攻击他、无故毁灭他，约伯仍然持守纯正\"}, {\"start\": 10, \"end\": 12, \"ending\": \"断言神伸手伤约伯的骨肉，他必当面弃掉神\", \"title\": \"撒但回答耶和华，说人以皮代皮，情愿舍去一切所有保全性命；于是求神伸手伤约伯的骨头和肉，断言约伯必当面弃掉神\"}, {\"start\": 13, \"end\": 13, \"ending\": \"耶和华把约伯交在撒但手中，只要求存留他的性命\", \"title\": \"耶和华对撒但说，约伯在撒但手中，只要存留约伯的性命\"}], \"uncertain\": []}]}",
+    "reasoning_content": "让我分析约伯记2章1-5节的这段经文，行号从1到13。\n\n我需要根据上下文和文体来决定切分点，而不是机械地按节划分。让我找出合理的切分点。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 8038,
+  "completion_tokens": 465,
+  "total_tokens": 8503,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 45
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 614
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

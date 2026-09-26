@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "pipeline": "chapter",
+    "tag": "约伯记2章1到6节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 15578,
+      "completion_tokens": 2606,
+      "total_tokens": 18184,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1948
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 15578
+    },
+    "secs": 11.6,
+    "finish_reason": "stop"
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 13,
+      "title": "诵读约伯记2章1~5节:撒但再次侍立在耶和华面前控告约伯",
+      "trigger": "C",
+      "evidence": "行1「大家来诵读这周证道的经文」——言语行为由开场直接转为诵读经文",
+      "confidence": 0.92
+    },
+    {
+      "no": 2,
+      "start": 14,
+      "end": 18,
+      "title": "开场祷告:求圣灵开通耳朵,使古旧圣道中的福音智慧被众圣徒得着",
+      "trigger": "A",
+      "evidence": "行14「我们一起来祷告」——显式宣告转为祷告",
+      "confidence": 0.96
+    },
+    {
+      "no": 3,
+      "start": 19,
+      "end": 34,
+      "title": "引言:本次讲道分两部分,1~3节论属灵征战,4~6节论上帝的护理",
+      "trigger": "A",
+      "evidence": "行19「还是分两个方面来讲啊」——显式宣告讲道框架",
+      "confidence": 0.93
+    },
+    {
+      "no": 4,
+      "start": 35,
+      "end": 486,
+      "title": "讲道第一部分:约伯在1~3节持守纯正,属灵征战的实质是披戴全副军装",
+      "trigger": "A",
+      "evidence": "行35「第一层」——转入1~3节的经文讲解",
+      "confidence": 0.9
+    },
+    {
+      "no": 5,
+      "start": 487,
+      "end": 741,
+      "title": "讲道第二部分:4~6节撒但以皮代皮的控告,与海德堡要理问答27、28问的护理教义",
+      "trigger": "A",
+      "evidence": "行487「接下来我们要逐步开始看4~6节,也就第二层」——显式宣告进入第二部分",
+      "confidence": 0.93
+    },
+    {
+      "no": 6,
+      "start": 742,
+      "end": 793,
+      "title": "结尾劝勉:耶利米书29章赐平安的意念,与使徒行传20章交托恩惠的道",
+      "trigger": "A",
+      "evidence": "行742「在结尾呢,我会推荐两处经文作为结束」——显式宣告进入结尾",
+      "confidence": 0.92
+    },
+    {
+      "no": 7,
+      "start": 794,
+      "end": 795,
+      "title": "结束祷告:遵照所读约伯记的话向神祈求",
+      "trigger": "A",
+      "evidence": "行794「我们一起来祷告」——显式宣告转为结束祷告",
+      "confidence": 0.95
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 438,
+      "reason": "「我当然也要回应一个我可预见的问题」像是一个新的应答环节,但讲者仍在讲第一部分的全副军装与祷告方向,按判据归入章4"
+    }
+  ]
+}

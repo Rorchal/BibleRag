@@ -1,0 +1,32 @@
+{
+ "id": "c8ee03f3-78a7-4cd7-a504-16b96d5edb59",
+ "object": "chat.completion",
+ "created": 1790431216,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 7, \"sections\": [{\"section\": \"7.1\", \"cuts\": [794], \"paragraphs\": [{\"start\": 794, \"end\": 795, \"ending\": \"以祷告起头，句子未完，落在求神让人继续看约伯\", \"title\": \"总结约伯仍以同样的方式得胜，随即带领祷告，求神使人在祷告中继续看约伯记\"}], \"uncertain\": [{\"line\": 795, \"reason\": \"该行是祷告的开头，句子在「在看约伯在」处中断，识别不完整，标题只取其大意\"}]}]}",
+    "reasoning_content": "节 7.1 只有 2 行，允许整节 1 段。cuts = [794]，end = 795。\n\n标题：讲道收尾，说约伯仍以同样方式得胜，带领听众祷告，求神使人继续看约伯记。但标题不能出现「我」「我们」。原文 794「我们一起来祷告」——这是讲道人带领祷告的号召。795「我们遵照你的话，在看约伯在」是祷告的开始，句子不完整。\n\n标题要写：总结约伯仍以同样的方式得胜，并带领祷告，求神使人在祷告中继续看约伯记。\n\n注意禁止「讲者」「讲员」等。改写为：总结约伯仍以同样的方式得胜，随即带领祷告，求神使人在祷告中继续看约伯记。\n\n长度约 40 字，合适。\n\nuncertain：795 行不完整，可记一条。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7819,
+  "completion_tokens": 338,
+  "total_tokens": 8157,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 198
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 395
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

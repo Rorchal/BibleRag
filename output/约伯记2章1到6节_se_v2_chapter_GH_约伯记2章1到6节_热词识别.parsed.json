@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "pipeline": "se_v2_chapter",
+    "tag": "约伯记2章1到6节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "tokens": {
+      "prompt": 34544,
+      "completion": 19977
+    },
+    "calls": [
+      {
+        "usage": {
+          "prompt_tokens": 3166,
+          "completion_tokens": 1204,
+          "total_tokens": 4370,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1096
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 478
+        },
+        "secs": 7.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 1
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3053,
+          "completion_tokens": 89,
+          "total_tokens": 3142,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 16
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 365
+        },
+        "secs": 2.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 2
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3340,
+          "completion_tokens": 2730,
+          "total_tokens": 6070,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2539
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 652
+        },
+        "secs": 13.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 3
+      },
+      {
+        "usage": {
+          "prompt_tokens": 10701,
+          "completion_tokens": 9183,
+          "total_tokens": 19884,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 8118
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 8013
+        },
+        "secs": 44.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 4
+      },
+      {
+        "usage": {
+          "prompt_tokens": 7375,
+          "completion_tokens": 5226,
+          "total_tokens": 12601,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 4699
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 4687
+        },
+        "secs": 24.1,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 5
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3944,
+          "completion_tokens": 1245,
+          "total_tokens": 5189,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 999
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 1256
+        },
+        "secs": 6.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 6
+      },
+      {
+        "usage": {
+          "prompt_tokens": 2965,
+          "completion_tokens": 300,
+          "total_tokens": 3265,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 246
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 277
+        },
+        "secs": 2.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 7
+      }
+    ]
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 13,
+      "title": "诵读约伯记2章1~5节:撒但再次侍立在耶和华面前控告约伯"
+    },
+    {
+      "no": 2,
+      "start": 14,
+      "end": 18,
+      "title": "开场祷告:求圣灵开通耳朵,使古旧圣道中的福音智慧被众圣徒得着"
+    },
+    {
+      "no": 3,
+      "start": 19,
+      "end": 34,
+      "title": "引言:本次讲道分两部分,1~3节论属灵征战,4~6节论上帝的护理"
+    },
+    {
+      "no": 4,
+      "start": 35,
+      "end": 486,
+      "title": "讲道第一部分:约伯在1~3节持守纯正,属灵征战的实质是披戴全副军装"
+    },
+    {
+      "no": 5,
+      "start": 487,
+      "end": 741,
+      "title": "讲道第二部分:4~6节撒但以皮代皮的控告,与海德堡要理问答27、28问的护理教义"
+    },
+    {
+      "no": 6,
+      "start": 742,
+      "end": 793,
+      "title": "结尾劝勉:耶利米书29章赐平安的意念,与使徒行传20章交托恩惠的道"
+    },
+    {
+      "no": 7,
+      "start": 794,
+      "end": 795,
+      "title": "结束祷告:遵照所读约伯记的话向神祈求"
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 13,
+      "title": "诵读约伯记2章1-5节，撒但在耶和华面前回答，耶和华问约伯完全正直，撒但求伸手伤其骨肉，耶和华允许只要存留他性命",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 14,
+      "end": 18,
+      "title": "第二幕开场祷告：求神藉圣灵开通耳朵，使圣徒领受约伯记中古旧圣道的福音智慧，并求福音与救恩的果效生发",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 19,
+      "end": 23,
+      "title": "约伯记1章1至3节与第一章的询问回应类似，借这段经文说明属灵征战的真实方式与持守方式",
+      "chapter": 3
+    },
+    {
+      "no": "3.2",
+      "start": 24,
+      "end": 31,
+      "title": "约伯记1章4至6节约伯遭遇肉体灾难，超自然源头是撒但，造成皮肉惨烈伤痕，背后是属灵气的恶魔",
+      "chapter": 3
+    },
+    {
+      "no": "3.3",
+      "start": 32,
+      "end": 34,
+      "title": "本章分享两个话题：用于属灵征战的全副军装，以及如何正确看待上帝的护理，先看约伯记1章1至3节",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 35,
+      "end": 65,
+      "title": "回顾约伯记第一章，约伯从东方大户、家业丰盛变为家破人亡、身无分文的次身之人，唯独对耶和华的敬畏仍被保留",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 66,
+      "end": 110,
+      "title": "约伯记2章1节众子侍立、撒但也来在其中；众子是服役的天使，撒但曾为其一员但已堕落，仍服在上帝权柄下",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 111,
+      "end": 145,
+      "title": "约伯记2章2节上帝再问撒但从哪里来，是授权而非困惑；撒但老实回答显出他受空间限制且已不再是天使，却仍在上帝权下",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 146,
+      "end": 172,
+      "title": "约伯记2章3节耶和华重复对约伯的评语，又加上约伯经第一轮试炼仍持守纯正的话，显明上帝记得并见证约伯的得胜",
+      "chapter": 4
+    },
+    {
+      "no": "4.5",
+      "start": 173,
+      "end": 200,
+      "title": "约伯得胜的方式不同于惯常的属灵征战：他没有直接与撒但交锋，也没有大声急切宣告，而是清楚冷静地作信仰告白、持守纯正",
+      "chapter": 4
+    },
+    {
+      "no": "4.6",
+      "start": 201,
+      "end": 236,
+      "title": "真正属灵征战的实质：魔鬼的攻击是信息性的，主要攻击人对上帝的认知，目的是使人不纯正，最终弃掉上帝",
+      "chapter": 4
+    },
+    {
+      "no": "4.7",
+      "start": 237,
+      "end": 278,
+      "title": "今世复活仍会死，基督徒盼望死人复活并来世生命；撒但终极目的是攻击信徒在上帝面前的纯正，使人落入永死",
+      "chapter": 4
+    },
+    {
+      "no": "4.8",
+      "start": 279,
+      "end": 294,
+      "title": "属灵征战有许多方式，要保护好自己的纯正；不可信谁都无法纯正的谎言，纯正标准借大公信条和信经总结，需披戴军装",
+      "chapter": 4
+    },
+    {
+      "no": "4.9",
+      "start": 295,
+      "end": 337,
+      "title": "以弗所书6章10至13节：要依靠主的大能披戴全副军装，抵挡魔鬼的诡计；信徒不是与属血气的征战，而是与属灵气的恶魔征战",
+      "chapter": 4
+    },
+    {
+      "no": "4.10",
+      "start": 338,
+      "end": 371,
+      "title": "属灵气的恶魔能降维打击，给信徒造成实际的磨难，人靠自己打不过；但穿上军装可以在磨难的日子站立得稳，持守纯正",
+      "chapter": 4
+    },
+    {
+      "no": "4.11",
+      "start": 372,
+      "end": 386,
+      "title": "以弗所书6章14至17节：军装的具体部件——真理束腰、公义护心镜、平安福音的鞋、信德盾牌、救恩头盔、圣灵的宝剑",
+      "chapter": 4
+    },
+    {
+      "no": "4.12",
+      "start": 387,
+      "end": 409,
+      "title": "圣灵的宝剑就是上帝的道，不是用来砍撒但的；以斩龙聚会为例说明把圣灵的宝剑当作实际武器的错谬",
+      "chapter": 4
+    },
+    {
+      "no": "4.13",
+      "start": 410,
+      "end": 437,
+      "title": "军装的共性是真理，中间部件是真理在基督徒身上的各种表现；属灵征战的具体方式是学习真道、辨别诸灵、站立得住",
+      "chapter": 4
+    },
+    {
+      "no": "4.14",
+      "start": 438,
+      "end": 471,
+      "title": "属灵征战仍要祷告，靠着圣灵随时多方祈求警醒不倦；但祷告方向确定，即求上帝使福音的奥秘被放胆讲明",
+      "chapter": 4
+    },
+    {
+      "no": "4.15",
+      "start": 472,
+      "end": 486,
+      "title": "总结：要为众圣徒和教会讲台祷告，用真道披戴军装；约伯持守纯正，上帝在撒但面前为他作证，他赢了第一次",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 487,
+      "end": 511,
+      "title": "约伯记2章4-6节第二轮:撒但从针对约伯一人扩展为观察全人类物种，人以皮代皮",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 512,
+      "end": 534,
+      "title": "以皮代皮是当时的谚语，指人豁出性命、不惜一切代价保住自己的皮肉性命",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 535,
+      "end": 557,
+      "title": "撒但观察人类社会的规律：前半生拿命换钱、后半生拿钱换命，请求再攻击约伯",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 558,
+      "end": 581,
+      "title": "约伯记2章5节撒但请求伤约伯的骨头和肉，断定约伯必当面弃掉神，敬畏神比肉体更重要",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 582,
+      "end": 611,
+      "title": "约伯记2章6节约伯在耶和华手中但性命存留，与第一次授权有别，约伯死不掉反成痛苦来源",
+      "chapter": 5
+    },
+    {
+      "no": "5.6",
+      "start": 612,
+      "end": 643,
+      "title": "从旁观者转向亲历者：现有秩序崩塌、情况失控时，信徒容易怀疑上帝的护理",
+      "chapter": 5
+    },
+    {
+      "no": "5.7",
+      "start": 644,
+      "end": 676,
+      "title": "海德堡要理问答27、28问：上帝的护理包括荒年、贫穷、疾病与患难，人不能与之隔绝",
+      "chapter": 5
+    },
+    {
+      "no": "5.8",
+      "start": 677,
+      "end": 708,
+      "title": "约伯早于海德堡要理问答就懂得护理教义，妻子却因他持守纯正而辱骂他弃掉神",
+      "chapter": 5
+    },
+    {
+      "no": "5.9",
+      "start": 709,
+      "end": 737,
+      "title": "真正的基督徒所信的不是环境不改变，而是上帝本身不改变、上帝不会失落我们",
+      "chapter": 5
+    },
+    {
+      "no": "5.10",
+      "start": 738,
+      "end": 741,
+      "title": "上帝保护我们的方式，除了用全能命令托住环境，还包括帮助我们披戴基督的全副军装",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 742,
+      "end": 769,
+      "title": "耶利米书29章10-13节：上帝向被掳七十年的百姓怀赐平安的意念，患难中当相信上帝不改变的意念，平安指在末后有指望",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 770,
+      "end": 788,
+      "title": "信仰危机或教会遇险时当回到使徒的道：保罗在使徒行传20章劝诫以弗所长老警醒，把羊群交托给能建立人的恩惠之道",
+      "chapter": 6
+    },
+    {
+      "no": "6.3",
+      "start": 789,
+      "end": 793,
+      "title": "总结：个人问题相信上帝赐平安的意念，教会艰难回到使徒的道；回溯约伯记第一轮站住，下週看第二轮",
+      "chapter": 6
+    },
+    {
+      "no": "7.1",
+      "start": 794,
+      "end": 795,
+      "title": "总结约伯仍以同样方式得胜，并带领祷告，求神使人在祷告中继续看约伯记",
+      "chapter": 7
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 2,
+      "reason": "1-2行是主持人引出诵读的引导语，按过渡句归入经文节；也可能作为独立的诵读安排单列一节"
+    },
+    {
+      "line": 558,
+      "reason": "“这很毒啊”承接第4节应用的收束，也可能应与535-557同节"
+    },
+    {
+      "line": 738,
+      "reason": "章末结语紧接约伯的总结，是否应与5.9合并待复核"
+    },
+    {
+      "line": 789,
+      "reason": "789-790是对前述两点的回顾小结，既可单独成节，也可视为6.2的收尾"
+    }
+  ]
+}
