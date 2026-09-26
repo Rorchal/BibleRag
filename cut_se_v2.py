@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""切节 v2：两种方式，都用 output/prompts_切节_v2.md 的提示词。
+"""切节 v2：两种方式，都用 prompts/切节_v2.md 的提示词。
 
   --mode chapter  逐章切：章区间取自 gold（只取行号，不给标题），每章调用一次，按 start 合并
   --mode whole    整篇切：整篇原文一次交给模型，直接切成节
@@ -25,7 +25,7 @@ from concurrent.futures import ThreadPoolExecutor
 import ds_client as ds
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-PROMPT_MD = os.path.join(ROOT, "output", "prompts_切节_v2.md")
+PROMPT_MD = os.path.join(ROOT, "prompts", "切节_v2.md")
 
 USER_CH = """{fewshot}
 
