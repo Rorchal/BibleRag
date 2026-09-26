@@ -1,0 +1,32 @@
+{
+ "id": "52188410-18ec-4e1b-95f0-e93c7f649cec",
+ "object": "chat.completion",
+ "created": 1790408062,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1], \"paragraphs\": [{\"start\": 1, \"end\": 3, \"ending\": \"自称不敢当帮助，只是把神的话用今天的话尽可能讲给大家听\", \"title\": \"开场互道平安，并谦卑表示自己不敢当什么帮助，只是把神的话用今天的话尽可能讲给众人听\"}], \"uncertain\": []}]}",
+    "reasoning_content": ""
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 5290,
+  "completion_tokens": 104,
+  "total_tokens": 5394,
+  "prompt_tokens_details": {
+   "cached_tokens": 896
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0
+  },
+  "prompt_cache_hit_tokens": 896,
+  "prompt_cache_miss_tokens": 4394
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,32 @@
+{
+ "id": "8f22cffa-883d-4b74-b534-e2a028d0b779",
+ "object": "chat.completion",
+ "created": 1790408068,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 3, \"sections\": [{\"section\": \"3.1\", \"cuts\": [26, 30], \"paragraphs\": [{\"start\": 26, \"end\": 29, \"ending\": \"落在求神临格在众人中间，开通弟兄姊妹的耳朵，使他们凡有耳的都应当听\", \"title\": \"祷告开头先求神使众人照他的话、以他话语为根基来崇拜他，在众圣徒中得着他当得的荣耀，并求他临格在中间，开通众弟兄姊妹的耳朵，使他们凡有耳的都应当听\"}, {\"start\": 30, \"end\": 33, \"ending\": \"最后一句以奉耶稣基督的圣名祈求作结\", \"title\": \"求神把众先知使徒记在圣经上的福音与古旧的信仰、并众人需用的一切知识一同赏赐给他们，使他们通达灵敏、认识神、一次得救；又求真信心在他们中间酝酿，使他们多结果子，末了奉耶稣基督的圣名祈求\"}], \"uncertain\": [{\"line\": 30, \"reason\": \"「使众先知使徒记在圣经上的福音……」可看作第29行开通耳朵、能听之后所听内容的展开，也可看作独立的一项祈求；按祈求事项另起一段处理\"}]}]}",
+    "reasoning_content": "The section is 26-33, 8 lines. It's a prayer. Divide by prayer items. Possibly 2-3 paragraphs.\n\nLine 26: opening \"那我们先一起来祷告。\"\n27-28: 求神以话语为根基受崇拜，得荣耀\n29: 开通耳朵听\n30-31: 赐下福音和知识，认识神\n32: 真信心、多结果子\n33: 奉耶稣基督圣名\n\nSince it's a prayer, \"按祈求的事项分段\". 8 lines, minimum 3 lines per段. Could be 2-3 paragraphs.\n\nOption: [26, 30] and [31, 33]? That's 5+3.\n\nOr [26,29] (4 lines) and [30,33] (4 lines).\n\nLet me think about argument actions: 26 opening; 27-29 求以话语为根基崇拜、开通耳朵; 30-31 求赐福音与知识以认识神; 32 求信心与果子; 33 奉圣名.\n\nCould do 3 paragraphs: 26-29, 30-31, 32-33. That's 4+2+2 — the 2-line ones are under 3 lines, which violates the \"少于3行的并入相邻段\" rule. So merge.\n\nSo 2 paragraphs: 26-29, 30-33. Or 26-28, 29-33.\n\nRule 3.1 min 3 lines. 26-29 = 4, 30-33 = 4. Good.\n\nActually maybe a better split at 30: 26-29 (opening + 以话语为根基崇拜 + 开通耳朵), 30-33 (赐福音古旧信仰与知识使他们认识你一次得救, 真信心酝酿多结果子, 奉圣名).\n\nConsider transition rule: line 29 \"你临格在我们中间，开通众弟兄姊妹的耳朵，使他们凡有耳的都应该都应该听。\" This ends the \"听\" line, and 30 starts a new petition \"使众先知使徒记在圣经上的福音...\". So cut at 30 works.\n\nAlternatively cut at 31? 30-31 is one petition (赐福音与知识使他们认识你). 32 is another.\n\nI'll go with cuts [26, 30], 2 paragraphs. Actually maybe 3 paragraphs: 26-28, 29-30... hmm.\n\nLet me think more carefully. Prayer petitions:\n1. 以话语为根基崇拜你，得荣耀 (27-28)\n2. 临格、开通耳朵能听 (29)\n3. 赐下福音、古旧信仰、知识，认识你，一次得救 (30-31)\n4. 真信心酝酿、多结果子 (32)\n5. 奉圣名 (33)\n\nConsidering minimum lengths, [26-29] covers 1-2, [30-33] covers 3-5. That's clean 2 paragraphs.\n\nBut 4+4 might feel too coarse? The guidance says 段数 ≈ 行数 ÷ 8 = 1. So 2 paragraphs is fine (a bit more). Actually 8/8 = 1. So 1-2 paragraphs. 2 is acceptable.\n\nI'll go with 2 paragraphs. Hmm, but consider [26] alone as opening? Only 1 line, under 3, merge.\n\nFinal: cuts [26, 30].\n\nTitles:\n段1 (26-29): 祷告开头，求神使众人照他的话、以他话语为根基来崇拜他，在圣徒中得荣耀，并临格中间开通弟兄姊妹的耳朵使他们能听。\nending: 落在求神临格、开通耳朵使众人能听。\n\n段2 (30-33): 求神把众先知使徒记在圣经上的福音、古旧的信仰和他们需用的一切知识一同赏赐，使他们通达灵敏、认识神、一次得救，真信心在心中酝酿并多结果子，最后奉耶稣基督的圣名祈求。\nending: 落在奉耶稣基督圣名祈求。\n\nLengths OK.\n\nuncertain: none, or maybe note about 26.\n\nWrite JSON."
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 5393,
+  "completion_tokens": 1183,
+  "total_tokens": 6576,
+  "prompt_tokens_details": {
+   "cached_tokens": 4864
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 898
+  },
+  "prompt_cache_hit_tokens": 4864,
+  "prompt_cache_miss_tokens": 529
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}
