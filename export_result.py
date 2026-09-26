@@ -19,6 +19,7 @@ import json
 import os
 
 import seg_paras as sp
+import typo_fix
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -32,6 +33,8 @@ def main() -> int:
     a = ap.parse_args()
 
     lines = sp.read_lines(a.txt)
+    rules = typo_fix.load_rules()      # 标题也按全局规则统一写法（撒旦→撒但）
+    fix = lambda t: typo_fix.apply_rules(t or "", rules)
     se = json.load(io.open(a.sections, encoding="utf-8"))
     pa = json.load(io.open(os.path.join(a.paras, "parsed.json"), encoding="utf-8"))
     paras_by_sec = {s["no"]: s["paragraphs"] for s in pa["sections"]}
@@ -43,11 +46,11 @@ def main() -> int:
         for s in se["sections"]:
             if s["chapter"] != c["no"]:
                 continue
-            secs.append({"no": s["no"], "start": s["start"], "end": s["end"], "title": s["title"],
-                         "paragraphs": [{"start": p["start"], "end": p["end"], "title": p.get("title", "")}
+            secs.append({"no": s["no"], "start": s["start"], "end": s["end"], "title": fix(s["title"]),
+                         "paragraphs": [{"start": p["start"], "end": p["end"], "title": fix(p.get("title", ""))}
                                         for p in paras_by_sec.get(s["no"], [])]})
         chapters.append({"no": c["no"], "start": c["start"], "end": c["end"],
-                         "title": c.get("title", ""), "sections": secs})
+                         "title": fix(c.get("title", "")), "sections": secs})
 
     n_sec = sum(len(c["sections"]) for c in chapters)
     n_par = sum(len(s["paragraphs"]) for c in chapters for s in c["sections"])

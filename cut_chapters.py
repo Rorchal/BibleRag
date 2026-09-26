@@ -20,7 +20,7 @@ import sys
 import ds_client as ds
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-PROMPT_MD = os.path.join(ROOT, "prompts", "切章.md")
+PROMPT_MD = os.path.join(ROOT, "prompts", "切章.md")   # --prompt 可换成 切章_v2（带 typos）
 
 USER = """{fewshot}
 
@@ -29,7 +29,7 @@ USER = """{fewshot}
 
 {numbered}
 
-只输出「章」的 json。"""
+只输出「章」的 json{tail}。"""
 
 
 def load_prompts():
@@ -44,16 +44,20 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("path")
     ap.add_argument("--tag", required=True)
+    ap.add_argument("--prompt", default="切章", help="prompts/ 下的文件名（不含 .md），如 切章_v2")
     ap.add_argument("--max-tokens", type=int, default=64000)
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--effort", default=None, choices=["low", "high", "max"],
                     help="思考强度；不传则用模型默认")
     a = ap.parse_args()
+    global PROMPT_MD
+    PROMPT_MD = os.path.join(ROOT, "prompts", f"{a.prompt}.md")
+    with_typos = "typos" in io.open(PROMPT_MD, encoding="utf-8").read()
 
     lines = ds.read_lines(a.path)
     N = len(lines)
     system, fewshot = load_prompts()
-    user = USER.format(fewshot=fewshot, n=N, numbered="\n".join(f"{i} | {l}" for i, l in enumerate(lines, 1)))
+    user = USER.format(fewshot=fewshot, n=N, tail=",顺带把识别错字写进 typos" if with_typos else "", numbered="\n".join(f"{i} | {l}" for i, l in enumerate(lines, 1)))
     ctx = {"file": os.path.basename(a.path), "tag": a.tag, "stage": "chapter"}
     content, meta = ds.chat(system, user, max_tokens=a.max_tokens, temperature=a.temperature,
                             timeout=1800, ctx=ctx, reasoning_effort=a.effort)
@@ -86,12 +90,15 @@ def main() -> int:
         print(f"   第{c['no']}章 {c['start']}-{c['end']}  {c['title']}")
     for m in issues:
         print("   -", m)
+    if with_typos:
+        print(f"   上报错字 {len((data or {}).get('typos') or [])} 条")
     out = os.path.join(ROOT, "output", f"{a.tag}_ch_{os.path.splitext(os.path.basename(a.path))[0]}.parsed.json")
     io.open(out, "w", encoding="utf-8").write(json.dumps(
-        {"meta": {"pipeline": "chapter", "tag": a.tag, "model": ds.MODEL, "temperature": a.temperature,
+        {"meta": {"pipeline": "chapter", "prompt": a.prompt, "tag": a.tag, "model": ds.MODEL, "temperature": a.temperature,
                   "effort": a.effort, "usage": usage, "secs": meta.get("secs"),
                   "finish_reason": meta.get("finish_reason")},
-         "issues": issues, "chapters": chapters, "uncertain": (data or {}).get("uncertain") or []},
+         "issues": issues, "chapters": chapters, "uncertain": (data or {}).get("uncertain") or [],
+         "typos": (data or {}).get("typos") or []},
         ensure_ascii=False, indent=2))
     print(f"   → {os.path.relpath(out, ROOT)}")
     return 0 if chapters and not issues else 2

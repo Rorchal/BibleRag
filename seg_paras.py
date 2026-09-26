@@ -79,16 +79,25 @@ def read_lines(path: str) -> list[str]:
     return lines
 
 
+def lexicon_names() -> str:
+    """v5 起的专名表：lexicon/热词表.txt 的「讲道人」「人名地名」两组。"""
+    import typo_fix
+    g = typo_fix.load_lexicon()
+    return "、".join(dict.fromkeys(g.get("讲道人", []) + g.get("人名地名", [])))
+
+
 def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str],
-               names: str | None = None) -> str:
-    """names 不为空时（v4 起）按 v4 模板在每节前加专名表，结尾加「逐项核对」一句。"""
+               names: str | None = None, typos: bool = False) -> str:
+    """names 不为空时（v4 起）加专名表，结尾加「逐项核对」一句。
+    typos=True（v5 起）：专名表只放一次（在所有节前面），并要求顺带上报识别错字。"""
     blocks = []
+    per_sec_names = names if not typos else None
     for s in secs:
         lo, hi = s["start"], s["end"]
         numbered = "\n".join(f"{i} | {lines[i - 1]}" for i in range(lo, hi + 1))
         blocks.append(
             f"━━━ 待处理的节 ━━━\n"
-            + (f"专名表:{names}\n" if names else "")
+            + (f"专名表:{per_sec_names}\n" if per_sec_names else "")
             + f"所在节:{s['no']}「{s['title']}」\n"
             f"行号 {lo}..{hi},共 {hi - lo + 1} 行。格式为「行号 | 内容」。\n\n{numbered}")
     spec = "\n".join(f"- 节 {s['no']}:cuts 第一个数必须是 {s['start']};最后一段的 end 必须是 {s['end']}"
@@ -96,11 +105,14 @@ def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str],
     return (f"{fewshot}\n\n"
             f"本次输入是第 {ch_no} 章,共 {len(secs)} 节,节的范围已定、不许改动。"
             f"请对每一节分别按规则切段,各节互不影响。\n\n"
+            + (f"专名表:{names}\n\n" if typos and names else "")
             + "\n\n".join(blocks)
             + f"\n\n把以上每一节分别切成「段」。\n{spec}\n"
             + ("写完每个标题,逐项核对主体、对象、身份、范围、因果。" if names else "")
+            + ("顺带把识别错字写进每一节的 typos。" if typos else "")
             + f"只输出 json,格式为 {{\"chapter\": {ch_no}, \"sections\": [每一节一个对象,"
-            f"字段同 SYSTEM 里的 section/cuts/paragraphs/uncertain,按节号顺序]}}。")
+            f"字段同 SYSTEM 里的 section/cuts/paragraphs/uncertain"
+            + ("/typos" if typos else "") + ",按节号顺序]}。")
 
 
 def parse_content(content: str) -> tuple[dict, bool]:
@@ -166,7 +178,7 @@ def check(sec: dict, out: dict | None) -> list[str]:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prompt", choices=["v1", "v2", "v3", "v4a", "v4"], default="v1", help="切段提示词版本")
+    ap.add_argument("--prompt", choices=["v1", "v2", "v3", "v4a", "v4", "v5"], default="v1", help="切段提示词版本")
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
@@ -203,7 +215,9 @@ def main() -> int:
                    "messages": [{"role": "system", "content": system},
                                 {"role": "user", "content": build_user(
                                     fewshot, ch, cs, lines,
-                                    NAMES if a.prompt >= "v4" and a.prompt != "v4a" else None)}],
+                                    (lexicon_names() if a.prompt >= "v5" else NAMES)
+                                    if a.prompt >= "v4" and a.prompt != "v4a" else None,
+                                    typos=a.prompt >= "v5")}],
                    "temperature": 0.2, "max_tokens": 64000,
                    "response_format": {"type": "json_object"}}
         if a.effort != "none":
@@ -266,6 +280,7 @@ def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -
                        "title": s["title"], "chapter": ch,
                        "paragraphs": (o or {}).get("paragraphs", []),
                        "uncertain": (o or {}).get("uncertain", []), "issues": iss,
+                       "typos": (o or {}).get("typos", []),
                        "verify_fatal": vf, "verify_warns": vw,
                        "warnings": title_warnings((o or {}).get("paragraphs", []))})
     return n_bad
