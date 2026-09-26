@@ -1,32 +1,32 @@
 {
- "id": "71fdc26f-af2b-46a3-8e85-bfa00bbeff52",
+ "id": "05d5b9ed-8348-4a71-a59f-07cb89b2d86b",
  "object": "chat.completion",
- "created": 1790409323,
+ "created": 1790411166,
  "model": "deepseek-flash",
  "choices": [
   {
    "index": 0,
    "message": {
     "role": "assistant",
-    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1], \"paragraphs\": [{\"start\": 1, \"end\": 3, \"ending\": \"谦卑表示自己只是把神的话用今天的话尽可能讲给大家听\", \"title\": \"讲道开场向会众问平安，谦卑表示帮助不敢当，强调神的话确实能建立听众，自己只是把神的话用今天的话尽可能讲给大家听\"}], \"uncertain\": []}]}",
-    "reasoning_content": "本节只有3行，规则说不足6行允许整节1段。所以cuts=[1]，paragraphs一段1-3。\n\n标题要写：开场问候平安，讲者谦卑表示自己只是把神的话用今天的话讲给大家听。长度20-110字。\n\nending：最后两三行落在——讲者表示自己只是把神的话用今天的话尽可能讲给大家听。\n\n标题：讲员问候平安，谦卑表示「帮助不敢当」，强调神的话能建立听众，自己只是把神的话用今天的话尽可能讲给大家听。注意不要出现\"讲者\"\"讲员\"。反例提到「讲者」不行。改成直接陈述……但这段本身就是讲者自述，怎么避开？可以写成「开场问候平安，谦卑表示帮助不敢当，强调神的话能建立听众，自己只是把神的话用今天的话尽可能讲给大家听」。这是讲话人自己的话，用「自己」可以。或者用被动？示范里没提供。用「讲道开场问候平安，谦卑表示……」也行。\n\n我写：「讲道开场向会众问平安，谦卑表示帮助不敢当，强调神的话能建立听众，自己只是把神的话用今天的话尽可能讲给大家听。」约60字，可以。\n\nuncertain 空数组。"
+    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1], \"paragraphs\": [{\"start\": 1, \"end\": 3, \"ending\": \"谦卑地表示自己担当不起「帮助」二字，只是把神的话用今天的话尽可能讲给听众听\", \"title\": \"开场互道平安，谦卑地表示「帮助」不敢当，真正能建立人的是神的话，自己只是把神的话用今天的话尽可能讲给听众听\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有3行，不足6行，允许整节就是1段。cuts=[1]，段落1-3。\n\n标题：开场问候平安，讲者谦卑表示自己只是把神的话用今天的话讲给大家听。\n\n要避免「讲者」。写：开场问候平安，谦卑表示自己只是把神的话用今天的话尽可能讲给听众听。人称改写：去「我」「你们」。写「谦卑表示自己只是把神的话用今天的话尽可能讲给会众听」。\n\nending：谦卑表示只是把神的话用今天的话讲给大家听。"
    },
    "logprobs": null,
    "finish_reason": "stop"
   }
  ],
  "usage": {
-  "prompt_tokens": 4667,
-  "completion_tokens": 383,
-  "total_tokens": 5050,
+  "prompt_tokens": 7836,
+  "completion_tokens": 243,
+  "total_tokens": 8079,
   "prompt_tokens_details": {
-   "cached_tokens": 1536
+   "cached_tokens": 0
   },
   "completion_tokens_details": {
-   "reasoning_tokens": 271
+   "reasoning_tokens": 122
   },
-  "prompt_cache_hit_tokens": 1536,
-  "prompt_cache_miss_tokens": 3131
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 7836
  },
  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
 }

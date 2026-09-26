@@ -24,11 +24,15 @@ import time
 import urllib.error
 import urllib.request
 
+from verify_paragraphs import verify_paragraphs
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.environ.get("DEEPSEEK_BASE", "https://api.deepseek.com")
 KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
 TXT = os.path.join(HERE, "input", "GH_伯1章1到8节_校对.txt")
+# 专名表（切段 v4 起使用）：讲道人姓名 + 录音识别时的热词表（task.json 里的 hotwords）
+NAMES = "陈社炳、约伯、约伯记、乌斯、以利法、提幔、比勒达、书亚、琐法、拿玛、以利户、巴拉迦、布西、示巴、迦勒底、耶和华、撒但"
 SECTIONS = os.path.join(HERE, "input", "c2low4_se_v2_chapter_GH_伯1章1到8节.parsed.json")
 
 
@@ -75,14 +79,17 @@ def read_lines(path: str) -> list[str]:
     return lines
 
 
-def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str]) -> str:
+def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str],
+               names: str | None = None) -> str:
+    """names 不为空时（v4 起）按 v4 模板在每节前加专名表，结尾加「逐项核对」一句。"""
     blocks = []
     for s in secs:
         lo, hi = s["start"], s["end"]
         numbered = "\n".join(f"{i} | {lines[i - 1]}" for i in range(lo, hi + 1))
         blocks.append(
             f"━━━ 待处理的节 ━━━\n"
-            f"所在节:{s['no']}「{s['title']}」\n"
+            + (f"专名表:{names}\n" if names else "")
+            + f"所在节:{s['no']}「{s['title']}」\n"
             f"行号 {lo}..{hi},共 {hi - lo + 1} 行。格式为「行号 | 内容」。\n\n{numbered}")
     spec = "\n".join(f"- 节 {s['no']}:cuts 第一个数必须是 {s['start']};最后一段的 end 必须是 {s['end']}"
                      for s in secs)
@@ -91,7 +98,8 @@ def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str]) -> 
             f"请对每一节分别按规则切段,各节互不影响。\n\n"
             + "\n\n".join(blocks)
             + f"\n\n把以上每一节分别切成「段」。\n{spec}\n"
-            f"只输出 json,格式为 {{\"chapter\": {ch_no}, \"sections\": [每一节一个对象,"
+            + ("写完每个标题,逐项核对主体、对象、身份、范围、因果。" if names else "")
+            + f"只输出 json,格式为 {{\"chapter\": {ch_no}, \"sections\": [每一节一个对象,"
             f"字段同 SYSTEM 里的 section/cuts/paragraphs/uncertain,按节号顺序]}}。")
 
 
@@ -158,7 +166,7 @@ def check(sec: dict, out: dict | None) -> list[str]:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prompt", choices=["v1", "v2", "v3", "v4"], default="v1", help="切段提示词版本")
+    ap.add_argument("--prompt", choices=["v1", "v2", "v3", "v4a", "v4"], default="v1", help="切段提示词版本")
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
@@ -186,7 +194,9 @@ def main() -> int:
         cs = [s for s in secs if s["chapter"] == ch]
         payload = {"model": model,
                    "messages": [{"role": "system", "content": system},
-                                {"role": "user", "content": build_user(fewshot, ch, cs, lines)}],
+                                {"role": "user", "content": build_user(
+                                    fewshot, ch, cs, lines,
+                                    NAMES if a.prompt >= "v4" and a.prompt != "v4a" else None)}],
                    "temperature": 0.2, "max_tokens": 64000,
                    "response_format": {"type": "json_object"}}
         if a.effort != "none":
@@ -235,15 +245,20 @@ def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -
         got, fixed = {}, False
     rec["json_fixed"] = fixed
     rec["empty"] = not content.strip()
+    lines = read_lines(TXT)
     n_bad = 0
     for s in cs:
         o = got.get(s["no"])
         iss = ["模型返回内容为空（输出全是推理）"] if rec["empty"] else check(s, o)
         n_bad += bool(iss)
+        # 用户提供的校验脚本（verify_paragraphs.py）：fatal 按规定应重跑一次，这里只记录
+        vf, vw = (verify_paragraphs(o, lines, s["start"], s["end"], s["title"])
+                  if o else (["没有输出任何段"], []))
         merged.append({"no": s["no"], "start": s["start"], "end": s["end"],
                        "title": s["title"], "chapter": ch,
                        "paragraphs": (o or {}).get("paragraphs", []),
                        "uncertain": (o or {}).get("uncertain", []), "issues": iss,
+                       "verify_fatal": vf, "verify_warns": vw,
                        "warnings": title_warnings((o or {}).get("paragraphs", []))})
     return n_bad
 
@@ -273,7 +288,10 @@ def summary(merged: list[dict]) -> str:
     ban = sum(bool(BANNED.search(p.get("title") or "")) for p in P)
     dem = sum(bool(DEMONS.search(p.get("title") or "")) for p in P)
     per = sum(bool(person_hits(p.get("title") or "")) for p in P)
-    return (f"合计 {len(P)} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}；"
+    vf = sum(len(s.get("verify_fatal", [])) for s in merged)
+    vw = sum(len(s.get("verify_warns", [])) for s in merged)
+    return (f"verify_paragraphs：致命 {vf} 条，警告 {vw} 条\n"
+            f"合计 {len(P)} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}；"
             f"标题含禁用词 {ban} 段，含第一二人称 {per} 段，含指示词 {dem} 段（后者需人工看是否悬空）")
 
 

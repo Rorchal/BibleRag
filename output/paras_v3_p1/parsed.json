@@ -24,7 +24,8 @@
           "prompt_cache_miss_tokens": 4394
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 2,
@@ -45,7 +46,8 @@
           "prompt_cache_miss_tokens": 935
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 3,
@@ -66,7 +68,8 @@
           "prompt_cache_miss_tokens": 529
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 4,
@@ -87,7 +90,8 @@
           "prompt_cache_miss_tokens": 1681
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 5,
@@ -108,7 +112,8 @@
           "prompt_cache_miss_tokens": 10432
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 6,
@@ -129,7 +134,8 @@
           "prompt_cache_miss_tokens": 7606
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 7,
@@ -150,7 +156,8 @@
           "prompt_cache_miss_tokens": 1289
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       },
       {
         "chapter": 8,
@@ -171,7 +178,8 @@
           "prompt_cache_miss_tokens": 393
         },
         "finish_reason": "stop",
-        "json_fixed": false
+        "json_fixed": false,
+        "empty": false
       }
     ]
   },
@@ -192,6 +200,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -210,6 +220,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -234,6 +246,10 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 14-18 标题里的数字 [4] 在本段原文和节标题里都找不到"
+      ],
       "warnings": [
         "指示词 这样（行14-18）"
       ]
@@ -265,6 +281,10 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 19-22 标题里的数字 [7] 在本段原文和节标题里都找不到"
+      ],
       "warnings": [
         "指示词 此（行23-25）"
       ]
@@ -296,6 +316,10 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 30-33 标题 91 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": []
     },
     {
@@ -325,6 +349,10 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [
+        "段 34-41 标题含「这一段」"
+      ],
+      "verify_warns": [],
       "warnings": [
         "指示词 这个（行34-41）"
       ]
@@ -353,6 +381,10 @@
       "issues": [
         "人称 我（行49-51）"
       ],
+      "verify_fatal": [
+        "段 49-51 标题含第一、二人称「我」"
+      ],
+      "verify_warns": [],
       "warnings": [
         "指示词 此（行49-51）"
       ]
@@ -379,6 +411,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 那个（行55-58）"
       ]
@@ -399,6 +433,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -429,6 +465,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这个（行74-76）",
         "指示词 这些（行77-79）"
@@ -456,6 +494,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -486,6 +526,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -529,6 +571,10 @@
       "issues": [
         "禁用词 作者（行129-132）"
       ],
+      "verify_fatal": [
+        "段 129-132 标题含「作者」"
+      ],
+      "verify_warns": [],
       "warnings": [
         "指示词 这样（行122-128）",
         "指示词 这样（行129-132）",
@@ -569,6 +615,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这样/这种（行150-154）"
       ]
@@ -619,6 +667,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这样（行184-190）",
         "指示词 这样（行212-215）"
@@ -646,6 +696,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这个（行223-228）"
       ]
@@ -697,6 +749,10 @@
       "issues": [
         "禁用词 这一节（行229-237）"
       ],
+      "verify_fatal": [
+        "段 229-237 标题含「这一节」"
+      ],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -727,6 +783,10 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 273-280 标题 98 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这样/这种（行273-280）",
         "指示词 这样（行281-290）",
@@ -755,6 +815,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这个（行304-311）",
         "指示词 这样（行312-323）"
@@ -790,6 +852,13 @@
       "issues": [
         "标题长度 115（行339-353）",
         "禁用词 作者（行339-353）"
+      ],
+      "verify_fatal": [
+        "段 339-353 标题 115 字,不在 20-110 之间",
+        "段 339-353 标题含「作者」"
+      ],
+      "verify_warns": [
+        "段 339-353 标题 115 字,超过 90 字,可能在逐句复述"
       ],
       "warnings": [
         "指示词 这样/那些（行324-330）",
@@ -830,6 +899,10 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 368-379 标题 107 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": []
     },
     {
@@ -869,6 +942,13 @@
         "标题长度 113（行391-398）",
         "人称 你（行399-404）"
       ],
+      "verify_fatal": [
+        "段 391-398 标题 113 字,不在 20-110 之间",
+        "段 399-404 标题含第一、二人称「你」"
+      ],
+      "verify_warns": [
+        "段 391-398 标题 113 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这个（行380-385）",
         "指示词 这样/这种（行391-398）",
@@ -906,6 +986,14 @@
         "人称 我（行411-420）",
         "人称 我们（行421-427）"
       ],
+      "verify_fatal": [
+        "段 411-420 标题含第一、二人称「我」",
+        "段 421-427 标题含第一、二人称「我」"
+      ],
+      "verify_warns": [
+        "段 405-410 标题 97 字,超过 90 字,可能在逐句复述",
+        "段 421-427 标题 97 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 那些（行405-410）",
         "指示词 这样（行411-420）",
@@ -940,6 +1028,10 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 428-433 标题 94 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这件（行428-433）",
         "指示词 这个（行440-444）"
@@ -982,6 +1074,13 @@
         "人称 我们（行445-448）",
         "人称 我们（行459-466）"
       ],
+      "verify_fatal": [
+        "段 445-448 标题含第一、二人称「我」",
+        "段 459-466 标题含第一、二人称「我」"
+      ],
+      "verify_warns": [
+        "段 449-458 标题 93 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这些（行445-448）"
       ]
@@ -1022,6 +1121,14 @@
       "issues": [
         "标题长度 112（行483-492）",
         "标题长度 114（行498-511）"
+      ],
+      "verify_fatal": [
+        "段 483-492 标题 112 字,不在 20-110 之间",
+        "段 498-511 标题 114 字,不在 20-110 之间"
+      ],
+      "verify_warns": [
+        "段 483-492 标题 112 字,超过 90 字,可能在逐句复述",
+        "段 498-511 标题 114 字,超过 90 字,可能在逐句复述"
       ],
       "warnings": [
         "指示词 这个（行477-482）",
@@ -1065,6 +1172,15 @@
         "标题长度 111（行519-532）",
         "人称 我们（行533-540）"
       ],
+      "verify_fatal": [
+        "段 519-532 标题 111 字,不在 20-110 之间",
+        "段 533-540 标题含第一、二人称「我」"
+      ],
+      "verify_warns": [
+        "段 519-532 标题 111 字,超过 90 字,可能在逐句复述",
+        "段 533-540 标题 109 字,超过 90 字,可能在逐句复述",
+        "段 541-546 标题 93 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": []
     },
     {
@@ -1089,6 +1205,10 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 551-556 标题 108 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这件（行551-556）"
       ]
@@ -1145,6 +1265,13 @@
       ],
       "issues": [
         "禁用词 作者（行582-596）"
+      ],
+      "verify_fatal": [
+        "段 582-596 标题含「作者」"
+      ],
+      "verify_warns": [
+        "段 557-566 标题 91 字,超过 90 字,可能在逐句复述",
+        "段 567-572 标题 108 字,超过 90 字,可能在逐句复述"
       ],
       "warnings": [
         "指示词 那些（行557-566）",
@@ -1211,6 +1338,11 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 630-640 标题 91 字,超过 90 字,可能在逐句复述",
+        "段 647-653 标题 100 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这样（行613-618）",
         "指示词 这种（行647-653）",
@@ -1239,6 +1371,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 此（行667-677）"
       ]
@@ -1279,6 +1413,10 @@
       "issues": [
         "禁用词 这段（行678-686）"
       ],
+      "verify_fatal": [
+        "段 678-686 标题含「这段」"
+      ],
+      "verify_warns": [],
       "warnings": [
         "指示词 此（行695-700）"
       ]
@@ -1316,6 +1454,8 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": [
         "指示词 这些（行715-720）"
       ]
@@ -1362,6 +1502,13 @@
       "issues": [
         "标题长度 115（行765-775）"
       ],
+      "verify_fatal": [
+        "段 765-775 标题 115 字,不在 20-110 之间"
+      ],
+      "verify_warns": [
+        "段 741-749 标题 92 字,超过 90 字,可能在逐句复述",
+        "段 765-775 标题 115 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 那样（行758-764）"
       ]
@@ -1401,6 +1548,15 @@
       "uncertain": [],
       "issues": [
         "标题长度 112（行801-810）"
+      ],
+      "verify_fatal": [
+        "段 801-810 标题 112 字,不在 20-110 之间"
+      ],
+      "verify_warns": [
+        "段 776-783 标题 99 字,超过 90 字,可能在逐句复述",
+        "段 784-792 标题 106 字,超过 90 字,可能在逐句复述",
+        "段 793-800 标题 105 字,超过 90 字,可能在逐句复述",
+        "段 801-810 标题 112 字,超过 90 字,可能在逐句复述"
       ],
       "warnings": [
         "指示词 这样（行776-783）",
@@ -1449,6 +1605,14 @@
       "issues": [
         "标题长度 140（行839-850）",
         "人称 你（行839-850）"
+      ],
+      "verify_fatal": [
+        "段 839-850 标题 140 字,不在 20-110 之间",
+        "段 839-850 标题含第一、二人称「你」"
+      ],
+      "verify_warns": [
+        "段 830-838 标题 109 字,超过 90 字,可能在逐句复述",
+        "段 839-850 标题 140 字,超过 90 字,可能在逐句复述"
       ],
       "warnings": [
         "指示词 这个（行811-814）",
@@ -1501,6 +1665,12 @@
         "人称 我（行879-884）",
         "人称 你（行885-889）"
       ],
+      "verify_fatal": [
+        "段 859-868 标题含第一、二人称「你」",
+        "段 879-884 标题含第一、二人称「我」",
+        "段 885-889 标题含第一、二人称「你」"
+      ],
+      "verify_warns": [],
       "warnings": [
         "指示词 这件（行879-884）",
         "指示词 这个（行885-889）"
@@ -1549,6 +1719,15 @@
         "人称 我（行894-899）",
         "人称 我们（行900-910）"
       ],
+      "verify_fatal": [
+        "段 894-899 标题含第一、二人称「我」",
+        "段 900-910 标题含第一、二人称「我」"
+      ],
+      "verify_warns": [
+        "段 890-893 标题 92 字,超过 90 字,可能在逐句复述",
+        "段 900-910 标题 110 字,超过 90 字,可能在逐句复述",
+        "段 911-918 标题 110 字,超过 90 字,可能在逐句复述"
+      ],
       "warnings": [
         "指示词 这样（行900-910）",
         "指示词 这样/这种（行911-918）"
@@ -1581,6 +1760,8 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -1610,6 +1791,8 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     },
     {
@@ -1657,6 +1840,10 @@
         }
       ],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [
+        "段 953-959 标题里的数字 [2] 在本段原文和节标题里都找不到"
+      ],
       "warnings": [
         "指示词 这个（行943-946）"
       ]
@@ -1677,6 +1864,8 @@
       ],
       "uncertain": [],
       "issues": [],
+      "verify_fatal": [],
+      "verify_warns": [],
       "warnings": []
     }
   ]

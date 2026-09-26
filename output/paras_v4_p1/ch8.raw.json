@@ -1,32 +1,32 @@
 {
- "id": "5548df2f-1578-4087-b97f-416f4f3a028e",
+ "id": "ee1bddbc-cc9c-4d02-a5fc-60470d508686",
  "object": "chat.completion",
- "created": 1790409493,
+ "created": 1790411395,
  "model": "deepseek-flash",
  "choices": [
   {
    "index": 0,
    "message": {
     "role": "assistant",
-    "content": "{\"chapter\": 8, \"sections\": [{\"section\": \"8.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"末句落在遵照神的话开始看约伯记\", \"title\": \"以祷告作为开场，会众一同祷告，随后遵照神的话开始查考约伯记\"}], \"uncertain\": []}]}",
-    "reasoning_content": "Section 8.1, lines 968-969, only 2 lines. Rule: 本节不足 6 行时,允许整节就是 1 段。So one segment: start 968, end 969.\n\nTitle: 祷告与开场，求神带领开始查考约伯记。Must be 20-110 chars. Content: 一起祷告，遵照神的话开始看约伯记。\n\nTitle: \"讲员带领会众一起祷告，求神带领，并遵照神的话开始查考约伯记\" — but avoid \"讲员\". Write: \"带领会众一起祷告，并遵照神的话开始查考约伯记\" — needs subject. Maybe \"以祷告作为开场，会众一同祷告后遵照神的话开始查考约伯记\". Length ~30 chars, ok.\n\nEnding: 落在遵照神的话开始看约伯记。"
+    "content": "{\"chapter\": 8, \"sections\": [{\"section\": \"8.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"末行落在遵照神的话、要开始看约伯记\", \"title\": \"以祷告开始，求神带领，遵照神的话开始查考约伯记\"}], \"uncertain\": [{\"line\": 969, \"reason\": \"转写在此处被截断，「约伯的」应为「约伯记」，按上下文补全\"}]}]}",
+    "reasoning_content": "本节只有2行，不足6行，允许整节就是1段。cuts: [968]，一段 968-969。\n\n标题：祷告开场，求神带领开始查考约伯记。注意不要写说话人。内容：一起祷告，遵照神的话要开始看约伯记。第969行末尾「要开始看约伯的」被截断，应为约伯记。\n\n标题：以祷告开始，求神带领，遵照神的话开始查考约伯记。\n\nending：末行落在遵照神的话、要开始看约伯记。"
    },
    "logprobs": null,
    "finish_reason": "stop"
   }
  ],
  "usage": {
-  "prompt_tokens": 4634,
-  "completion_tokens": 281,
-  "total_tokens": 4915,
+  "prompt_tokens": 7803,
+  "completion_tokens": 245,
+  "total_tokens": 8048,
   "prompt_tokens_details": {
-   "cached_tokens": 4224
+   "cached_tokens": 7296
   },
   "completion_tokens_details": {
-   "reasoning_tokens": 189
+   "reasoning_tokens": 120
   },
-  "prompt_cache_hit_tokens": 4224,
-  "prompt_cache_miss_tokens": 410
+  "prompt_cache_hit_tokens": 7296,
+  "prompt_cache_miss_tokens": 507
  },
  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
 }
