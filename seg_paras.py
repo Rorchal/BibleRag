@@ -95,6 +95,14 @@ def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str]) -> 
             f"字段同 SYSTEM 里的 section/cuts/paragraphs/uncertain,按节号顺序]}}。")
 
 
+def parse_content(content: str) -> tuple[dict, bool]:
+    """解析模型输出；遇到尾逗号（如 `[...], }`）这类小毛病就去掉再解析。返回 (数据, 是否修过)。"""
+    try:
+        return json.loads(content), False
+    except json.JSONDecodeError:
+        return json.loads(re.sub(r",(\s*[}\]])", r"\1", content)), True
+
+
 def check(sec: dict, out: dict | None) -> list[str]:
     if out is None:
         return ["模型没有输出这一节"]
@@ -125,7 +133,11 @@ def main() -> int:
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
+    ap.add_argument("--from-raw", action="store_true",
+                    help="不调用接口，用 output/paras_v1_<tag>/ch*.raw.json 重新整理结果")
     a = ap.parse_args()
+    if a.from_raw:
+        return rebuild(a)
     if not KEY:
         raise SystemExit("缺少环境变量 DEEPSEEK_API_KEY")
 
@@ -166,22 +178,9 @@ def main() -> int:
         rec.update(secs=round(time.time() - t0, 1), usage=raw.get("usage"),
                    finish_reason=raw["choices"][0].get("finish_reason"))
         calls.append(rec)
-        content = raw["choices"][0]["message"].get("content") or ""
         io.open(os.path.join(outdir, f"ch{ch}.raw.json"), "w", encoding="utf-8").write(
             json.dumps(raw, ensure_ascii=False, indent=1))
-        try:
-            got = {str(x.get("section")): x for x in json.loads(content).get("sections", [])}
-        except (json.JSONDecodeError, AttributeError):
-            got = {}
-        n_bad = 0
-        for s in cs:
-            o = got.get(s["no"])
-            iss = check(s, o)
-            n_bad += bool(iss)
-            merged.append({"no": s["no"], "start": s["start"], "end": s["end"],
-                           "title": s["title"], "chapter": ch,
-                           "paragraphs": (o or {}).get("paragraphs", []),
-                           "uncertain": (o or {}).get("uncertain", []), "issues": iss})
+        n_bad = collect(raw, ch, cs, merged, rec)
         u = raw.get("usage") or {}
         print(f"第{ch}章  {len(cs)} 节 {rec['lines']} 行  {rec['secs']}s  "
               f"入 {u.get('prompt_tokens')}（缓存命中 {u.get('prompt_cache_hit_tokens')}）"
@@ -189,10 +188,60 @@ def main() -> int:
               f"段 {sum(len(m['paragraphs']) for m in merged if m['chapter'] == ch)}"
               f"  有问题的节 {n_bad}")
 
+    write_outputs(outdir, {"prompt": "切段_v1", "model": model, "effort": a.effort,
+                           "temperature": 0.2, "calls": calls}, merged)
+
+    print(f"\n调用后余额：{balance()}")
+    n_p = sum(len(s["paragraphs"]) for s in merged)
+    print(f"合计 {n_p} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}")
+    print(f"结果：{outdir}")
+    return 0
+
+
+def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -> int:
+    content = raw["choices"][0]["message"].get("content") or ""
+    try:
+        data, fixed = parse_content(content)
+        got = {str(x.get("section")): x for x in data.get("sections", [])}
+    except (json.JSONDecodeError, AttributeError):
+        got, fixed = {}, False
+    rec["json_fixed"] = fixed
+    n_bad = 0
+    for s in cs:
+        o = got.get(s["no"])
+        iss = check(s, o)
+        n_bad += bool(iss)
+        merged.append({"no": s["no"], "start": s["start"], "end": s["end"],
+                       "title": s["title"], "chapter": ch,
+                       "paragraphs": (o or {}).get("paragraphs", []),
+                       "uncertain": (o or {}).get("uncertain", []), "issues": iss})
+    return n_bad
+
+
+def rebuild(a) -> int:
+    outdir = os.path.join(HERE, "output", f"paras_v1_{a.tag}")
+    meta = json.load(io.open(os.path.join(outdir, "parsed.json"), encoding="utf-8"))["meta"]
+    secs = json.load(io.open(SECTIONS, encoding="utf-8"))["sections"]
+    merged = []
+    for rec in meta["calls"]:
+        ch = rec["chapter"]
+        cs = [s for s in secs if s["chapter"] == ch]
+        path = os.path.join(outdir, f"ch{ch}.raw.json")
+        if not os.path.exists(path):
+            merged += [{**s, "issues": ["调用失败"], "paragraphs": [], "uncertain": []} for s in cs]
+            continue
+        n_bad = collect(json.load(io.open(path, encoding="utf-8")), ch, cs, merged, rec)
+        print(f"第{ch}章  段 {sum(len(m['paragraphs']) for m in merged if m['chapter'] == ch)}"
+              f"  有问题的节 {n_bad}{'  （JSON 尾逗号已修复）' if rec['json_fixed'] else ''}")
+    write_outputs(outdir, meta, merged)
+    n_p = sum(len(s["paragraphs"]) for s in merged)
+    print(f"合计 {n_p} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}")
+    return 0
+
+
+def write_outputs(outdir: str, meta: dict, merged: list[dict]) -> None:
     io.open(os.path.join(outdir, "parsed.json"), "w", encoding="utf-8").write(json.dumps(
-        {"meta": {"prompt": "切段_v1", "model": model, "effort": a.effort,
-                  "temperature": 0.2, "calls": calls}, "sections": merged},
-        ensure_ascii=False, indent=2))
+        {"meta": meta, "sections": merged}, ensure_ascii=False, indent=2))
     md = ["# 伯1:1-8 按节切段（切段提示词 v1，每章一次调用）", ""]
     for s in merged:
         md.append(f"## {s['no']} {s['title']}（行{s['start']}–{s['end']}）")
@@ -202,12 +251,6 @@ def main() -> int:
             md.append(f"- ⚠ {i}")
         md.append("")
     io.open(os.path.join(outdir, "paragraphs.md"), "w", encoding="utf-8").write("\n".join(md))
-
-    print(f"\n调用后余额：{balance()}")
-    n_p = sum(len(s["paragraphs"]) for s in merged)
-    print(f"合计 {n_p} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}")
-    print(f"结果：{outdir}")
-    return 0
 
 
 if __name__ == "__main__":
