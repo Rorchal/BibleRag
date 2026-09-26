@@ -158,7 +158,7 @@ def check(sec: dict, out: dict | None) -> list[str]:
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prompt", choices=["v1", "v2", "v3"], default="v1", help="切段提示词版本")
+    ap.add_argument("--prompt", choices=["v1", "v2", "v3", "v4"], default="v1", help="切段提示词版本")
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
@@ -234,10 +234,11 @@ def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -
     except (json.JSONDecodeError, AttributeError):
         got, fixed = {}, False
     rec["json_fixed"] = fixed
+    rec["empty"] = not content.strip()
     n_bad = 0
     for s in cs:
         o = got.get(s["no"])
-        iss = check(s, o)
+        iss = ["模型返回内容为空（输出全是推理）"] if rec["empty"] else check(s, o)
         n_bad += bool(iss)
         merged.append({"no": s["no"], "start": s["start"], "end": s["end"],
                        "title": s["title"], "chapter": ch,
