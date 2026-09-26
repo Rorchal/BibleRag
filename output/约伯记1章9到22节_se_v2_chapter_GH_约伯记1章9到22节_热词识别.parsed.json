@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "pipeline": "se_v2_chapter",
+    "tag": "约伯记1章9到22节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "tokens": {
+      "prompt": 34178,
+      "completion": 25315
+    },
+    "calls": [
+      {
+        "usage": {
+          "prompt_tokens": 3005,
+          "completion_tokens": 123,
+          "total_tokens": 3128,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 66
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 317
+        },
+        "secs": 2.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 1
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3481,
+          "completion_tokens": 5135,
+          "total_tokens": 8616,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 4845
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 793
+        },
+        "secs": 23.4,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 2
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3050,
+          "completion_tokens": 373,
+          "total_tokens": 3423,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 297
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 362
+        },
+        "secs": 2.6,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 3
+      },
+      {
+        "usage": {
+          "prompt_tokens": 8997,
+          "completion_tokens": 9139,
+          "total_tokens": 18136,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 8182
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 6309
+        },
+        "secs": 40.5,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 4
+      },
+      {
+        "usage": {
+          "prompt_tokens": 8009,
+          "completion_tokens": 6881,
+          "total_tokens": 14890,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 6494
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 5321
+        },
+        "secs": 30.1,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 5
+      },
+      {
+        "usage": {
+          "prompt_tokens": 4678,
+          "completion_tokens": 3609,
+          "total_tokens": 8287,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3067
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 1990
+        },
+        "secs": 17.6,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 6
+      },
+      {
+        "usage": {
+          "prompt_tokens": 2958,
+          "completion_tokens": 55,
+          "total_tokens": 3013,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 15
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 270
+        },
+        "secs": 1.6,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 7
+      }
+    ]
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "开场问候并说明本周继续讲约伯记开篇第一个场景"
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 26,
+      "title": "诵读约伯记1章9~22节：撒旦控告约伯敬畏神无故，上帝允许夺去其所有，约伯称颂耶和华"
+    },
+    {
+      "no": 3,
+      "start": 27,
+      "end": 32,
+      "title": "开场祷告：求神借约伯记显明救恩智慧，引导进入古旧真理"
+    },
+    {
+      "no": 4,
+      "start": 33,
+      "end": 374,
+      "title": "讲道第一层：神本与人本敬拜差异，撒旦称敬畏神当无故，上帝允许夺去一切，约伯仍称颂；申命记10章指出敬畏缘由是拣选与救恩"
+    },
+    {
+      "no": 5,
+      "start": 375,
+      "end": 642,
+      "title": "讲道第二层：撒旦攻击约伯，借天灾人祸与信息差制造耶和华击打约伯的错觉；属灵征战本质是守护信仰，披戴真理军装"
+    },
+    {
+      "no": 6,
+      "start": 643,
+      "end": 746,
+      "title": "收尾：以约伯记1章20~22节信仰告白作结，约伯在崩溃中仍称颂赏赐收取的耶和华，神的话保守心灵"
+    },
+    {
+      "no": 7,
+      "start": 747,
+      "end": 747,
+      "title": "结束祷告：求神眷顾保守弟兄姊妹的心灵"
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 3,
+      "title": "主日平安开场：本次证道继续讲约伯记，讲完开篇第一个场景后再考虑是否放松看些乐观经文",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 4,
+      "end": 6,
+      "title": "诵读前说明：上周已讲约伯记1章1至8节，本周诵读9至22节",
+      "chapter": 2
+    },
+    {
+      "no": "2.2",
+      "start": 7,
+      "end": 23,
+      "title": "约伯记1章9至22节经文诵读：撒但控诉约伯敬畏神岂是无故，耶和华允许毁去其所有，约伯失去家产儿女仍称颂神",
+      "chapter": 2
+    },
+    {
+      "no": "2.3",
+      "start": 24,
+      "end": 26,
+      "title": "以神为愚妄的另一抄本译作不妄评神，约伯一夜之间失去家产与至亲儿女",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 27,
+      "end": 32,
+      "title": "为约伯记讲解祷告：求神使会众客观看约伯记，在圣卷根基上得建立，领受其托付的得救智慧与真知识，求圣灵引导进入古旧真理",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 33,
+      "end": 72,
+      "title": "约伯记1章9-22节分三部分：撒但质疑敬畏岂是无故、第一轮攻击、约伯在苦难中称颂；并讨论神本与人本敬拜差异及属灵征战本质。",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 73,
+      "end": 112,
+      "title": "约伯记1章9节撒但透露出敬畏神应当无故的正确观念，须调整二极管思维，避免反派全错正派全对。",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 113,
+      "end": 125,
+      "title": "仇敌的话不全错，人类受的欺骗常是系统性真假参半；约伯三友以利法、比勒达、琐法的话乍听有理终被上帝责备。",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 126,
+      "end": 144,
+      "title": "第九节魔鬼提出被上帝认可的观念：敬畏神应当无故，连魔鬼都认为人不该因第10节缘故敬畏神。",
+      "chapter": 4
+    },
+    {
+      "no": "4.5",
+      "start": 145,
+      "end": 157,
+      "title": "撒但所说的缘故指约伯记1章10节的四面篱笆、手所做的蒙福与家产增多，人不该因此敬畏神。",
+      "chapter": 4
+    },
+    {
+      "no": "4.6",
+      "start": 158,
+      "end": 177,
+      "title": "约伯记1章11节撒但挑战毁去约伯一切所有，认定约伯敬畏神只为家大业大、万事如意的宗教需求。",
+      "chapter": 4
+    },
+    {
+      "no": "4.7",
+      "start": 178,
+      "end": 194,
+      "title": "约伯记1章12节耶和华没有反驳撒但，准许毁去约伯身外之物，只是不可加害约伯本身。",
+      "chapter": 4
+    },
+    {
+      "no": "4.8",
+      "start": 195,
+      "end": 222,
+      "title": "敬拜的本质：人本敬拜质问上帝的义务即为我做了什么，神本敬拜追问人的义务与上帝配受敬畏的缘由。",
+      "chapter": 4
+    },
+    {
+      "no": "4.9",
+      "start": 223,
+      "end": 252,
+      "title": "敬畏神的缘由曾被归结为事业、家庭、心灵解脱等敬拜收益，多年后发现这些不能成为唯一缘由，数算恩典仍必要。",
+      "chapter": 4
+    },
+    {
+      "no": "4.10",
+      "start": 253,
+      "end": 292,
+      "title": "申命记10章12-16、20-21节，摩西要求以色列敬畏、遵行、爱、尽心尽性侍奉神，并给出拣选拯救的救恩缘由。",
+      "chapter": 4
+    },
+    {
+      "no": "4.11",
+      "start": 293,
+      "end": 310,
+      "title": "以神为本不是盲目不问缘由，而是拒绝撒旦认同的理由，持定耶和华拣选、拯救、行大而可畏之事的救恩缘由。",
+      "chapter": 4
+    },
+    {
+      "no": "4.12",
+      "start": 311,
+      "end": 349,
+      "title": "从因个人祸福而敬畏神，转变成因认识神而敬畏神；约伯处境变而上帝不变，救恩不可震动。",
+      "chapter": 4
+    },
+    {
+      "no": "4.13",
+      "start": 350,
+      "end": 370,
+      "title": "保罗在腓立比书说可以处高贵处卑贱，靠着加力量的凡事都能做；无论环境如何，上帝不变，敬畏缘由不变。",
+      "chapter": 4
+    },
+    {
+      "no": "4.14",
+      "start": 371,
+      "end": 374,
+      "title": "总结第一点：约伯敬畏你岂是无故？撒旦认为人应无故敬畏，上帝也认为拿掉后约伯仍要敬畏。",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 375,
+      "end": 424,
+      "title": "约伯记1章13-19节撒旦的能力：召唤恶人杀戮、操控风暴降火，上帝用全能命令托住万有，稍撤限制即惨烈",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 425,
+      "end": 468,
+      "title": "撒旦试探的第一个技巧：每次杀戮都留活口报信，使约伯如目睹现场惨状，让苦难具体而非抽象",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 469,
+      "end": 511,
+      "title": "撒旦第二个技巧是时机精准，选在约伯儿女聚餐时动手，攻击的是约伯的信仰；约伯记1章5节约伯为儿女献祭",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 512,
+      "end": 535,
+      "title": "约伯信仰上敏感的儿女宴席被撒旦利用，使他产生错误解释；属血气者不知背后属灵全貌，目击者自带解释",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 536,
+      "end": 572,
+      "title": "约伯不知天上赌局只提耶和华，21节告白赏赐收取都在耶和华，告白纯正但对处境归因不健全，撒旦借信息差诱导",
+      "chapter": 5
+    },
+    {
+      "no": "5.6",
+      "start": 573,
+      "end": 596,
+      "title": "真理知识当用来指导敬拜与持守纯正，不当解释祸福吉凶，那是占卜；撒旦也曾用圣经试探耶稣",
+      "chapter": 5
+    },
+    {
+      "no": "5.7",
+      "start": 597,
+      "end": 642,
+      "title": "属灵征战的本质是信息战，穿上基督全副军装抵挡错误信息，以被真理塑造的信仰在身体衰残时仍敬畏神",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 643,
+      "end": 648,
+      "title": "以约伯记20至22节的信仰告白作结，回顾约伯受击打后信仰仍坚不可摧，人类敬拜上帝可以不问缘由",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 649,
+      "end": 664,
+      "title": "撒但的目的是制造耶和华击打约伯的错觉，诱人当面弃掉神；他自伊甸园起就曲解上帝的形像与动机",
+      "chapter": 6
+    },
+    {
+      "no": "6.3",
+      "start": 665,
+      "end": 690,
+      "title": "撒但借宴席时机、天灾天火并留活口报信造成信息差，约伯对天上场景有盲区；但隐秘的事属耶和华，显明的事即神的律例典章属乎我们，须持守传承",
+      "chapter": 6
+    },
+    {
+      "no": "6.4",
+      "start": 691,
+      "end": 700,
+      "title": "约伯在不知隐秘之事的前提下，用约伯记21节纯正的信息抵挡撒但的信息战，22节未以口妄论神而犯罪",
+      "chapter": 6
+    },
+    {
+      "no": "6.5",
+      "start": 701,
+      "end": 711,
+      "title": "约伯得胜不单靠意志力，乃靠清晰无误、纯度极高的信仰告白；信仰告白如同使徒信经，是主动向神宣认所信",
+      "chapter": 6
+    },
+    {
+      "no": "6.6",
+      "start": 712,
+      "end": 726,
+      "title": "约伯并非心如止水，约伯记20节撕裂外袍、剃发伏地显示他极度悲伤崩溃，却仍在宣认赏赐与收取都是同一位神",
+      "chapter": 6
+    },
+    {
+      "no": "6.7",
+      "start": 727,
+      "end": 746,
+      "title": "属灵征战：血肉之躯与属灵气的恶魔争战，可用的兵器是神的道和被话语塑造的纯正心灵，外体衰残内心却一天新似一天",
+      "chapter": 6
+    },
+    {
+      "no": "7.1",
+      "start": 747,
+      "end": 747,
+      "title": "为弟兄姊妹的心灵祷告，求神眷顾保守",
+      "chapter": 7
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 6,
+      "reason": "「我来为会众诵读这周证道的经文」是引出经文的过渡句，按过渡句归属规则可归入诵读节的开头，此处暂归前节的诵读预备"
+    },
+    {
+      "line": 24,
+      "reason": "对「不以神为愚妄」的抄本译法解释是在解释第23节刚出现的说法，按规则可与上文经文诵读同节，此处独立为译注与小结"
+    },
+    {
+      "line": 665,
+      "reason": "撒但此处的执行手法与信息差，似可归入上文撒但目的，也可归入下文盲区与隐秘事的论题"
+    },
+    {
+      "line": 643,
+      "reason": "本章开头的收尾与回顾较短，可能是整段结论的引子而非独立论题"
+    }
+  ]
+}

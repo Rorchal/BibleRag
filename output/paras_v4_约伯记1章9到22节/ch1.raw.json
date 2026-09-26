@@ -1,0 +1,32 @@
+{
+ "id": "d6860a1b-dfeb-48dd-9842-30967e20cf5b",
+ "object": "chat.completion",
+ "created": 1790430939,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1], \"paragraphs\": [{\"start\": 1, \"end\": 3, \"ending\": \"讲完开篇第一个场景后，再看要不要放松一下、看一些乐观的经文\", \"title\": \"主日平安的开场问候与本次证道安排：继续讲约伯记，计划把约伯记开篇的第一个场景都讲完，之后再考虑是否放松一点，看一些乐观的经文\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有3行,不足6行,允许整节就是1段。cuts=[1],paragraphs=[{start:1,end:3}]。\n\n标题:主日开场问候,说明本次证道继续讲约伯记,打算把开篇第一个场景讲完,再看是否放松讲些乐观的经文。\n\n不要写「讲者」。去掉第一二人称。「我们」是讲道人口吻,改写。\n\n标题:主日平安的开场问候,交代本次证道继续讲约伯记,计划把开篇第一个场景讲完,之后再考虑是否放松一点,看一些乐观的经文。\n\nending:最后落在讲完开篇场景后再决定是否看乐观经文。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7862,
+  "completion_tokens": 265,
+  "total_tokens": 8127,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 144
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 438
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

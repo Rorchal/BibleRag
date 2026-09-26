@@ -1,0 +1,32 @@
+{
+ "id": "c82d4aae-32de-4935-a67e-cc2f0b3d4863",
+ "object": "chat.completion",
+ "created": 1790431106,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 7, \"sections\": [{\"section\": \"7.1\", \"cuts\": [747], \"paragraphs\": [{\"start\": 747, \"end\": 747, \"ending\": \"愿神眷顾保守弟兄姊妹的心灵，并邀请一同祷告\", \"title\": \"为弟兄姊妹的心灵向神祈求，愿神眷顾保守他们，并一同祷告\"}], \"uncertain\": []}]}",
+    "reasoning_content": "节只有1行，整节就是1段。cuts = [747]，paragraphs 一段 start 747 end 747。\n\n标题：愿神眷顾保守弟兄姊妹的心灵，并一起祷告。这是祷告的引子/祈求。要写清楚是祷告，主体不能写「讲者」。\n\n标题：「为弟兄姊妹的心灵祷告，求神眷顾保守，并邀请一同祷告。」长度合适。含「求神眷顾保守」，主体是祈求神。禁止第一人称，「我们」不能出现——改成「邀请会众一同祷告」或「并一同祷告」。可以写「一同祷告」。\n\n标题：为弟兄姊妹的心灵向神祈求，愿神眷顾保守，并一同祷告。\n\nending：落在愿神眷顾保守弟兄姊妹心灵、一起祷告。\n\nuncertain: 空。或者说明只有一行。给空数组。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7798,
+  "completion_tokens": 269,
+  "total_tokens": 8067,
+  "prompt_tokens_details": {
+   "cached_tokens": 7296
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 177
+  },
+  "prompt_cache_hit_tokens": 7296,
+  "prompt_cache_miss_tokens": 502
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

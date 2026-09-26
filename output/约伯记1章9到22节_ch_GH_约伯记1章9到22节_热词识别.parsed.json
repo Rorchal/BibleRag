@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "pipeline": "chapter",
+    "tag": "约伯记1章9到22节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 15212,
+      "completion_tokens": 4894,
+      "total_tokens": 20106,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4165
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 15212
+    },
+    "secs": 24.7,
+    "finish_reason": "stop"
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "开场问候并说明本周继续讲约伯记开篇第一个场景",
+      "trigger": "C",
+      "evidence": "行1「好，各位弟兄姊妹，主日平安」—— 言语行为是问候",
+      "confidence": 0.95
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 26,
+      "title": "诵读约伯记1章9~22节：撒旦控告约伯敬畏神无故，上帝允许夺去其所有，约伯称颂耶和华",
+      "trigger": "A",
+      "evidence": "行4「我先为大家来诵读这周证道的经文」—— 显式宣告转为诵读",
+      "confidence": 0.95
+    },
+    {
+      "no": 3,
+      "start": 27,
+      "end": 32,
+      "title": "开场祷告：求神借约伯记显明救恩智慧，引导进入古旧真理",
+      "trigger": "A",
+      "evidence": "行27「啊，我们一起来祷告」—— 显式宣告转为祷告",
+      "confidence": 0.96
+    },
+    {
+      "no": 4,
+      "start": 33,
+      "end": 374,
+      "title": "讲道第一层：神本与人本敬拜差异，撒旦称敬畏神当无故，上帝允许夺去一切，约伯仍称颂；申命记10章指出敬畏缘由是拣选与救恩",
+      "trigger": "A",
+      "evidence": "行33「好，那我们来分三个方面来讲这周的故事哈」—— 显式宣告讲道框架",
+      "confidence": 0.9
+    },
+    {
+      "no": 5,
+      "start": 375,
+      "end": 642,
+      "title": "讲道第二层：撒旦攻击约伯，借天灾人祸与信息差制造耶和华击打约伯的错觉；属灵征战本质是守护信仰，披戴真理军装",
+      "trigger": "A",
+      "evidence": "行377「所以从13~19节，咱来看第二层哈」—— 显式宣告进入第二层",
+      "confidence": 0.9
+    },
+    {
+      "no": 6,
+      "start": 643,
+      "end": 746,
+      "title": "收尾：以约伯记1章20~22节信仰告白作结，约伯在崩溃中仍称颂赏赐收取的耶和华，神的话保守心灵",
+      "trigger": "A",
+      "evidence": "行643「好，我们来最后结束一下这个经文，好吧？」—— 显式宣告收尾",
+      "confidence": 0.9
+    },
+    {
+      "no": 7,
+      "start": 747,
+      "end": 747,
+      "title": "结束祷告：求神眷顾保守弟兄姊妹的心灵",
+      "trigger": "A",
+      "evidence": "行747「我们一起来祷告」—— 显式宣告转为祷告",
+      "confidence": 0.9
+    }
+  ],
+  "uncertain": []
+}

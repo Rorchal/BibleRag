@@ -1,0 +1,32 @@
+{
+ "id": "c46e517e-5228-4da2-a481-8b691ae8cca8",
+ "object": "chat.completion",
+ "created": 1790430950,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 3, \"sections\": [{\"section\": \"3.1\", \"cuts\": [27, 31], \"paragraphs\": [{\"start\": 27, \"end\": 30, \"ending\": \"落在求神让约伯记所托付的得救智慧与真知识充满弟兄姊妹上\", \"title\": \"祷告中求主使会众客观地看约伯的故事，并借着他话语、圣卷上一切的律例典章指示众儿女，使其在根基上切实得以建立，也让约伯记所托付的一切得救的智慧和真知识充满弟兄姊妹\"}, {\"start\": 31, \"end\": 32, \"ending\": \"以奉耶稣基督圣名的祈求作结\", \"title\": \"求圣灵引导会众进入这古旧的真理，并求神垂听祷告，奉耶稣基督的圣名祈求\"}], \"uncertain\": [{\"line\": 29, \"reason\": \"「一切的例例点章」应为「一切的律例典章」的语音识别错误，按上下文改正\"}]}]}",
+    "reasoning_content": "The section is 6 lines, a prayer. Rules: prayer — segment by items prayed. But section under 6 lines allows 1 paragraph. 6 lines is not less than 6; \"本节不足 6 行时,允许整节就是 1 段\". 6 lines is exactly 6. Could split into: 27 opening call to pray; 28-30 requests; 31-32. Let's think.\n\nPrayer items: 28 求客观看约伯记; 29 求神在话语圣卷上指示众儿女，使根基建立; 30 让约伯记所托付的得救智慧和真知识充满弟兄姊妹; 31 求圣灵引导进入古旧真理; 32 求垂听。\n\nReasonable cuts: [27, 28, 31] → 27 opening; 28-30 requests about seeing Job objectively and being established on the foundation, receiving the wisdom; 31-32 Holy Spirit leading into ancient truth and closing.\n\nOr [27, 28, 31]. Let's check paragraph lengths: 27 alone is 1 line — too short, but it's the opening call. Rule: less than 3 lines should be merged. So 27 merges with next.\n\nSo cuts: [27, 31] → 27-30: opening call plus first requests; 31-32: Holy Spirit guidance and closing. Hmm, but that's two segments for 6 lines. Alternatively one segment.\n\nLet me consider: prayer segmented by items. Items: (1) 客观看约伯记、在圣卷根基上得建立; (2) 得救智慧与真知识充满; (3) 圣灵引导进入古旧真理. \n\nBest: cuts [27, 28, 30]? 27 alone 1 line — violates minimum 3 lines. So merge 27 into 28's segment: cuts [27, 29]? Then 27-28 (2 lines, too short). Hmm.\n\nGiven 6 lines, minimum 3-line segments means at most 2 segments. Options: [27-29, 30-32] or [27-30, 31-32].\n\n27-29: 求客观看约伯记，求神借话语和圣卷指示众儿女使其根基建立。30-32: 求约伯记托付的得救智慧与真知识充满弟兄姊妹，求圣灵引导进入古旧真理，求垂听祷告。Hmm 30-32 mixes items. \n\n[27-30, 31-32]: first segment = 客观看约伯记 + 求神在圣卷话语上指示使根基建立 + 得救智慧真知识充满; second = 圣灵引导进入古旧真理 + 求垂听。 That's cleaner: the last two lines form the closing petition. Actually 31 圣灵引导 is a distinct petition, and 32 is closing. Two lines, but 32 is closing formula.\n\nI'll go with cuts [27, 31]. Two segments.\n\nActually, maybe better to split at 29 and 31? 27-28 is 2 lines — too short. So no.\n\nGo with cuts [27, 31].\n\nTitles without first person. \"我们\" appears. Rewrite: prayer addressed to the Lord, asking...\n\nSegment 1 (27-30): \"祷告中求主使会众客观地看约伯的故事，并借着他话语、圣卷上一切律例典章指示众儿女，使其在根基上切实得以建立，也让约伯记所托付的一切得救的智慧和真知识充满弟兄姊妹。\"\n\nNote 29 \"例例点章\" is likely \"律例典章\". Yes, correct to 律例典章.\n\nSegment 2 (31-32): \"求圣灵引导会众进入这古旧的真理，并求神垂听祷告，奉耶稣基督的圣名祈求。\"\n\nending for each.\n\nLength check: segment1 title ~80 chars fine.\n\nNo uncertain? Maybe note \"例例点章\" corrected. Put in uncertain as note.\n\nFormat: json with chapter and sections."
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7926,
+  "completion_tokens": 1116,
+  "total_tokens": 9042,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 883
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 502
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}
