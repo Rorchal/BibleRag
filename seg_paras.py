@@ -105,6 +105,14 @@ def parse_content(content: str) -> tuple[dict, bool]:
 
 # 标题禁用词（切段 v2「标题禁用词」第 1 条），命中算硬错误
 BANNED = re.compile(r"讲者|讲员|讲道人|讲道者|作者|牧师|本段|这段|本节|这一节")
+# 第一、二人称（切段 v3「标题禁用词」第 3 条），「」内直接引语除外，命中算硬错误
+
+
+def person_hits(title: str) -> list[str]:
+    bare = re.sub(r"「[^」]*」", "", title)
+    return sorted(set(re.findall(r"我们|你们|咱们|我|你|咱", bare)))
+
+
 # 指示词（第 2 条），是否悬空要人看，只作警告
 DEMONS = re.compile(r"这个|那个|这种|那种|这样|那样|这些|那些|这件|据此|(?<![因由如彼从])此")
 
@@ -143,13 +151,16 @@ def check(sec: dict, out: dict | None) -> list[str]:
         bad = sorted(set(BANNED.findall(p.get("title") or "")))
         if bad:
             iss.append(f"禁用词 {'/'.join(bad)}（行{p.get('start')}-{p.get('end')}）")
+        per = person_hits(p.get("title") or "")
+        if per:
+            iss.append(f"人称 {'/'.join(per)}（行{p.get('start')}-{p.get('end')}）")
     return iss
 
 
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
-    ap.add_argument("--prompt", choices=["v1", "v2"], default="v1", help="切段提示词版本")
+    ap.add_argument("--prompt", choices=["v1", "v2", "v3"], default="v1", help="切段提示词版本")
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
@@ -262,8 +273,9 @@ def summary(merged: list[dict]) -> str:
     P = [p for s in merged for p in s["paragraphs"]]
     ban = sum(bool(BANNED.search(p.get("title") or "")) for p in P)
     dem = sum(bool(DEMONS.search(p.get("title") or "")) for p in P)
+    per = sum(bool(person_hits(p.get("title") or "")) for p in P)
     return (f"合计 {len(P)} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}；"
-            f"标题含禁用词 {ban} 段，含指示词 {dem} 段（后者需人工看是否悬空）")
+            f"标题含禁用词 {ban} 段，含第一二人称 {per} 段，含指示词 {dem} 段（后者需人工看是否悬空）")
 
 
 def write_outputs(outdir: str, meta: dict, merged: list[dict]) -> None:
