@@ -9,7 +9,8 @@ v1 设计是一节一调；这里按章送，一次把本章所有节交给模�
 
 用法：
   export DEEPSEEK_API_KEY=...
-  python seg_paras.py [--effort low|none] [--model <id>] [--tag p1]
+  python seg_paras.py [--prompt v1|v2] [--effort low|none] [--model <id>] [--tag p1]
+结果写到 output/paras_<prompt>_<tag>/。
 """
 from __future__ import annotations
 
@@ -27,7 +28,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.environ.get("DEEPSEEK_BASE", "https://api.deepseek.com")
 KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 
-PROMPT_MD = os.path.join(HERE, "prompts", "切段_v1.md")
 TXT = os.path.join(HERE, "input", "GH_伯1章1到8节_校对.txt")
 SECTIONS = os.path.join(HERE, "input", "c2low4_se_v2_chapter_GH_伯1章1到8节.parsed.json")
 
@@ -60,8 +60,8 @@ def pick_model(explicit: str | None) -> str:
     return flash[0]
 
 
-def load_prompt() -> tuple[str, str]:
-    md = io.open(PROMPT_MD, encoding="utf-8").read()
+def load_prompt(ver: str) -> tuple[str, str]:
+    md = io.open(os.path.join(HERE, "prompts", f"切段_{ver}.md"), encoding="utf-8").read()
     system = re.search(r"## 一、SYSTEM\n(.*?)\n---\n", md, re.S).group(1).strip()
     fewshot = re.search(r"## 二、FEWSHOT[^\n]*\n(.*?)\n---\n", md, re.S).group(1).strip()
     return system, fewshot
@@ -103,6 +103,22 @@ def parse_content(content: str) -> tuple[dict, bool]:
         return json.loads(re.sub(r",(\s*[}\]])", r"\1", content)), True
 
 
+# 标题禁用词（切段 v2「标题禁用词」第 1 条），命中算硬错误
+BANNED = re.compile(r"讲者|讲员|讲道人|讲道者|作者|牧师|本段|这段|本节|这一节")
+# 指示词（第 2 条），是否悬空要人看，只作警告
+DEMONS = re.compile(r"这个|那个|这种|那种|这样|那样|这些|那些|这件|据此|(?<![因由如彼从])此")
+
+
+def title_warnings(P: list[dict]) -> list[str]:
+    out = []
+    for p in P:
+        t = p.get("title") or ""
+        hit = sorted(set(DEMONS.findall(t)))
+        if hit:
+            out.append(f"指示词 {'/'.join(hit)}（行{p.get('start')}-{p.get('end')}）")
+    return out
+
+
 def check(sec: dict, out: dict | None) -> list[str]:
     if out is None:
         return ["模型没有输出这一节"]
@@ -124,17 +140,21 @@ def check(sec: dict, out: dict | None) -> list[str]:
         n = len(p.get("title") or "")
         if not 20 <= n <= 110:
             iss.append(f"标题长度 {n}（行{p.get('start')}-{p.get('end')}）")
+        bad = sorted(set(BANNED.findall(p.get("title") or "")))
+        if bad:
+            iss.append(f"禁用词 {'/'.join(bad)}（行{p.get('start')}-{p.get('end')}）")
     return iss
 
 
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
+    ap.add_argument("--prompt", choices=["v1", "v2"], default="v1", help="切段提示词版本")
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
     ap.add_argument("--from-raw", action="store_true",
-                    help="不调用接口，用 output/paras_v1_<tag>/ch*.raw.json 重新整理结果")
+                    help="不调用接口，用 output/paras_<prompt>_<tag>/ch*.raw.json 重新整理结果")
     a = ap.parse_args()
     if a.from_raw:
         return rebuild(a)
@@ -143,14 +163,14 @@ def main() -> int:
 
     print(f"调用前余额：{balance()}")
     model = pick_model(a.model)
-    system, fewshot = load_prompt()
+    system, fewshot = load_prompt(a.prompt)
     lines = read_lines(TXT)
     secs = json.load(io.open(SECTIONS, encoding="utf-8"))["sections"]
     chapters = sorted({s["chapter"] for s in secs})
     print(f"模型 {model}，effort={a.effort}，temperature=0.2，{len(lines)} 行，"
           f"{len(chapters)} 章 / {len(secs)} 节，每章调用 1 次，不重试\n")
 
-    outdir = os.path.join(HERE, "output", f"paras_v1_{a.tag}")
+    outdir = os.path.join(HERE, "output", f"paras_{a.prompt}_{a.tag}")
     os.makedirs(outdir, exist_ok=True)
     merged, calls = [], []
     for ch in chapters:
@@ -188,12 +208,11 @@ def main() -> int:
               f"段 {sum(len(m['paragraphs']) for m in merged if m['chapter'] == ch)}"
               f"  有问题的节 {n_bad}")
 
-    write_outputs(outdir, {"prompt": "切段_v1", "model": model, "effort": a.effort,
+    write_outputs(outdir, {"prompt": f"切段_{a.prompt}", "model": model, "effort": a.effort,
                            "temperature": 0.2, "calls": calls}, merged)
 
     print(f"\n调用后余额：{balance()}")
-    n_p = sum(len(s["paragraphs"]) for s in merged)
-    print(f"合计 {n_p} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}")
+    print(summary(merged))
     print(f"结果：{outdir}")
     return 0
 
@@ -214,12 +233,13 @@ def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -
         merged.append({"no": s["no"], "start": s["start"], "end": s["end"],
                        "title": s["title"], "chapter": ch,
                        "paragraphs": (o or {}).get("paragraphs", []),
-                       "uncertain": (o or {}).get("uncertain", []), "issues": iss})
+                       "uncertain": (o or {}).get("uncertain", []), "issues": iss,
+                       "warnings": title_warnings((o or {}).get("paragraphs", []))})
     return n_bad
 
 
 def rebuild(a) -> int:
-    outdir = os.path.join(HERE, "output", f"paras_v1_{a.tag}")
+    outdir = os.path.join(HERE, "output", f"paras_{a.prompt}_{a.tag}")
     meta = json.load(io.open(os.path.join(outdir, "parsed.json"), encoding="utf-8"))["meta"]
     secs = json.load(io.open(SECTIONS, encoding="utf-8"))["sections"]
     merged = []
@@ -234,21 +254,30 @@ def rebuild(a) -> int:
         print(f"第{ch}章  段 {sum(len(m['paragraphs']) for m in merged if m['chapter'] == ch)}"
               f"  有问题的节 {n_bad}{'  （JSON 尾逗号已修复）' if rec['json_fixed'] else ''}")
     write_outputs(outdir, meta, merged)
-    n_p = sum(len(s["paragraphs"]) for s in merged)
-    print(f"合计 {n_p} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}")
+    print(summary(merged))
     return 0
+
+
+def summary(merged: list[dict]) -> str:
+    P = [p for s in merged for p in s["paragraphs"]]
+    ban = sum(bool(BANNED.search(p.get("title") or "")) for p in P)
+    dem = sum(bool(DEMONS.search(p.get("title") or "")) for p in P)
+    return (f"合计 {len(P)} 段；有问题的节 {sum(bool(s['issues']) for s in merged)} / {len(merged)}；"
+            f"标题含禁用词 {ban} 段，含指示词 {dem} 段（后者需人工看是否悬空）")
 
 
 def write_outputs(outdir: str, meta: dict, merged: list[dict]) -> None:
     io.open(os.path.join(outdir, "parsed.json"), "w", encoding="utf-8").write(json.dumps(
         {"meta": meta, "sections": merged}, ensure_ascii=False, indent=2))
-    md = ["# 伯1:1-8 按节切段（切段提示词 v1，每章一次调用）", ""]
+    md = [f"# 伯1:1-8 按节切段（{meta['prompt']}，每章一次调用）", ""]
     for s in merged:
         md.append(f"## {s['no']} {s['title']}（行{s['start']}–{s['end']}）")
         for p in s["paragraphs"]:
             md.append(f"- **行{p.get('start')}–{p.get('end')}**　{p.get('title')}")
         for i in s["issues"]:
             md.append(f"- ⚠ {i}")
+        for w in s.get("warnings", []):
+            md.append(f"- ？{w}")
         md.append("")
     io.open(os.path.join(outdir, "paragraphs.md"), "w", encoding="utf-8").write("\n".join(md))
 
