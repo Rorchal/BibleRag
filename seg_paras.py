@@ -106,8 +106,6 @@ def parse_content(content: str) -> tuple[dict, bool]:
 # 标题禁用词（切段 v2「标题禁用词」第 1 条），命中算硬错误
 BANNED = re.compile(r"讲者|讲员|讲道人|讲道者|作者|牧师|本段|这段|本节|这一节")
 # 第一、二人称（切段 v3「标题禁用词」第 3 条），「」内直接引语除外，命中算硬错误
-
-
 def person_hits(title: str) -> list[str]:
     bare = re.sub(r"「[^」]*」", "", title)
     return sorted(set(re.findall(r"我们|你们|咱们|我|你|咱", bare)))

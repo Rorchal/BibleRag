@@ -1,0 +1,344 @@
+<title>伯1章切段对照</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#F3F5F8; --surface:#FFFFFF; --sunk:#EDF0F5; --ink:#18202E; --muted:#5A6477; --faint:#8A93A4; --rule:#DCE1E9;
+  --accent:#2F4B8F;
+  --same:#1F7A55; --same-bg:#E4F3EC;
+  --near:#9A6A0B; --near-bg:#FBF1DC;
+  --over:#5B45A8; --over-bg:#ECE8F8;
+  --under:#B4441A; --under-bg:#FBE9E1;
+  --mixed:#B42335; --mixed-bg:#FBE4E7;
+  --gold:#2F4B8F; --pred:#0F7C84;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#10141B; --surface:#171C25; --sunk:#1E2430; --ink:#E6EAF1; --muted:#A3ACBC; --faint:#737D8F; --rule:#2B3342;
+    --accent:#9DB2EC;
+    --same:#5CC99A; --same-bg:#16302A; --near:#E3B55A; --near-bg:#33291A; --over:#B5A4F0; --over-bg:#272240;
+    --under:#F0936B; --under-bg:#3A2219; --mixed:#F2808F; --mixed-bg:#3A1C22; --gold:#9DB2EC; --pred:#5FC6CD;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#10141B; --surface:#171C25; --sunk:#1E2430; --ink:#E6EAF1; --muted:#A3ACBC; --faint:#737D8F; --rule:#2B3342;
+  --accent:#9DB2EC;
+  --same:#5CC99A; --same-bg:#16302A; --near:#E3B55A; --near-bg:#33291A; --over:#B5A4F0; --over-bg:#272240;
+  --under:#F0936B; --under-bg:#3A2219; --mixed:#F2808F; --mixed-bg:#3A1C22; --gold:#9DB2EC; --pred:#5FC6CD;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:14px;line-height:1.65;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-size:26px;line-height:1.3;margin:0 0 6px;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:12.5px;margin-top:10px}
+.meta b{color:var(--ink);font-weight:500}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin:22px 0 8px}
+.stat{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.stat .k{font-size:12px;color:var(--muted);letter-spacing:.02em}
+.stat .v{font-size:20px;font-weight:600}
+.stat .s{font-size:12px;color:var(--faint)}
+.note{font-size:12.5px;color:var(--muted);margin:6px 0 0;max-width:90ch}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);padding-block:12px;border-bottom:1px solid var(--rule);margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:12.5px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 10px 3px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip .dot{width:8px;height:8px;border-radius:50%}
+.chip .n{color:var(--muted);font-size:11.5px}
+select{font:inherit;font-size:13px;padding:4px 8px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink)}
+button:focus-visible,select:focus-visible,.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chapter{margin-top:30px}
+.chead{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-bottom:8px}
+.chead h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:18px;margin:0;text-wrap:balance}
+.chead .r{color:var(--muted);font-size:12.5px}
+.strip{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:8px 10px 4px;margin-bottom:10px;overflow-x:auto}
+.strip svg{display:block;width:100%;min-width:520px;height:54px}
+.strip .lg{display:flex;flex-wrap:wrap;gap:12px;font-size:11.5px;color:var(--muted);padding:2px 2px 4px}
+.cols{display:grid;grid-template-columns:118px 1fr 1fr;gap:0 14px;font-size:12px;color:var(--muted);padding:0 12px 4px;letter-spacing:.03em}
+.group{display:grid;grid-template-columns:118px 1fr 1fr;gap:0 14px;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--c);border-radius:6px;padding:10px 12px;margin-bottom:8px}
+.gl{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.badge{font-size:12px;font-weight:500;color:var(--c);background:var(--cb);border-radius:4px;padding:1px 7px}
+.grange{font-size:12px;color:var(--muted)}
+.toggle{font:inherit;font-size:12px;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.side{display:flex;flex-direction:column;gap:8px;min-width:0}
+.side .lbl{display:none;font-size:11.5px;color:var(--muted);letter-spacing:.03em}
+.para{border-left:2px solid var(--rule);padding-left:9px}
+.gold .para{border-color:var(--gold)}
+.pred .para{border-color:var(--pred)}
+.ph{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;font-size:12px;color:var(--muted)}
+.ph .rg{font-weight:600;color:var(--ink);font-size:12.5px}
+.ph .d{font-weight:600}
+.ph .d.pos{color:var(--near)} .ph .d.neg{color:var(--near)} .ph .d.ok{color:var(--same)} .ph .d.miss{color:var(--mixed)}
+.pt{margin:2px 0 0}
+.pe{margin:3px 0 0;font-size:12px;color:var(--faint)}
+.pe b{font-weight:500;color:var(--muted)}
+.pu{margin:3px 0 0;font-size:12px;color:var(--near)}
+.src{grid-column:1/-1;margin-top:10px;border-top:1px dashed var(--rule);padding-top:8px;overflow-x:auto}
+.src table{border-collapse:collapse;width:100%;font-size:13px}
+.src td{padding:2px 6px;vertical-align:top}
+.src td.n{width:44px;text-align:right;color:var(--faint);font-size:12px}
+.src td.m{width:26px;font-size:11px;font-weight:600;text-align:center;white-space:nowrap}
+.src tr.cut td{border-top:1px solid var(--rule)}
+.src .mg{color:var(--gold)} .src .mp{color:var(--pred)}
+.empty{color:var(--muted);padding:20px 0}
+
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:7px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:13px;border:0;background:none;color:var(--ink);padding:4px 12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface);font-weight:600}
+.chk{font-size:12.5px;color:var(--muted);display:inline-flex;gap:5px;align-items:center;cursor:pointer}
+.runinfo{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.runinfo b{color:var(--ink);font-weight:500}
+.cmp{font-size:11.5px;margin-left:6px}
+.cmp.up{color:var(--same)} .cmp.down{color:var(--mixed)} .cmp.flat{color:var(--faint)}
+mark{background:none;color:inherit;padding:0 1px;border-radius:2px}
+mark.ban{background:var(--mixed-bg);color:var(--mixed);font-weight:600}
+mark.per{background:var(--over-bg);color:var(--over);font-weight:600}
+mark.dem{border-bottom:1.5px dotted var(--near)}
+.fl{display:inline-flex;gap:4px;flex-wrap:wrap}
+.ft{font-size:11px;border-radius:3px;padding:0 5px;font-weight:500}
+.ft.ban{background:var(--mixed-bg);color:var(--mixed)} .ft.per{background:var(--over-bg);color:var(--over)} .ft.dem{background:var(--near-bg);color:var(--near)}
+.other{margin:6px 0 0;padding:6px 8px;background:var(--sunk);border-radius:5px;font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.other .ol{font-size:11.5px;font-weight:600;color:var(--ink)}
+.other .same{color:var(--same);font-weight:600}
+@media (max-width:760px){
+  .cols{display:none}
+  .group{grid-template-columns:1fr;gap:10px}
+  .gl{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+  .side .lbl{display:block}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div class="wrap">
+  <header>
+    <h1>约伯记1章1–8节讲道稿 · 切段结果与 gold 对照</h1>
+    <p class="lede">左栏是 gold 的段，右栏是所选版本的切段结果。gold 和模型在同一行切开的位置作为分组点：一组里左右各一段、起止行完全相同，就是“一致”，否则按差异类型标出。模型标题下方附上另一版在同一位置的标题。</p>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="版本与筛选">
+    <div class="seg" id="runsel" role="group" aria-label="选择版本"></div>
+    <div class="chips" id="chips"></div>
+    <label class="mono" style="font-size:12.5px;color:var(--muted);display:flex;gap:6px;align-items:center" for="chsel">章
+      <select id="chsel"><option value="all">全部</option></select>
+    </label>
+    <label class="chk" for="onlyflag"><input type="checkbox" id="onlyflag">只看标题有问题的组</label>
+    <label class="chk" for="showother"><input type="checkbox" id="showother" checked>显示另一版标题</label>
+  </div>
+  <section class="summary" id="summary"></section>
+  <p class="runinfo" id="runinfo"></p>
+  <p class="note">边界 = 每段的起始行（不含第 1 行）。“±3 行”指模型边界与 gold 相差 3 行以内也算命中。标题检查：<mark class="ban">红底</mark> 是禁用的说话人词（讲者、讲员、作者、这段……），<mark class="per">紫底</mark> 是第一、二人称（「」里的直接引语不算），<mark class="dem">虚线</mark> 是指示词（是否悬空要人看）。模型的节来自 c2low4 切节，与 gold 的节号可能不同，这里只比段。</p>
+  <main id="main"></main>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+const D = JSON.parse(document.getElementById('data').textContent);
+const ST = {
+  same:{name:'一致',desc:'起止行相同',c:'--same',cb:'--same-bg'},
+  near:{name:'±3 行内错位',desc:'段数相同，边界差 1–3 行',c:'--near',cb:'--near-bg'},
+  over:{name:'模型多切',desc:'gold 一段，模型切成多段',c:'--over',cb:'--over-bg'},
+  under:{name:'模型少切',desc:'gold 多段，模型并成一段',c:'--under',cb:'--under-bg'},
+  mixed:{name:'边界交错',desc:'两边都有对方没有的切点',c:'--mixed',cb:'--mixed-bg'}
+};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const load = (k, d) => { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } };
+const store = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+
+const state = {
+  run: load('cmp-run', D.order[D.order.length - 1]),
+  on: new Set(load('cmp-on', Object.keys(ST))),
+  ch: load('cmp-ch', 'all'), onlyflag: load('cmp-onlyflag', false), showother: load('cmp-showother', true)
+};
+if (!D.runs[state.run]) state.run = D.order[D.order.length - 1];
+
+document.getElementById('meta').innerHTML =
+  `<span>源文件 <b>GH_伯1章1到8节（校对版）</b>，${D.lines.length} 行</span><span>gold <b>${esc(D.gold_name)}</b>，${D.gold_n} 段</span>` +
+  D.order.map(k => { const s = D.runs[k].stats; return `<span>${esc(k)} <b>${esc(s.prompt)}</b> · ${esc(s.model)} · effort ${esc(s.effort)}</span>`; }).join('');
+
+// ---- 版本切换
+const runsel = document.getElementById('runsel');
+runsel.innerHTML = D.order.map(k => `<button id="run-${k}" data-k="${k}">${esc(k)}</button>`).join('');
+runsel.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; state.run = b.dataset.k; store('cmp-run', state.run); render(); });
+
+// ---- 筛选
+const chips = document.getElementById('chips');
+chips.innerHTML = Object.entries(ST).map(([k,v]) =>
+  `<button class="chip" id="chip-${k}" data-k="${k}" aria-pressed="true" title="${v.desc}"><span class="dot" style="background:var(${v.c})"></span>${v.name}<span class="n mono" id="n-${k}"></span></button>`).join('');
+chips.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  const k = b.dataset.k; state.on.has(k) ? state.on.delete(k) : state.on.add(k); store('cmp-on', [...state.on]); render();
+});
+const sel = document.getElementById('chsel');
+D.chapters.forEach(c => sel.insertAdjacentHTML('beforeend', `<option value="${c.no}">第${c.no}章（${c.s}–${c.e}）</option>`));
+sel.value = state.ch;
+sel.addEventListener('change', () => { state.ch = sel.value; store('cmp-ch', state.ch); render(); });
+const onlyflag = document.getElementById('onlyflag'), showother = document.getElementById('showother');
+onlyflag.checked = state.onlyflag; showother.checked = state.showother;
+onlyflag.addEventListener('change', () => { state.onlyflag = onlyflag.checked; store('cmp-onlyflag', state.onlyflag); render(); });
+showother.addEventListener('change', () => { state.showother = showother.checked; store('cmp-showother', state.showother); render(); });
+
+// ---- 标题高亮
+function marked(t, f) {
+  const cls = [];
+  f.ban.forEach(w => cls.push([w, 'ban']));
+  f.per.forEach(w => cls.push([w, 'per']));
+  f.dem.forEach(w => cls.push([w, 'dem']));
+  if (!cls.length) return esc(t);
+  cls.sort((a, b) => b[0].length - a[0].length);
+  // 「」内直接引语不标人称
+  const parts = t.split(/(「[^」]*」)/);
+  return parts.map(seg => {
+    const quoted = seg.startsWith('「');
+    const list = cls.filter(([, c]) => !(quoted && c === 'per'));
+    if (!list.length) return esc(seg);
+    const re = new RegExp(list.map(([w]) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+    let out = '', last = 0, m;
+    while ((m = re.exec(seg))) {
+      out += esc(seg.slice(last, m.index));
+      const c = list.find(([w]) => w === m[0])[1];
+      out += `<mark class="${c}">${esc(m[0])}</mark>`;
+      last = m.index + m[0].length;
+    }
+    return out + esc(seg.slice(last));
+  }).join('');
+}
+const hasFlag = f => f.ban.length || f.per.length;
+function ftags(f) {
+  const t = [];
+  if (f.ban.length) t.push(`<span class="ft ban">禁用词 ${esc(f.ban.join('/'))}</span>`);
+  if (f.per.length) t.push(`<span class="ft per">人称 ${esc(f.per.join('/'))}</span>`);
+  if (f.dem.length) t.push(`<span class="ft dem">指示词 ${esc(f.dem.join('/'))}</span>`);
+  return t.length ? `<span class="fl">${t.join('')}</span>` : '';
+}
+
+// ---- 渲染
+const main = document.getElementById('main');
+const open = new Set();
+function render() {
+  const R = D.runs[state.run], s = R.stats;
+  const others = D.order.filter(k => k !== state.run);
+  const near = R.near, nearRev = {};
+  for (const k in near) nearRev[near[k]] = +k;
+  const gStarts = new Set(D.gold.map(p => p.s)), pStarts = new Set();
+  R.groups.forEach(g => g.p.forEach(p => pStarts.add(p.s)));
+
+  D.order.forEach(k => document.getElementById('run-' + k).setAttribute('aria-pressed', k === state.run));
+  Object.keys(ST).forEach(k => {
+    document.getElementById('chip-' + k).setAttribute('aria-pressed', state.on.has(k));
+    document.getElementById('n-' + k).textContent = s.groups[k] || 0;
+  });
+
+  // 摘要，附与另一版的差
+  const ref = others.length ? D.runs[others[others.length - 1]].stats : null;
+  const delta = (v, r, better) => {
+    if (r === null || r === undefined) return '';
+    const d = +(v - r).toFixed(3);
+    if (!d) return `<span class="cmp flat">与 ${esc(others[others.length-1])} 持平</span>`;
+    const good = better === 'up' ? d > 0 : d < 0;
+    return `<span class="cmp ${good ? 'up' : 'down'}">${d > 0 ? '+' : ''}${d} vs ${esc(others[others.length-1])}</span>`;
+  };
+  const same = s.groups.same || 0;
+  document.getElementById('summary').innerHTML = [
+    ['段数', `${D.gold_n} → ${s.pred_n}`, `gold → ${esc(state.run)}` + delta(s.pred_n, ref && ref.pred_n, 'down')],
+    ['起止行完全一致的段', `${same}`, `占 gold 的 ${(same / D.gold_n * 100).toFixed(1)}%` + delta(same, ref && (ref.groups.same || 0), 'up')],
+    ['边界完全命中 F1', `${s.f0[2]}`, `P ${s.f0[0]} · R ${s.f0[1]}` + delta(s.f0[2], ref && ref.f0[2], 'up')],
+    ['边界 ±3 行 F1', `${s.f3[2]}`, `P ${s.f3[0]} · R ${s.f3[1]}` + delta(s.f3[2], ref && ref.f3[2], 'up')],
+    ['标题含禁用词', `${s.ban}`, '讲者、讲员、作者、这段…' + delta(s.ban, ref && ref.ban, 'down')],
+    ['标题含第一二人称', `${s.per}`, '我、我们、你、你们、咱' + delta(s.per, ref && ref.per, 'down')],
+  ].map(([k,v,sub]) => `<div class="stat"><span class="k">${k}</span><span class="v mono">${v}</span><span class="s">${sub}</span></div>`).join('');
+  document.getElementById('runinfo').innerHTML =
+    `当前版本 <b>${esc(state.run)}</b>：${esc(s.prompt)} · ${esc(s.model)} · effort ${esc(s.effort)} · 输入 ${s.tok_in} tok / 输出 ${s.tok_out} tok · 含指示词的标题 ${s.dem} 段 · 超过 110 字 ${s.long} 段`;
+
+  const tagGold = p => {
+    if (p.s === 1) return '';
+    if (pStarts.has(p.s)) return `<span class="d ok">起始行一致</span>`;
+    if (p.s in nearRev) { const d = nearRev[p.s] - p.s; return `<span class="d pos">模型起于 ${nearRev[p.s]}（${d>0?'+':''}${d}）</span>`; }
+    return `<span class="d miss">模型没在这里切</span>`;
+  };
+  const tagPred = p => {
+    if (p.s === 1) return '';
+    if (gStarts.has(p.s)) return `<span class="d ok">起始行一致</span>`;
+    if (p.s in near) { const d = p.s - near[p.s]; return `<span class="d pos">gold 起于 ${near[p.s]}（${d>0?'+':''}${d}）</span>`; }
+    return `<span class="d miss">gold 没在这里切</span>`;
+  };
+  const otherBlock = p => {
+    if (!state.showother || !others.length) return '';
+    return others.map(k => {
+      const ov = D.runs[k].paras.filter(q => q.s <= p.e && q.e >= p.s);
+      if (!ov.length) return '';
+      const exact = ov.length === 1 && ov[0].s === p.s && ov[0].e === p.e;
+      const rows = ov.map(q => `<div><span class="mono">${exact ? '<span class="same">同段</span>' : `行 ${q.s}–${q.e}`}</span>　${esc(q.t)}</div>`).join('');
+      return `<div class="other"><span class="ol">${esc(k)} ${exact ? '' : '在这里的切法不同'}</span>${rows}</div>`;
+    }).join('');
+  };
+  const paraG = p => `<div class="para"><div class="ph mono"><span class="rg">行 ${p.s}–${p.e}</span><span>${p.e-p.s+1} 行</span><span>节 ${esc(p.sec)}</span>${tagGold(p)}</div>
+    <p class="pt">${esc(p.t)}</p><p class="pe">标题 ${[...p.t].length} 字</p></div>`;
+  const paraP = p => `<div class="para"><div class="ph mono"><span class="rg">行 ${p.s}–${p.e}</span><span>${p.e-p.s+1} 行</span><span>节 ${esc(p.sec)}</span>${tagPred(p)}</div>
+    <p class="pt">${marked(p.t, p.f)}</p>
+    <p class="pe"><b>ending</b> ${esc(p.en)}　· 标题 ${[...p.t].length} 字 ${ftags(p.f)}</p>
+    ${R.unc[p.s] ? `<p class="pu">模型拿不准此切点：${esc(R.unc[p.s])}</p>` : ''}${otherBlock(p)}</div>`;
+  const source = g => {
+    let rows = '';
+    for (let i = g.s; i <= g.e; i++) {
+      const mg = gStarts.has(i), mp = pStarts.has(i);
+      rows += `<tr class="${(mg||mp) && i !== g.s ? 'cut' : ''}"><td class="n mono">${i}</td>
+        <td class="m mono">${mg ? '<span class="mg">G</span>' : ''}${mp ? '<span class="mp">P</span>' : ''}</td><td>${esc(D.lines[i-1])}</td></tr>`;
+    }
+    return `<div class="src"><table>${rows}</table></div>`;
+  };
+  const strip = c => {
+    const W = 1000, lo = c.s, hi = c.e + 1, x = n => 6 + (n - lo) / (hi - lo) * (W - 12);
+    let out = `<line x1="6" x2="${W-6}" y1="27" y2="27" stroke="var(--rule)" stroke-width="1"/>`;
+    [...gStarts].filter(b => b > lo && b <= c.e).forEach(b => {
+      const col = pStarts.has(b) ? '--same' : (b in nearRev ? '--near' : '--mixed');
+      out += `<line x1="${x(b)}" x2="${x(b)}" y1="6" y2="24" stroke="var(${col})" stroke-width="2"><title>gold 边界 ${b}</title></line>`;
+    });
+    [...pStarts].filter(b => b > lo && b <= c.e).forEach(b => {
+      const col = gStarts.has(b) ? '--same' : (b in near ? '--near' : '--over');
+      out += `<line x1="${x(b)}" x2="${x(b)}" y1="30" y2="48" stroke="var(${col})" stroke-width="2"><title>模型边界 ${b}</title></line>`;
+      if (b in near) out += `<line x1="${x(near[b])}" x2="${x(b)}" y1="24" y2="30" stroke="var(--near)" stroke-width="1"/>`;
+    });
+    out += `<text x="6" y="60" font-size="10" fill="var(--faint)" font-family="JetBrains Mono,monospace">${lo}</text>`;
+    out += `<text x="${W-6}" y="60" font-size="10" fill="var(--faint)" text-anchor="end" font-family="JetBrains Mono,monospace">${c.e}</text>`;
+    return `<div class="strip"><div class="lg"><span>上排 gold 边界 · 下排 ${esc(state.run)} 边界</span>
+      <span style="color:var(--same)">■ 同一行</span><span style="color:var(--near)">■ 差 1–3 行</span>
+      <span style="color:var(--mixed)">■ gold 有、模型没切</span><span style="color:var(--over)">■ 模型多切</span></div>
+      <svg viewBox="0 0 ${W} 64" preserveAspectRatio="none" role="img" aria-label="第${c.no}章边界对照">${out}</svg></div>`;
+  };
+
+  let html = '';
+  for (const c of D.chapters) {
+    if (state.ch !== 'all' && +state.ch !== c.no) continue;
+    const gs = R.groups.filter(g => g.s >= c.s && g.s <= c.e);
+    const shown = gs.filter(g => state.on.has(g.st) && (!state.onlyflag || g.p.some(p => hasFlag(p.f))));
+    const tally = Object.keys(ST).map(k => [k, gs.filter(g => g.st === k).length]).filter(x => x[1]);
+    html += `<section class="chapter" id="ch${c.no}"><div class="chead"><h2>第${c.no}章　${esc(c.t)}</h2>
+      <span class="r mono">行 ${c.s}–${c.e} · gold ${gs.reduce((a,g)=>a+g.g.length,0)} 段 / ${esc(state.run)} ${gs.reduce((a,g)=>a+g.p.length,0)} 段 · ${tally.map(([k,n]) => ST[k].name + ' ' + n).join('，')}</span></div>`;
+    html += strip(c);
+    if (!shown.length) { html += `<p class="empty">这一章没有符合筛选条件的分组。</p></section>`; continue; }
+    html += `<div class="cols"><span>分组</span><span style="color:var(--gold)">gold</span><span style="color:var(--pred)">${esc(state.run)}</span></div>`;
+    for (const g of shown) {
+      const t = ST[g.st], key = g.s;
+      html += `<article class="group" style="--c:var(${t.c});--cb:var(${t.cb})">
+        <div class="gl"><span class="badge">${t.name}</span><span class="grange mono">行 ${g.s}–${g.e}</span>
+          <button class="toggle" data-k="${key}" aria-expanded="${open.has(key)}">${open.has(key) ? '收起原文' : '看原文'}</button></div>
+        <div class="side gold"><span class="lbl" style="color:var(--gold)">gold</span>${g.g.map(i => paraG(D.gold[i])).join('')}</div>
+        <div class="side pred"><span class="lbl" style="color:var(--pred)">${esc(state.run)}</span>${g.p.map(paraP).join('')}</div>
+        ${open.has(key) ? source(g) : ''}</article>`;
+    }
+    html += `</section>`;
+  }
+  main.innerHTML = html;
+}
+main.addEventListener('click', e => {
+  const b = e.target.closest('.toggle'); if (!b) return;
+  const k = +b.dataset.k; open.has(k) ? open.delete(k) : open.add(k); render();
+});
+render();
+})();
+</script>
