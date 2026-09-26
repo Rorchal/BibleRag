@@ -170,9 +170,16 @@ def main() -> int:
     ap.add_argument("--effort", choices=["none", "low", "high"], default="low")
     ap.add_argument("--model", default=None)
     ap.add_argument("--tag", default="p1")
+    ap.add_argument("--txt", default=None, help="原文 txt（默认伯1:1-8 校对版）")
+    ap.add_argument("--sections", default=None, help="切节结果 parsed.json（默认 c2low4）")
+    ap.add_argument("--name", default=None,
+                    help="结果目录名，默认 paras_<prompt>_<tag>；换讲道时建议写成 paras_<prompt>_<讲道名>")
     ap.add_argument("--from-raw", action="store_true",
                     help="不调用接口，用 output/paras_<prompt>_<tag>/ch*.raw.json 重新整理结果")
     a = ap.parse_args()
+    global TXT, SECTIONS
+    TXT = a.txt or TXT
+    SECTIONS = a.sections or SECTIONS
     if a.from_raw:
         return rebuild(a)
     if not KEY:
@@ -187,7 +194,7 @@ def main() -> int:
     print(f"模型 {model}，effort={a.effort}，temperature=0.2，{len(lines)} 行，"
           f"{len(chapters)} 章 / {len(secs)} 节，每章调用 1 次，不重试\n")
 
-    outdir = os.path.join(HERE, "output", f"paras_{a.prompt}_{a.tag}")
+    outdir = os.path.join(HERE, "output", a.name or f"paras_{a.prompt}_{a.tag}")
     os.makedirs(outdir, exist_ok=True)
     merged, calls = [], []
     for ch in chapters:
@@ -227,7 +234,8 @@ def main() -> int:
               f"段 {sum(len(m['paragraphs']) for m in merged if m['chapter'] == ch)}"
               f"  有问题的节 {n_bad}")
 
-    write_outputs(outdir, {"prompt": f"切段_{a.prompt}", "model": model, "effort": a.effort,
+    write_outputs(outdir, {"prompt": f"切段_{a.prompt}", "txt": os.path.relpath(TXT, HERE),
+                           "sections": os.path.relpath(SECTIONS, HERE), "model": model, "effort": a.effort,
                            "temperature": 0.2, "calls": calls}, merged)
 
     print(f"\n调用后余额：{balance()}")
@@ -264,7 +272,7 @@ def collect(raw: dict, ch: int, cs: list[dict], merged: list[dict], rec: dict) -
 
 
 def rebuild(a) -> int:
-    outdir = os.path.join(HERE, "output", f"paras_{a.prompt}_{a.tag}")
+    outdir = os.path.join(HERE, "output", a.name or f"paras_{a.prompt}_{a.tag}")
     meta = json.load(io.open(os.path.join(outdir, "parsed.json"), encoding="utf-8"))["meta"]
     secs = json.load(io.open(SECTIONS, encoding="utf-8"))["sections"]
     merged = []

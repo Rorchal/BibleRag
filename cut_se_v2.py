@@ -11,6 +11,7 @@
     export DS_BASE=https://api.deepseek.com/chat/completions DS_KEY=<密钥> DS_MODEL=deepseek-flash
     python cut_se_v2.py <原文 txt> --mode chapter --chapters output/gold_v3.md --tag c2r1
     python cut_se_v2.py <原文 txt> --mode whole --tag w2r1
+    python cut_se_v2.py <原文 txt> --mode chapter --chapters-json output/<tag>_ch_<原文名>.parsed.json --tag x
 """
 from __future__ import annotations
 
@@ -117,6 +118,8 @@ def main() -> int:
     ap.add_argument("path")
     ap.add_argument("--mode", required=True, choices=["chapter", "whole"])
     ap.add_argument("--chapters", default=None, help="逐章模式：章区间取自这个 gold markdown")
+    ap.add_argument("--chapters-json", default=None,
+                    help="逐章模式：章区间取自 cut_chapters.py 的结果（与 --chapters 二选一）")
     ap.add_argument("--tag", required=True)
     ap.add_argument("--max-tokens", type=int, default=64000)
     ap.add_argument("--temperature", type=float, default=0.2)
@@ -131,9 +134,14 @@ def main() -> int:
     calls, unc, issues = [], [], []
 
     if a.mode == "chapter":
-        import goldeval
-        chapters = [{"no": c["no"], "start": c["start"], "end": c["end"]}
-                    for c in goldeval.parse_gold(a.chapters)["chapters"]]
+        if a.chapters_json:
+            src = json.load(io.open(a.chapters_json, encoding="utf-8"))["chapters"]
+        else:
+            import goldeval
+            src = goldeval.parse_gold(a.chapters)["chapters"]
+        chapters = [{"no": c["no"], "start": c["start"], "end": c["end"],
+                     **({"title": c["title"]} if a.chapters_json and c.get("title") else {})}
+                    for c in src]
 
         def one(c):
             lo, hi = c["start"], c["end"]
