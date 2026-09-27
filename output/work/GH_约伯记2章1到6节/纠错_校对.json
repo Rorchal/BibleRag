@@ -1,0 +1,420 @@
+{
+  "src": "output/work/GH_约伯记2章1到6节/0_规则.txt",
+  "out": "output/work/GH_约伯记2章1到6节/1_校对.txt",
+  "reported": 28,
+  "applied": [
+    {
+      "line": 42,
+      "wrong": "东方自大",
+      "right": "东方至大",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 47,
+      "wrong": "东方自大",
+      "right": "东方至大",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 44,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 45,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 46,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 48,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 49,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 623,
+      "wrong": "次身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 50,
+      "wrong": "刺身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 51,
+      "wrong": "刺身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 53,
+      "wrong": "刺身",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 55,
+      "wrong": "次生",
+      "right": "赤身",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 71,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 72,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 84,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 88,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 91,
+      "wrong": "乌鬼",
+      "right": "污鬼",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 93,
+      "wrong": "受到",
+      "right": "受造",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 96,
+      "wrong": "神的种子",
+      "right": "神的众子",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 97,
+      "wrong": "神的种子",
+      "right": "神的众子",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 110,
+      "wrong": "便捷",
+      "right": "变节",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 134,
+      "wrong": "旧恩",
+      "right": "救恩",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 136,
+      "wrong": "大军",
+      "right": "大君",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 139,
+      "wrong": "活马",
+      "right": "火马",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 140,
+      "wrong": "活马",
+      "right": "火马",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 204,
+      "wrong": "查干",
+      "right": "查看",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 215,
+      "wrong": "创世纪",
+      "right": "创世记",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 223,
+      "wrong": "创世纪",
+      "right": "创世记",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 306,
+      "wrong": "陈社斌",
+      "right": "陈社炳",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 516,
+      "wrong": "以皮带皮",
+      "right": "以皮代皮",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 517,
+      "wrong": "以皮带皮",
+      "right": "以皮代皮",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 553,
+      "wrong": "以皮带皮",
+      "right": "以皮代皮",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 520,
+      "wrong": "以皮和带皮",
+      "right": "以皮代皮",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 628,
+      "wrong": "售货",
+      "right": "受祸",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 645,
+      "wrong": "药理问答",
+      "right": "要理问答",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 646,
+      "wrong": "药理问答",
+      "right": "要理问答",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 663,
+      "wrong": "药理问答",
+      "right": "要理问答",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 687,
+      "wrong": "药理问答",
+      "right": "要理问答",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 647,
+      "wrong": "教育",
+      "right": "教义",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 690,
+      "wrong": "鱼王",
+      "right": "愚顽",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 715,
+      "wrong": "相地上",
+      "right": "相信",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 722,
+      "wrong": "天赋",
+      "right": "天父",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 756,
+      "wrong": "幕后",
+      "right": "末后",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 763,
+      "wrong": "幕后",
+      "right": "末后",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 768,
+      "wrong": "幕后",
+      "right": "末后",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 769,
+      "wrong": "幕后",
+      "right": "末后",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 761,
+      "wrong": "恩源",
+      "right": "恩言",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 778,
+      "wrong": "个人",
+      "right": "各人",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 662,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 739,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    }
+  ],
+  "rejected": [
+    {
+      "wrong": "人家大业大",
+      "right": "家大业大",
+      "lines": [
+        502
+      ],
+      "why": "157 行「家大业大」,同音错字",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "reason": "只是删字或加字，像是在修口误（叠字、漏字），不是识别错字"
+    }
+  ],
+  "hotwords_added": []
+}
