@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "pipeline": "se_v2_chapter",
+    "tag": "约伯记2章1到6节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "tokens": {
+      "prompt": 37498,
+      "completion": 17012
+    },
+    "calls": [
+      {
+        "usage": {
+          "prompt_tokens": 3166,
+          "completion_tokens": 298,
+          "total_tokens": 3464,
+          "prompt_tokens_details": {
+            "cached_tokens": 2816
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 202
+          },
+          "prompt_cache_hit_tokens": 2816,
+          "prompt_cache_miss_tokens": 350
+        },
+        "secs": 2.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 1
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3053,
+          "completion_tokens": 152,
+          "total_tokens": 3205,
+          "prompt_tokens_details": {
+            "cached_tokens": 2816
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 72
+          },
+          "prompt_cache_hit_tokens": 2816,
+          "prompt_cache_miss_tokens": 237
+        },
+        "secs": 1.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 2
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3340,
+          "completion_tokens": 1274,
+          "total_tokens": 4614,
+          "prompt_tokens_details": {
+            "cached_tokens": 3200
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1034
+          },
+          "prompt_cache_hit_tokens": 3200,
+          "prompt_cache_miss_tokens": 140
+        },
+        "secs": 6.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 3
+      },
+      {
+        "usage": {
+          "prompt_tokens": 10711,
+          "completion_tokens": 6842,
+          "total_tokens": 17553,
+          "prompt_tokens_details": {
+            "cached_tokens": 2816
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 5360
+          },
+          "prompt_cache_hit_tokens": 2816,
+          "prompt_cache_miss_tokens": 7895
+        },
+        "secs": 34.3,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 4
+      },
+      {
+        "usage": {
+          "prompt_tokens": 5125,
+          "completion_tokens": 4122,
+          "total_tokens": 9247,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3850
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 2437
+        },
+        "secs": 19.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 5
+      },
+      {
+        "usage": {
+          "prompt_tokens": 5181,
+          "completion_tokens": 1594,
+          "total_tokens": 6775,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1221
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 2493
+        },
+        "secs": 8.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 6
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3957,
+          "completion_tokens": 2620,
+          "total_tokens": 6577,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2365
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 1269
+        },
+        "secs": 13.6,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 7
+      },
+      {
+        "usage": {
+          "prompt_tokens": 2965,
+          "completion_tokens": 110,
+          "total_tokens": 3075,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 48
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 277
+        },
+        "secs": 2.0,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 8
+      }
+    ]
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 13,
+      "title": "诵读约伯记2章1~5节:天上第二幕,撒但再获授权攻击约伯的骨与肉"
+    },
+    {
+      "no": 2,
+      "start": 14,
+      "end": 18,
+      "title": "祷告:求圣灵开通耳朵,使约伯记古旧圣道中的福音果效生发"
+    },
+    {
+      "no": 3,
+      "start": 19,
+      "end": 34,
+      "title": "讲道引言:本周分两层讲,1~3节论属灵征战,4~6节论约伯的肉体灾难"
+    },
+    {
+      "no": 4,
+      "start": 35,
+      "end": 486,
+      "title": "第一层讲解1~3节:约伯持守纯正,属灵征战的实质与以弗所书的全副军装"
+    },
+    {
+      "no": 5,
+      "start": 487,
+      "end": 611,
+      "title": "第二层讲解4~6节:撒但以皮代皮控告,约伯骨肉受苦与上帝存留其性命的授权"
+    },
+    {
+      "no": 6,
+      "start": 612,
+      "end": 740,
+      "title": "上帝的护理:海德堡要理问答27、28问指出丰年荒年、健康疾病、富足贫穷皆出于神"
+    },
+    {
+      "no": 7,
+      "start": 741,
+      "end": 793,
+      "title": "结语勉励:信靠上帝不变的意念,回归使徒圣道,引耶利米书29章与使徒行传20章"
+    },
+    {
+      "no": 8,
+      "start": 794,
+      "end": 795,
+      "title": "结束祷告"
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 13,
+      "title": "约伯记2章1至5节诵读：撒但再侍立耶和华面前，耶和华称约伯完全正直，撒但以人以皮代皮相激，耶和华将约伯交在撒但手中只存留其性命",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 14,
+      "end": 18,
+      "title": "第二幕开场祷告：求圣灵开通耳朵，使约伯记古旧的圣道与福音的智慧被众圣徒得着，救恩果效在此生发",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 19,
+      "end": 23,
+      "title": "约伯记二章1至3节与第一章类似的询问与回应，借此说明属灵征战的真实方式与真实持守方式",
+      "chapter": 3
+    },
+    {
+      "no": "3.2",
+      "start": 24,
+      "end": 31,
+      "title": "约伯记二章4至6节约伯肉体灾难的超自然源头，疾病除营养学与病理细菌外还有属灵源头，撒但能造成皮肉惨烈伤痕",
+      "chapter": 3
+    },
+    {
+      "no": "3.3",
+      "start": 32,
+      "end": 34,
+      "title": "全章两个话题：属灵征战的全副军装究竟指什么，以及借约伯肉体苦难看如何正确看待上帝的护理",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 35,
+      "end": 65,
+      "title": "回顾约伯从东方至大变为赤身之人，身外身内尽失，唯独对耶和华的敬畏仍存留；第一章结尾的信仰告白证明财富、地位与家庭美满都不是约伯敬畏神的缘由",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 66,
+      "end": 110,
+      "title": "约伯记2章1节神的众子侍立在耶和华面前，撒但也来在其中；天使是服役的灵，奉差遣为承受救恩的人效力，撒但曾是其中一员却堕落，但仍在上帝权柄之下",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 111,
+      "end": 145,
+      "title": "约伯记2章2节耶和华问撒但从哪里来，对话与第一轮一模一样，说明上帝不是困惑而是授权撒但说话；撒但受空间限制，不全知不全在，也不能自由作恶",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 146,
+      "end": 172,
+      "title": "约伯记2章3节耶和华重复对约伯完全正直、敬畏神、远离恶事的评价，多出约伯经过第一轮无故毁灭后仍然持守纯正的描述，上帝在天上纪念并见证",
+      "chapter": 4
+    },
+    {
+      "no": "4.5",
+      "start": 173,
+      "end": 205,
+      "title": "约伯得胜的方式与惯常印象不同：他没有与撒但正面交锋，也没有赶鬼祷告，只以清楚冷静的信仰告白持守纯正，天上的耶和华便在撒但面前见证约伯",
+      "chapter": 4
+    },
+    {
+      "no": "4.6",
+      "start": 206,
+      "end": 236,
+      "title": "魔鬼的攻击是信息性的，主要方向是攻击人内心的知识与信仰，目的是摧毁人对上帝的认知，使人变得不纯正并弃掉神；创世记三章古蛇对夏娃说话就是偷换概念攻击对神的认识",
+      "chapter": 4
+    },
+    {
+      "no": "4.7",
+      "start": 237,
+      "end": 277,
+      "title": "拉撒路等复活的人仍要死，基督徒盼望的是死人复活并来世生命；撒但要攻击的是人在神面前所持守的纯正，即便摧毁肉体也要人当面弃掉神，使人堕入永死",
+      "chapter": 4
+    },
+    {
+      "no": "4.8",
+      "start": 278,
+      "end": 288,
+      "title": "撒但的目的不因是否被允许直接袭击而改变，今世风俗、异教文化与思潮不断席卷基督徒，基督徒的任务就是保护纯正；不可相信谁都无法真正纯正，纯正标准已借大公信条总结",
+      "chapter": 4
+    },
+    {
+      "no": "4.9",
+      "start": 289,
+      "end": 307,
+      "title": "以弗所书6章10至13节：要靠着主做刚强的人，披戴神所赐的全副军装抵挡魔鬼的诡计，在磨难的日子抵挡仇敌并站立得稳，这就是基督徒的赢法",
+      "chapter": 4
+    },
+    {
+      "no": "4.10",
+      "start": 308,
+      "end": 336,
+      "title": "基督徒的军装是用于抵挡诡计的知识性和策略性军装，不用于抵挡实际的攻击，因为对手不是属血气的，而是执政掌权、掌管幽暗世界与天空属灵气的恶魔",
+      "chapter": 4
+    },
+    {
+      "no": "4.11",
+      "start": 337,
+      "end": 371,
+      "title": "魔鬼是属灵气的恶魔，能对物质界降维打击，给基督徒造成实际的磨难日子；约伯这样的国际大佬在撒但面前不堪一击，但穿上军装就能打不过却站立得住，持守纯正",
+      "chapter": 4
+    },
+    {
+      "no": "4.12",
+      "start": 372,
+      "end": 385,
+      "title": "以弗所书6章14至17节：用真理当作带子束腰，用公义当作护心镜遮胸，用平安的福音当作预备走路的鞋，用信德当作盾牌灭尽火箭，戴上救恩头盔，拿着圣灵的宝剑",
+      "chapter": 4
+    },
+    {
+      "no": "4.13",
+      "start": 386,
+      "end": 408,
+      "title": "圣灵的宝剑就是神的道，不是用来砍撒但；以斩龙聚会为例说明人眼瞎，这军装是用于抵挡魔鬼诡计而非实际砍杀，因为对手是属灵气的恶魔根本打不到",
+      "chapter": 4
+    },
+    {
+      "no": "4.14",
+      "start": 409,
+      "end": 437,
+      "title": "军装头尾都是真理，中间各件是真理在基督徒身上的表现；属灵征战的具体方式是学习真道、认识基督的救恩和福音，在一切诡计面前辨别诸灵并站立得住",
+      "chapter": 4
+    },
+    {
+      "no": "4.15",
+      "start": 438,
+      "end": 471,
+      "title": "回应祷告问题：属灵征战要靠着圣灵随时多方祷告祈求并警醒不倦，但祷告方向是确定的，为众圣徒祈求，也为保罗祈求，让他得着口才放胆讲明福音的奥秘",
+      "chapter": 4
+    },
+    {
+      "no": "4.16",
+      "start": 472,
+      "end": 486,
+      "title": "总结应用：为弟兄姊妹祷告让上帝看守环境，为教会讲台祷告用真道披戴军装；约伯得胜与守护自己的方式与今天基督徒一致，约伯记2章1至3节多出上帝在撒但面前说出约伯持守纯正",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 487,
+      "end": 511,
+      "title": "约伯记2章4节撒但第二轮由观察约伯个人的宗教敬拜，转向观察全人类共同的弱点，认定无人能逃此铁律",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 512,
+      "end": 554,
+      "title": "约伯记2章4节以皮代皮的谚语指以这张皮换那张皮，即人情愿舍去一切所有、不惜一切代价保全自己的皮肉性命",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 555,
+      "end": 574,
+      "title": "约伯记2章5节撒但请求伤约伯的骨头和肉，认定约伯虽承认耶和华比家产重要，却不信耶和华比其身体性命更重要",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 575,
+      "end": 582,
+      "title": "对上帝的敬畏比人的骨头皮肉更重要，因为信徒相信身体复活与永生，这是耶稣的教导与圣经真理",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 583,
+      "end": 611,
+      "title": "约伯记2章6节耶和华授权撒但只留下约伯的性命，约伯因此患上不死的绝症，求死不得成为他痛苦与困惑的来源",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 612,
+      "end": 628,
+      "title": "约伯记读者作为旁观者看约伯受祸，亲历者却经历完全失控的折磨，约伯从上帝手中直接受祸是否仍算护理",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 629,
+      "end": 643,
+      "title": "信徒因家庭身体经济等现有秩序崩塌而怀疑上帝的护理，认为平安稳妥才算上帝保佑、祸患不算护理",
+      "chapter": 6
+    },
+    {
+      "no": "6.3",
+      "start": 644,
+      "end": 663,
+      "title": "海德堡要理问答27问：上帝用无所不能的能力托住管理万物，护理涵盖天晴下雨丰年荒年健康疾病富足贫穷，一切非偶然",
+      "chapter": 6
+    },
+    {
+      "no": "6.4",
+      "start": 664,
+      "end": 686,
+      "title": "海德堡要理问答28问：护理的益处是在患难中忍耐、顺境中感恩，任何受造物连撒但都不能叫信徒与神的爱隔绝",
+      "chapter": 6
+    },
+    {
+      "no": "6.5",
+      "start": 687,
+      "end": 708,
+      "title": "约伯在没有海德堡要理问答的古早年代已懂此教义，妻子因他持守纯正辱骂他，他回答说你说话像愚顽的妇人",
+      "chapter": 6
+    },
+    {
+      "no": "6.6",
+      "start": 709,
+      "end": 737,
+      "title": "真正的基督徒相信上帝本身不改变、无论赐福降祸意念都正面、失去一切也不从天父手中失落，对比另一套环境不变的信仰",
+      "chapter": 6
+    },
+    {
+      "no": "6.7",
+      "start": 738,
+      "end": 740,
+      "title": "上帝保护信徒的方式：除用全能命令托住环境，还包括帮助信徒披戴基督的全副军装",
+      "chapter": 6
+    },
+    {
+      "no": "7.1",
+      "start": 741,
+      "end": 769,
+      "title": "耶利米书29章10至13节：被掳巴比伦七十年中上帝所怀的是赐平安的意念，平安在于末后有指望而非身体顺遂",
+      "chapter": 7
+    },
+    {
+      "no": "7.2",
+      "start": 770,
+      "end": 788,
+      "title": "信仰或教会遇危难时不要投靠人，要回到先知使徒的道；保罗以三年流泪的劝诫和能建立人的恩惠之道交托以弗所长老",
+      "chapter": 7
+    },
+    {
+      "no": "7.3",
+      "start": 789,
+      "end": 793,
+      "title": "总结：个人难处要相信上帝赐平安的意念，信仰危机要回到使徒的道，并预告约伯记第二轮的得胜",
+      "chapter": 7
+    },
+    {
+      "no": "8.1",
+      "start": 794,
+      "end": 795,
+      "title": "以同样方式赢后一起祷告，求神让我们遵照他的话继续看约伯",
+      "chapter": 8
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 32,
+      "reason": "此句既是对前两段的收束，又引出全章两个话题，可能是章末小结单独成节，也可能归入3.2末尾，交下游复核"
+    },
+    {
+      "line": 289,
+      "reason": "过渡句「下面我用10分钟时间跟大家稍微了解一下什么叫做军装」按规则归入下一节开头，但若与278-288合并则节过短"
+    },
+    {
+      "line": 308,
+      "reason": "「我来分别解释一些细节哈」是过渡句，归后使308-336成为独立解释单元，但也可视为290-308的延续"
+    },
+    {
+      "line": 409,
+      "reason": "「所以你发现一点没有？」是引出下文的过渡句，归后使409-437独立，但也可归前收束386-408"
+    },
+    {
+      "line": 741,
+      "reason": "像是上一论题（被看守与神的道）的收尾，也可能是本章结尾劝勉的开头"
+    },
+    {
+      "line": 747,
+      "reason": "「我来为大家念一段耶利米书29章」可能应另起一节专讲该段经文，也可能是上文劝勉的经文依据而同属一节"
+    }
+  ]
+}
