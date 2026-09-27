@@ -80,10 +80,10 @@ def read_lines(path: str) -> list[str]:
 
 
 def lexicon_names() -> str:
-    """v5 起的专名表：lexicon/热词表.txt 的「讲道人」「人名地名」两组。"""
+    """v5 起的专名表：lexicon/热词表.txt 的「讲道人」「约伯记人名地名」两组。"""
     import typo_fix
     g = typo_fix.load_lexicon()
-    return "、".join(dict.fromkeys(g.get("讲道人", []) + g.get("人名地名", [])))
+    return "、".join(dict.fromkeys(g.get("讲道人", []) + g.get("约伯记人名地名", [])))
 
 
 def build_user(fewshot: str, ch_no: int, secs: list[dict], lines: list[str],

@@ -68,7 +68,10 @@ def main() -> int:
     if a.no_proofread:
         shutil.copy(t0, tp)
     else:
-        run(["correct_typos.py", t0, "--tag", tag, "--prompt", a.proofread_prompt, "--effort", a.effort], env)
+        import typo_fix
+        p = typo_fix.parse_passage(a.name) or typo_fix.parse_passage(os.path.basename(a.txt))
+        extra = ["--passage", f"{p[0]}:{p[1]}-{p[2]}:{p[3]}"] if p else []
+        run(["correct_typos.py", t0, "--tag", tag, "--prompt", a.proofread_prompt, "--effort", a.effort, *extra], env)
         pf = os.path.join(HERE, "output", f"{tag}_typos_0_规则.json")
         run(["typo_fix.py", "apply", t0, pf, "--out", tp, "--log", os.path.join(work, "纠错_校对.json"),
              "--add-hotwords"], env)

@@ -15,7 +15,8 @@
 用法：
   python typo_fix.py normalize <原文.txt> <输出.txt>          # 只做全局规则（撒旦→撒但 等）
   python typo_fix.py apply <原文.txt> <结果.json>... --out <输出.txt> --log <日志.json> [--add-hotwords]
-  python typo_fix.py hotwords-json [--groups 人名地名,66卷书名]  # 生成语音识别用的热词 JSON
+  python typo_fix.py hotwords-json [--groups 约伯记人名地名,66卷书名] [--passage 2:1-6]
+                                                            # 生成语音识别用的热词 JSON；--passage 加上那几节经文的短语
 """
 from __future__ import annotations
 
@@ -23,11 +24,13 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEXICON = os.path.join(HERE, "lexicon", "热词表.txt")
 RULES = os.path.join(HERE, "lexicon", "替换规则.tsv")
+JOB_TXT = os.path.join(HERE, "lexicon", "和合本_约伯记.txt")
 AUTO_GROUP = "自动补充"
 
 
@@ -81,6 +84,41 @@ def add_hotwords(words: list[str], path: str = LEXICON) -> list[str]:
         text = io.open(path, encoding="utf-8").read().rstrip("\n") + "\n" + "\n".join(new) + "\n"
         io.open(path, "w", encoding="utf-8").write(text)
     return new
+
+
+# ------------------------------------------------------------------ 按经文段落取约伯记短语
+
+def parse_passage(text: str) -> tuple[int, int, int, int] | None:
+    """从「约伯记2章1到6节」「伯6章28节到7章2节」「2:1-6」这类写法里取出 (起章, 起节, 止章, 止节)。"""
+    m = re.search(r"(\d+)章(\d+)节?到(?:(\d+)章)?(\d+)节", text)
+    if m:
+        c1, v1, c2, v2 = m.groups()
+        return int(c1), int(v1), int(c2 or c1), int(v2)
+    m = re.fullmatch(r"(\d+):(\d+)-(?:(\d+):)?(\d+)", text.strip())
+    if m:
+        c1, v1, c2, v2 = m.groups()
+        return int(c1), int(v1), int(c2 or c1), int(v2)
+    return None
+
+
+def passage_phrases(passage: str, min_len: int = 3, max_len: int = 8) -> list[str]:
+    """和合本约伯记里这段经文的短语（按标点切分，3~8 字）。「甚么」改成今天的写法「什么」，
+    免得热词把讲道人平常说的「什么」也带成旧写法。"""
+    p = parse_passage(passage)
+    if not p or not os.path.exists(JOB_TXT):
+        return []
+    c1, v1, c2, v2 = p
+    out = []
+    for ln in io.open(JOB_TXT, encoding="utf-8"):
+        if ln.startswith("#") or "\t" not in ln:
+            continue
+        ref, text = ln.rstrip("\n").split("\t")
+        c, v = map(int, ref.split(":"))
+        if (c1, v1) <= (c, v) <= (c2, v2):
+            for seg in re.split(r"[，。；：！？「」『』、,.;:!?\s]+", text.replace("・", "")):
+                if min_len <= len(seg) <= max_len:
+                    out.append(seg.replace("甚么", "什么"))
+    return list(dict.fromkeys(out))
 
 
 # ------------------------------------------------------------------ 读原文（保留行号）
@@ -199,6 +237,7 @@ def main() -> int:
     a_.add_argument("--add-hotwords", action="store_true")
     h = sub.add_parser("hotwords-json")
     h.add_argument("--groups", default=None, help="逗号分隔的分组名，默认全部")
+    h.add_argument("--passage", default=None, help="经文段落，如 2:1-6 或 约伯记2章1到6节；加上这几节的短语")
     a = ap.parse_args()
 
     if a.cmd == "normalize":
@@ -214,7 +253,9 @@ def main() -> int:
         groups = load_lexicon()
         if a.groups:
             groups = {k: v for k, v in groups.items() if k in a.groups.split(",")}
-        print(json.dumps({"hotwords": [{"word": w} for w in all_words(groups)]}, ensure_ascii=False))
+        words = all_words(groups) + (passage_phrases(a.passage) if a.passage else [])
+        words = list(dict.fromkeys(words))
+        print(json.dumps({"hotwords": [{"word": w} for w in words]}, ensure_ascii=False))
         return 0
 
     lines = read_lines(a.src)

@@ -41,9 +41,13 @@ def load_prompts(name: str = "校对_v1") -> tuple[str, str]:
     return system, fewshot
 
 
-def lexicon_block() -> str:
+def lexicon_block(passage: str | None = None) -> str:
     groups = typo_fix.load_lexicon()
     rows = [f"【{g}】" + "、".join(ws) for g, ws in groups.items() if ws]
+    if passage:
+        ph = typo_fix.passage_phrases(passage)
+        if ph:
+            rows.append(f"【本篇经文短语(和合本约伯记 {passage})】" + "、".join(ph))
     return "## 热词表(正确写法)\n" + "\n".join(rows)
 
 
@@ -53,6 +57,7 @@ def main() -> int:
     ap.add_argument("path")
     ap.add_argument("--tag", required=True)
     ap.add_argument("--prompt", default="校对_v1")
+    ap.add_argument("--passage", default=None, help="本篇经文，如 2:1-6；把这几节的短语加进热词表块")
     ap.add_argument("--max-tokens", type=int, default=64000)
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--effort", default=None, choices=["low", "high", "max"])
@@ -60,7 +65,7 @@ def main() -> int:
 
     lines = typo_fix.read_lines(a.path)          # 保留原行号（不丢空行）
     system, fewshot = load_prompts(a.prompt)
-    system = system + "\n\n" + lexicon_block()
+    system = system + "\n\n" + lexicon_block(a.passage)
     user = USER.format(fewshot=fewshot, n=len(lines),
                        numbered="\n".join(f"{i} | {l}" for i, l in enumerate(lines, 1)))
     content, meta = ds.chat(system, user, max_tokens=a.max_tokens, temperature=a.temperature,
