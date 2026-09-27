@@ -1,0 +1,32 @@
+{
+ "id": "ad906f10-c009-4069-b498-69222117d4ab",
+ "object": "chat.completion",
+ "created": 1790524984,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 8, \"sections\": [{\"section\": \"8.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"落在遵照神的话开始看约伯记这件事上\", \"title\": \"祷告之后，遵照神的话开始看约伯记\"}], \"uncertain\": []}]}",
+    "reasoning_content": "节只有2行，不足6行，整节就是1段。cuts: [968]，段落 968..969。标题要概括：一起祷告，遵照神的话开始看约伯记。ending 落在\"遵照你的话，要开始看约伯的\"。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7800,
+  "completion_tokens": 140,
+  "total_tokens": 7940,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 57
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 376
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

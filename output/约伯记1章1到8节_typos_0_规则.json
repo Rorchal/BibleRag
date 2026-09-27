@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "stage": "proofread",
+    "prompt": "校对_v1",
+    "tag": "约伯记1章1到8节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 19218,
+      "completion_tokens": 23919,
+      "total_tokens": 43137,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 23225
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 17938
+    },
+    "secs": 94.1,
+    "finish_reason": "stop"
+  },
+  "typos": [
+    {
+      "wrong": "正道",
+      "right": "证道",
+      "lines": [
+        4,
+        6
+      ],
+      "why": "讲道惯用语「这周证道」，同音错字"
+    },
+    {
+      "wrong": "门神",
+      "right": "蒙神",
+      "lines": [
+        78
+      ],
+      "why": "「蒙神赐福」是固定说法，同音错字"
+    },
+    {
+      "wrong": "为自大",
+      "right": "为至大",
+      "lines": [
+        40,
+        236,
+        269,
+        271,
+        442
+      ],
+      "why": "和合本作「在东方人中为至大」，284 行写对了"
+    },
+    {
+      "wrong": "研习",
+      "right": "筵席",
+      "lines": [
+        331,
+        333
+      ],
+      "why": "15 行「筵席的日子过了」，同音错字"
+    },
+    {
+      "wrong": "房祭",
+      "right": "燔祭",
+      "lines": [
+        373
+      ],
+      "why": "上下文讲献祭，同音错字"
+    },
+    {
+      "wrong": "击炸",
+      "right": "击打",
+      "lines": [
+        454
+      ],
+      "why": "417 行「皮与骨都被撒但给击打了」"
+    },
+    {
+      "wrong": "乌斯帝",
+      "right": "乌斯地",
+      "lines": [
+        527
+      ],
+      "why": "通篇作「乌斯地」，同音错字"
+    },
+    {
+      "wrong": "高胡",
+      "right": "高湖",
+      "lines": [
+        599
+      ],
+      "why": "598 行作「高湖教会」，同音错字"
+    },
+    {
+      "wrong": "艺人",
+      "right": "义人",
+      "lines": [
+        665
+      ],
+      "why": "上下文讲义人受苦，同音错字"
+    },
+    {
+      "wrong": "仍就",
+      "right": "仍旧",
+      "lines": [
+        696,
+        702
+      ],
+      "why": "和合本「仍旧在天的人子」，同音错字"
+    },
+    {
+      "wrong": "重子",
+      "right": "众子",
+      "lines": [
+        711
+      ],
+      "why": "通篇作「神的众子」，同音错字"
+    },
+    {
+      "wrong": "一人",
+      "right": "义人",
+      "lines": [
+        781,
+        786,
+        788,
+        789,
+        790,
+        791,
+        810
+      ],
+      "why": "与「恶人」对举，528 行「义人」写对了"
+    },
+    {
+      "wrong": "二人",
+      "right": "恶人",
+      "lines": [
+        786,
+        788,
+        789,
+        810
+      ],
+      "why": "与义人对举，应为恶人，近音错字"
+    },
+    {
+      "wrong": "难阻",
+      "right": "拦阻",
+      "lines": [
+        865
+      ],
+      "why": "上下文讲上帝拦阻，同音错字"
+    },
+    {
+      "wrong": "董王",
+      "right": "懂王",
+      "lines": [
+        891
+      ],
+      "why": "918 行作「三个属灵的懂王」"
+    },
+    {
+      "wrong": "陈涉敏",
+      "right": "陈社炳",
+      "lines": [
+        895
+      ],
+      "why": "热词表里讲道人叫陈社炳"
+    },
+    {
+      "wrong": "旧恩",
+      "right": "救恩",
+      "lines": [
+        908
+      ],
+      "why": "上下文讲救恩根基，同音错字"
+    }
+  ]
+}
