@@ -262,10 +262,10 @@ def main() -> int:
     protected = set(all_words())
     typos = collect_typos(a.results)
     fixes, rejected = plan_fixes(lines, typos, protected)
-    fixed = apply_fixes(lines, fixes)
+    added = add_hotwords([f["right"] for f in fixes]) if a.add_hotwords else []   # 先补热词表
+    fixed = apply_fixes(lines, fixes)                                              # 再更新文本
     assert len(fixed) == len(lines)
     write_lines(a.out, fixed)
-    added = add_hotwords([f["right"] for f in fixes]) if a.add_hotwords else []
     io.open(a.log, "w", encoding="utf-8").write(json.dumps(
         {"src": os.path.relpath(a.src, HERE), "out": os.path.relpath(a.out, HERE),
          "reported": len(typos), "applied": fixes, "rejected": rejected, "hotwords_added": added},
