@@ -8,12 +8,14 @@
 输出：
   lexicon/约伯记短语.tsv      每个短语一行：章:节、短语、原样出现次数、同音误识次数、误识写法
                                （同音 = 去声调拼音相同但字不同，正是热词能纠正的那一类）
-  lexicon/热词表.txt          重写其中两组：「约伯记人名地名」「约伯记短语（同音易错）」
+  lexicon/热词表.txt          重写其中三组：「约伯记人名地名」「约伯记短语（同音易错）」「约伯记常引短语」
 
 「同音易错」的口径（排除不是识别错的情况）：
   - 只是和合本旧写法 / 异体（甚么/什么、惟/唯、他/她/它、须要/需要……，见 VARIANTS）不算
   - 太日常的短句不收：少于 4 字，或识别稿里原样出现 ≥30 次（识别器本来就不会错）
   - 口吃叠字（「审审判人」）不算，见 NOT_ASR
+「常引短语」的口径：识别稿里原样 + 同音一共 ≥2 次、至少 4 字、不是日常说法
+  （jieba 拆开后每段都是极高频词的，如「你们中间」，不收），不含已在「同音易错」里的
 
 短语 = 经文按标点切出的分句，3~8 字。2 字分句（「他说」「现在」）太泛，不收。
 
@@ -168,7 +170,17 @@ def main() -> int:
     set_group(lex, "约伯记人名地名", names, "由 build_job_lexicon.py 生成：和合本约伯记原文里出现的人名、族名、地名、星宿名")
     set_group(lex, "约伯记短语（同音易错）", easy,
               "由 build_job_lexicon.py 生成：约伯记原文短语里，讲道识别稿出现过同音误识的（不含旧写法异体、日常短句）")
-    print(f"热词表：约伯记人名地名 {len(names)} 个，约伯记短语（同音易错）{len(easy)} 个")
+    import jieba
+    jieba.setLogLevel(60)
+    jieba.initialize()
+    freq = jieba.dt.FREQ
+    everyday = lambda p: all(freq.get(t, 0) >= 20000 for t in jieba.lcut(p, HMM=False))
+    quoted = [c.replace("甚么", "什么") for ref, c, ex, nv, _ in sorted(rows, key=lambda r: -(r[2] + r[3]))
+              if ex + nv >= 2 and len(c) >= 4 and c not in easy and not everyday(c.replace("甚么", "什么"))]
+    quoted = list(dict.fromkeys(quoted))
+    set_group(lex, "约伯记常引短语", quoted,
+              "由 build_job_lexicon.py 生成：约伯记原文短语里，讲道识别稿原样或同音出现 ≥2 次的（至少 4 字，不含日常说法）")
+    print(f"热词表：约伯记人名地名 {len(names)} 个，约伯记短语（同音易错）{len(easy)} 个，约伯记常引短语 {len(quoted)} 个")
 
     quoted = [r for r in rows if r[2] + r[3] > 0]
     misheard = [r for r in rows if r[3] > 0]
