@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "stage": "proofread",
+    "prompt": "校对_v1",
+    "tag": "约伯记1章1到8节_新热词",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 21485,
+      "completion_tokens": 21466,
+      "total_tokens": 42951,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 20649
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 20589
+    },
+    "secs": 90.4,
+    "finish_reason": "stop"
+  },
+  "typos": [
+    {
+      "wrong": "为自大",
+      "right": "为至大",
+      "lines": [
+        40,
+        236,
+        269,
+        271,
+        442
+      ],
+      "why": "经文第3节「在东方人中就为至大」,同音错字"
+    },
+    {
+      "wrong": "整洁",
+      "right": "总结",
+      "lines": [
+        281
+      ],
+      "why": "同句后文即说「总结一下」,同音错字"
+    },
+    {
+      "wrong": "研习",
+      "right": "筵席",
+      "lines": [
+        331,
+        333
+      ],
+      "why": "15 节说「筵席的日子过了」,同音错字"
+    },
+    {
+      "wrong": "近前",
+      "right": "敬虔",
+      "lines": [
+        354
+      ],
+      "why": "上下文讲这家族敬畏神,近音错字"
+    },
+    {
+      "wrong": "近钱",
+      "right": "敬虔",
+      "lines": [
+        357
+      ],
+      "why": "与「敬虔又强大」对应,近音错字"
+    },
+    {
+      "wrong": "尽钱",
+      "right": "敬虔",
+      "lines": [
+        371
+      ],
+      "why": "紧接「父亲不是说不警醒」,近音错字"
+    },
+    {
+      "wrong": "房祭",
+      "right": "燔祭",
+      "lines": [
+        373
+      ],
+      "why": "16 节作「献燔祭」,近音错字"
+    },
+    {
+      "wrong": "四维",
+      "right": "四围",
+      "lines": [
+        423
+      ],
+      "why": "篱笆是四围圈上,同音错字"
+    },
+    {
+      "wrong": "乌斯帝",
+      "right": "乌斯地",
+      "lines": [
+        527
+      ],
+      "why": "热词表地名作「乌斯地」"
+    },
+    {
+      "wrong": "视为",
+      "right": "四围",
+      "lines": [
+        553
+      ],
+      "why": "423 行说「圈上的四围的篱笆」,近音错字"
+    },
+    {
+      "wrong": "陈世美",
+      "right": "陈社炳",
+      "lines": [
+        599
+      ],
+      "why": "热词表讲道人叫陈社炳"
+    },
+    {
+      "wrong": "高胡",
+      "right": "高湖",
+      "lines": [
+        599
+      ],
+      "why": "598 行作「高湖教会」,同音错字"
+    },
+    {
+      "wrong": "艺人",
+      "right": "义人",
+      "lines": [
+        665
+      ],
+      "why": "全篇论义人受苦,同音错字"
+    },
+    {
+      "wrong": "重子",
+      "right": "众子",
+      "lines": [
+        711
+      ],
+      "why": "567 行作「神的众子」,同音错字"
+    },
+    {
+      "wrong": "一人",
+      "right": "义人",
+      "lines": [
+        781,
+        786,
+        788,
+        790,
+        791,
+        810
+      ],
+      "why": "与「恶人」对举,同音错字"
+    },
+    {
+      "wrong": "二人",
+      "right": "恶人",
+      "lines": [
+        786,
+        788,
+        789,
+        810
+      ],
+      "why": "与「义人」对举,近音错字"
+    },
+    {
+      "wrong": "难阻",
+      "right": "拦阻",
+      "lines": [
+        865
+      ],
+      "why": "867 行说「撒但拦阻」,同音错字"
+    },
+    {
+      "wrong": "董王",
+      "right": "懂王",
+      "lines": [
+        891
+      ],
+      "why": "918 行作「三个属灵的懂王」,同音错字"
+    },
+    {
+      "wrong": "陈涉敏",
+      "right": "陈社炳",
+      "lines": [
+        895
+      ],
+      "why": "热词表讲道人叫陈社炳"
+    },
+    {
+      "wrong": "旧恩",
+      "right": "救恩",
+      "lines": [
+        908
+      ],
+      "why": "全篇讲救恩的稳固,同音错字"
+    }
+  ]
+}

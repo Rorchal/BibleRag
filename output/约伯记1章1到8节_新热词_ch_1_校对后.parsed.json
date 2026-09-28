@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "pipeline": "chapter",
+    "prompt": "切章",
+    "tag": "约伯记1章1到8节_新热词",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 18548,
+      "completion_tokens": 1478,
+      "total_tokens": 20026,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 818
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 17140
+    },
+    "secs": 8.0,
+    "finish_reason": "stop"
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "开场问候与自谦",
+      "trigger": "C",
+      "evidence": "行1「好，各位平安哦」—— 言语行为是问候",
+      "confidence": 0.92
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 25,
+      "title": "诵读经文:约伯记1章1~8节",
+      "trigger": "A",
+      "evidence": "行4「我为大家来宣读这周正道的经文」—— 由问候转入诵读",
+      "confidence": 0.95
+    },
+    {
+      "no": 3,
+      "start": 26,
+      "end": 33,
+      "title": "开场祷告",
+      "trigger": "A",
+      "evidence": "行26「那我们先一起来祷告」—— 显式宣告,转为祷告",
+      "confidence": 0.96
+    },
+    {
+      "no": 4,
+      "start": 34,
+      "end": 79,
+      "title": "引言:讲道分两部分与两个大纲问题,讲员陈社炳自我介绍",
+      "trigger": "A",
+      "evidence": "行34「我们就分两个部分来讲」—— 显式宣告讲道框架",
+      "confidence": 0.93
+    },
+    {
+      "no": 5,
+      "start": 80,
+      "end": 556,
+      "title": "讲道第一部分:约伯记1章1~5节,约伯的现实背景与世上是否存在绝对平安",
+      "trigger": "A",
+      "evidence": "行80「闲言少叙，我们看到经文里面」—— 转入经文讲解",
+      "confidence": 0.92
+    },
+    {
+      "no": 6,
+      "start": 557,
+      "end": 922,
+      "title": "讲道第二部分:约伯记1章6~8节,天上场景与撒但在上帝权下,不可凭环境判断信仰",
+      "trigger": "A",
+      "evidence": "行557「好，我们看第二节」及行558「第二部分，6~8节」—— 显式宣告第二部分",
+      "confidence": 0.93
+    },
+    {
+      "no": 7,
+      "start": 923,
+      "end": 942,
+      "title": "收尾:上帝圣言是信仰第一鉴别标准,环境顺逆不是判断依据",
+      "trigger": "A",
+      "evidence": "行923「大体我们今天就到这里」—— 显式宣告进入收尾",
+      "confidence": 0.8
+    },
+    {
+      "no": 8,
+      "start": 943,
+      "end": 967,
+      "title": "诵读并解释约翰福音9章1~3节:生来瞎眼显明神的作为而非罪",
+      "trigger": "A",
+      "evidence": "行943「最后我用一段经文来结束」—— 显式宣告转为读经",
+      "confidence": 0.88
+    },
+    {
+      "no": 9,
+      "start": 968,
+      "end": 969,
+      "title": "结束祷告",
+      "trigger": "A",
+      "evidence": "行968「好，我们一起来祷告」—— 显式宣告,转为祷告",
+      "confidence": 0.96
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 923,
+      "reason": "「大体我们今天就到这里」标示收尾,但紧随其后的答疑仍延续第二部分论题,可能应并入章6"
+    },
+    {
+      "line": 943,
+      "reason": "「最后我用一段经文来结束」明确转为读经,但也可能只算收尾章内的一个单元"
+    }
+  ],
+  "typos": []
+}

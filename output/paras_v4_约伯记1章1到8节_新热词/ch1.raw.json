@@ -1,0 +1,32 @@
+{
+ "id": "8d67b096-3544-4533-ac3e-0f483c71321b",
+ "object": "chat.completion",
+ "created": 1790586230,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 1, \"sections\": [{\"section\": \"1.1\", \"cuts\": [1], \"paragraphs\": [{\"start\": 1, \"end\": 3, \"ending\": \"不敢当「帮助」这一说法，但神的话确实能建立听众\", \"title\": \"开场互道平安之后，谦虚地推辞「帮助」的说法，说明自己只是尽可能把神的话用今天的话讲给听众听，而真正能建立人的是神的话\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有3行，不足6行，允许整节就是1段。cuts=[1]，paragraphs一段 start 1 end 3。\n\n标题：讲者自述只是把神的话用今天的话讲给大家听，不敢当「帮助」，但神的话确实能建立人。\n\n注意禁用词：不写「讲者」。改写：开场问候后，表示不敢当「帮助」，只是把神的话用今天的话尽可能讲给大家听，而神的话确实能建立人。\n\n人称：这里「你们」是听众。去掉人称写「听众」。可以写「别人」。\n\n标题：「开场问候之后谦虚地表示不敢当帮助，说明自己只是尽可能把神的话用今天的话讲给听众，而神的话确实能建立人」\n\nending：神的话确实能建立听众。\n\nuncertain：无。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7841,
+  "completion_tokens": 284,
+  "total_tokens": 8125,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 170
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 417
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

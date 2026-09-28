@@ -1,0 +1,32 @@
+{
+ "id": "d7400f33-df21-4f74-963e-5a6260fd96c4",
+ "object": "chat.completion",
+ "created": 1790586440,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 9, \"sections\": [{\"section\": \"9.1\", \"cuts\": [968], \"paragraphs\": [{\"start\": 968, \"end\": 969, \"ending\": \"一起祷告，并遵照神的话准备开始看约伯记\", \"title\": \"祷告后遵照神的话，预备开始查考约伯记\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有2行，不足6行，允许整节就是1段。cuts=[968]，paragraphs一段 start 968 end 969。\n\n标题：祷告后预备开始查考约伯记。内容：一起祷告，然后遵照神的话开始看约伯记。\n\n注意不要用「我们」。写成「祷告后遵照神的话，预备开始查考约伯记」。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7805,
+  "completion_tokens": 166,
+  "total_tokens": 7971,
+  "prompt_tokens_details": {
+   "cached_tokens": 7296
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 79
+  },
+  "prompt_cache_hit_tokens": 7296,
+  "prompt_cache_miss_tokens": 509
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

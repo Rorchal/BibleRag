@@ -1,0 +1,279 @@
+{
+  "src": "output/work/GH_约伯记1章1到8节_新热词/0_规则.txt",
+  "out": "output/work/GH_约伯记1章1到8节_新热词/1_校对后.txt",
+  "reported": 20,
+  "applied": [
+    {
+      "line": 40,
+      "wrong": "为自大",
+      "right": "为至大",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 236,
+      "wrong": "为自大",
+      "right": "为至大",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 269,
+      "wrong": "为自大",
+      "right": "为至大",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 271,
+      "wrong": "为自大",
+      "right": "为至大",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 442,
+      "wrong": "为自大",
+      "right": "为至大",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 281,
+      "wrong": "整洁",
+      "right": "总结",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 331,
+      "wrong": "研习",
+      "right": "筵席",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 333,
+      "wrong": "研习",
+      "right": "筵席",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 354,
+      "wrong": "近前",
+      "right": "敬虔",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 357,
+      "wrong": "近钱",
+      "right": "敬虔",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 371,
+      "wrong": "尽钱",
+      "right": "敬虔",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 373,
+      "wrong": "房祭",
+      "right": "燔祭",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 423,
+      "wrong": "四维",
+      "right": "四围",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 527,
+      "wrong": "乌斯帝",
+      "right": "乌斯地",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 553,
+      "wrong": "视为",
+      "right": "四围",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 599,
+      "wrong": "陈世美",
+      "right": "陈社炳",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 599,
+      "wrong": "高胡",
+      "right": "高湖",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 665,
+      "wrong": "艺人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 711,
+      "wrong": "重子",
+      "right": "众子",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 781,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 786,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 788,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 790,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 791,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 810,
+      "wrong": "一人",
+      "right": "义人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 786,
+      "wrong": "二人",
+      "right": "恶人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 788,
+      "wrong": "二人",
+      "right": "恶人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 789,
+      "wrong": "二人",
+      "right": "恶人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 810,
+      "wrong": "二人",
+      "right": "恶人",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 865,
+      "wrong": "难阻",
+      "right": "拦阻",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 891,
+      "wrong": "董王",
+      "right": "懂王",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 895,
+      "wrong": "陈涉敏",
+      "right": "陈社炳",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 908,
+      "wrong": "旧恩",
+      "right": "救恩",
+      "source": "output/约伯记1章1到8节_新热词_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    }
+  ],
+  "rejected": [],
+  "hotwords_added": [
+    "为至大",
+    "总结",
+    "四围",
+    "拦阻",
+    "懂王"
+  ]
+}
