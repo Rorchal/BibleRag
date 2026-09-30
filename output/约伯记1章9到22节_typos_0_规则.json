@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "stage": "proofread",
+    "prompt": "校对_v1",
+    "tag": "约伯记1章9到22节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 18219,
+      "completion_tokens": 8907,
+      "total_tokens": 27126,
+      "prompt_tokens_details": {
+        "cached_tokens": 3584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8243
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 14635
+    },
+    "secs": 35.4,
+    "finish_reason": "stop"
+  },
+  "typos": [
+    {
+      "wrong": "例例点章",
+      "right": "律例典章",
+      "lines": [
+        29
+      ],
+      "why": "686 行说「耶和华的律例典章」，同音错字"
+    },
+    {
+      "wrong": "倾刻间",
+      "right": "顷刻间",
+      "lines": [
+        48
+      ],
+      "why": "同音错字，无「倾刻」一词"
+    },
+    {
+      "wrong": "九到十二家",
+      "right": "九到十二节",
+      "lines": [
+        73
+      ],
+      "why": "全篇都说「几节」，此处当为节"
+    },
+    {
+      "wrong": "气掉",
+      "right": "弃掉",
+      "lines": [
+        165,
+        507
+      ],
+      "why": "166 行「他必当面弃掉你」，同音错字"
+    },
+    {
+      "wrong": "忠孝性",
+      "right": "宗教性",
+      "lines": [
+        171
+      ],
+      "why": "上文说「一切的宗教需求」，同音错字"
+    },
+    {
+      "wrong": "生命记",
+      "right": "申命记",
+      "lines": [
+        253,
+        254,
+        260,
+        307
+      ],
+      "why": "摩西的妥拉书卷是申命记"
+    },
+    {
+      "wrong": "印的景象",
+      "right": "硬着颈项",
+      "lines": [
+        272
+      ],
+      "why": "申 10:16「不可再硬着颈项」，近音错字"
+    },
+    {
+      "wrong": "德芙的印许",
+      "right": "得福的应许",
+      "lines": [
+        292
+      ],
+      "why": "上文讲拣选拯救后跟上得福的应许"
+    },
+    {
+      "wrong": "腓利比书",
+      "right": "腓立比书",
+      "lines": [
+        352,
+        361
+      ],
+      "why": "热词表书卷名为腓立比书"
+    },
+    {
+      "wrong": "旧恩",
+      "right": "救恩",
+      "lines": [
+        368
+      ],
+      "why": "348 行「不可震动的救恩」，同音错字"
+    },
+    {
+      "wrong": "幕后的世代",
+      "right": "末后的世代",
+      "lines": [
+        400
+      ],
+      "why": "末世论常用语「末后的世代」"
+    },
+    {
+      "wrong": "拖住",
+      "right": "托住",
+      "lines": [
+        405,
+        410,
+        413,
+        420
+      ],
+      "why": "来 1:3「用全能的命令托住万有」"
+    },
+    {
+      "wrong": "四八人",
+      "right": "示巴人",
+      "lines": [
+        439
+      ],
+      "why": "上文 15 节报信说示巴人闯来"
+    },
+    {
+      "wrong": "守灵",
+      "right": "属灵",
+      "lines": [
+        600
+      ],
+      "why": "全篇讲「属灵征战」，同音错字"
+    },
+    {
+      "wrong": "陈胜",
+      "right": "陈社炳",
+      "lines": [
+        674
+      ],
+      "why": "热词表里讲道人叫陈社炳"
+    },
+    {
+      "wrong": "一天心思一天",
+      "right": "一天新似一天",
+      "lines": [
+        735
+      ],
+      "why": "林后 4:16「内心却一天新似一天」"
+    }
+  ]
+}

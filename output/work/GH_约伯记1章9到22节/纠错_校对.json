@@ -1,0 +1,211 @@
+{
+  "src": "output/work/GH_约伯记1章9到22节/0_规则.txt",
+  "out": "output/work/GH_约伯记1章9到22节/1_校对后.txt",
+  "reported": 16,
+  "applied": [
+    {
+      "line": 29,
+      "wrong": "例例点章",
+      "right": "律例典章",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 48,
+      "wrong": "倾刻间",
+      "right": "顷刻间",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 73,
+      "wrong": "九到十二家",
+      "right": "九到十二节",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 165,
+      "wrong": "气掉",
+      "right": "弃掉",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 507,
+      "wrong": "气掉",
+      "right": "弃掉",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 171,
+      "wrong": "忠孝性",
+      "right": "宗教性",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 253,
+      "wrong": "生命记",
+      "right": "申命记",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 254,
+      "wrong": "生命记",
+      "right": "申命记",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 260,
+      "wrong": "生命记",
+      "right": "申命记",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 307,
+      "wrong": "生命记",
+      "right": "申命记",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 272,
+      "wrong": "印的景象",
+      "right": "硬着颈项",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 292,
+      "wrong": "德芙的印许",
+      "right": "得福的应许",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 352,
+      "wrong": "腓利比书",
+      "right": "腓立比书",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 361,
+      "wrong": "腓利比书",
+      "right": "腓立比书",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 368,
+      "wrong": "旧恩",
+      "right": "救恩",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 400,
+      "wrong": "幕后的世代",
+      "right": "末后的世代",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 405,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 410,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 413,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 420,
+      "wrong": "拖住",
+      "right": "托住",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 439,
+      "wrong": "四八人",
+      "right": "示巴人",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 600,
+      "wrong": "守灵",
+      "right": "属灵",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 674,
+      "wrong": "陈胜",
+      "right": "陈社炳",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 735,
+      "wrong": "一天心思一天",
+      "right": "一天新似一天",
+      "source": "output/约伯记1章9到22节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    }
+  ],
+  "rejected": [],
+  "hotwords_added": [
+    "律例典章",
+    "顷刻间",
+    "九到十二节",
+    "弃掉",
+    "宗教性",
+    "得福的应许",
+    "末后的世代",
+    "属灵",
+    "一天新似一天"
+  ]
+}

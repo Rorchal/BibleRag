@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "pipeline": "chapter",
+    "prompt": "切章",
+    "tag": "约伯记1章9到22节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 15208,
+      "completion_tokens": 5017,
+      "total_tokens": 20225,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4191
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 13672
+    },
+    "secs": 22.6,
+    "finish_reason": "stop"
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 3,
+      "title": "主日聚会开场问候，说明本周接续约伯记第一章开篇场景的证道",
+      "trigger": "C",
+      "evidence": "行1「好，各位弟兄姊妹，主日平安」—— 言语行为是问候",
+      "confidence": 0.92
+    },
+    {
+      "no": 2,
+      "start": 4,
+      "end": 26,
+      "title": "诵读约伯记1章9~22节经文，撒但控告约伯敬畏神岂是无故，约伯撕裂外袍称颂耶和华",
+      "trigger": "C",
+      "evidence": "行4「我先为大家来诵读这周证道的经文」—— 由问候转为诵读经文",
+      "confidence": 0.9
+    },
+    {
+      "no": 3,
+      "start": 27,
+      "end": 32,
+      "title": "讲道前祷告，求神借着约伯记的律例典章建立众儿女，引导进入古旧真理",
+      "trigger": "A",
+      "evidence": "行27「啊，我们一起来祷告」—— 显式宣告转为祷告",
+      "confidence": 0.95
+    },
+    {
+      "no": 4,
+      "start": 33,
+      "end": 72,
+      "title": "讲道引言：按9~12节、13~19节、20~22节三层讲解，预告神本与人本敬拜之别及属灵征战本质",
+      "trigger": "A",
+      "evidence": "行33「好，那我们来分三个方面来讲这周的故事哈」—— 显式宣告讲道框架",
+      "confidence": 0.9
+    },
+    {
+      "no": 5,
+      "start": 73,
+      "end": 374,
+      "title": "约伯记1章9~12节：敬畏神岂是无故，神本敬拜与人本敬拜的差别，敬畏的缘由不在赐福而在认识神",
+      "trigger": "A",
+      "evidence": "行73「好，我们来看一下九到十二节」—— 转入第一部分经文讲解",
+      "confidence": 0.9
+    },
+    {
+      "no": 6,
+      "start": 375,
+      "end": 642,
+      "title": "约伯记1章13~19节：撒但的第一轮攻击，报信留活口与时机的策略，信息差及属灵征战的本质与全副军装",
+      "trigger": "A",
+      "evidence": "行377「所以从13~19节，咱来看第二层哈」—— 显式宣告进入第二层",
+      "confidence": 0.88
+    },
+    {
+      "no": 7,
+      "start": 643,
+      "end": 747,
+      "title": "约伯记1章20~22节：约伯的信仰告白护卫信仰，隐秘的事属耶和华，以言词打赢信息战并结语祷告",
+      "trigger": "A",
+      "evidence": "行643「好，我们来最后结束一下这个经文，好吧」—— 显式宣告进入结束部分",
+      "confidence": 0.9
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 597,
+      "reason": "有「我想跟大家分享的第二个话题就是属灵征战的本质」的显式宣告，对应引言中预告的第二点，但讲者仍处在讲道同一段落中推进，且570起已展开信息战，可能只是节边界，暂并入章6"
+    }
+  ],
+  "typos": []
+}
