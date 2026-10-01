@@ -10,24 +10,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L1-3\",\"kind\":\"开场过渡\",\"questions\":[\"讲员为什么说“帮助不敢当”，只把自己当传话的？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L1-3\",\"kind\":\"开场过渡\",\"questions\":[\"讲员说“帮助不敢当”，那他讲道真正想让人得着什么？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 2.8,
+  "secs": 2.1,
   "usage": {
-   "prompt_tokens": 2170,
-   "completion_tokens": 302,
-   "total_tokens": 2472,
+   "prompt_tokens": 2056,
+   "completion_tokens": 164,
+   "total_tokens": 2220,
    "prompt_tokens_details": {
     "cached_tokens": 0
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 262
+    "reasoning_tokens": 123
    },
    "prompt_cache_hit_tokens": 0,
-   "prompt_cache_miss_tokens": 2170
+   "prompt_cache_miss_tokens": 2056
   },
-  "id": "37a6b692-a793-4d33-9595-467ea1057ff6",
+  "id": "ca7e68ea-be10-40a8-8f81-e4060f39fd81",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

@@ -30,24 +30,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L4-8\",\"kind\":\"开场过渡\",\"questions\":[\"本周讲道要为弟兄姊妹宣读的正道经文是哪一处？\"]},{\"id\":\"L9-13\",\"kind\":\"经文诵读\",\"questions\":[\"约伯的家产有多少，为什么说他在东方人中为至大？\",\"住在乌斯地的约伯，生了几个儿子、几个女儿？\"]},{\"id\":\"L14-18\",\"kind\":\"经文诵读\",\"questions\":[\"约伯的儿子设摆筵席的日子过了，他打发人去叫他们做什么？\",\"约伯清早按儿子数目献燔祭，是恐怕儿子犯什么罪？\"]},{\"id\":\"L19-22\",\"kind\":\"经文诵读\",\"questions\":[\"神的众子来侍立在耶和华面前时，撒但也做了什么？\",\"耶和华问撒但从哪里来，撒但是怎样回答的？\"]},{\"id\":\"L23-25\",\"kind\":\"经文诵读\",\"questions\":[\"耶和华问撒但“你曾用心查看我的仆人约伯没有”，是想说什么？\",\"神说地上再没有人像约伯，是怎么描述他的？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L4-8\",\"kind\":\"开场过渡\",\"questions\":[\"这周正道诵读的是哪一处经文，难解的地方怎么处理？\"]},{\"id\":\"L9-13\",\"kind\":\"经文诵读\",\"questions\":[\"约伯的家产有七千羊、三千骆驼，他在东方人中是什么地位？\",\"乌斯地的约伯是怎样一个人，讲道怎么形容他？\"]},{\"id\":\"L14-18\",\"kind\":\"经文诵读\",\"questions\":[\"约伯为什么清早起来，按着儿子们的数目献燔祭？\",\"约伯担心儿子犯了罪、心中弃掉神，就常常做什么？\"]},{\"id\":\"L19-22\",\"kind\":\"经文诵读\",\"questions\":[\"撒但来到神的众子中间，耶和华问它从哪里来，它怎么回答？\"]},{\"id\":\"L23-25\",\"kind\":\"经文诵读\",\"questions\":[\"耶和华怎样向撒但评价他的仆人约伯？\",\"“地上再没有人像他完全正直”，这话是对谁说的？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 12.2,
+  "secs": 8.1,
   "usage": {
-   "prompt_tokens": 2657,
-   "completion_tokens": 2525,
-   "total_tokens": 5182,
+   "prompt_tokens": 2543,
+   "completion_tokens": 1450,
+   "total_tokens": 3993,
    "prompt_tokens_details": {
-    "cached_tokens": 2048
+    "cached_tokens": 1792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 2290
+    "reasoning_tokens": 1230
    },
-   "prompt_cache_hit_tokens": 2048,
-   "prompt_cache_miss_tokens": 609
+   "prompt_cache_hit_tokens": 1792,
+   "prompt_cache_miss_tokens": 751
   },
-  "id": "41413e17-6670-4175-801e-31f0e933b280",
+  "id": "316584a2-682e-413a-a292-2a9a41f2bc0c",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

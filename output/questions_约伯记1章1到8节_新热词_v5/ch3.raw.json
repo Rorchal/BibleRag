@@ -15,24 +15,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L26-28\",\"kind\":\"祷告\",\"questions\":[\"开场祷告求神让会众以什么为根基来敬拜他？\"]},{\"id\":\"L29-33\",\"kind\":\"祷告\",\"questions\":[\"祷告求神开通耳朵，把使徒先知记在圣经上的什么赐给会众？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L26-28\",\"kind\":\"祷告\",\"questions\":[\"开场祷告求神让会众继续以他的话语为根基来敬拜，还求什么？\"]},{\"id\":\"L29-33\",\"kind\":\"祷告\",\"questions\":[\"祷告里说“凡有耳的都应该听”，是要弟兄姊妹领受什么？\",\"祷告求神赐人通达灵敏以致认识神、一次得救，还求真信心怎样？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 3.5,
+  "secs": 5.2,
   "usage": {
-   "prompt_tokens": 2329,
-   "completion_tokens": 582,
-   "total_tokens": 2911,
+   "prompt_tokens": 2215,
+   "completion_tokens": 930,
+   "total_tokens": 3145,
    "prompt_tokens_details": {
-    "cached_tokens": 2048
+    "cached_tokens": 1792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 507
+    "reasoning_tokens": 832
    },
-   "prompt_cache_hit_tokens": 2048,
-   "prompt_cache_miss_tokens": 281
+   "prompt_cache_hit_tokens": 1792,
+   "prompt_cache_miss_tokens": 423
   },
-  "id": "63e0683c-b761-4245-9c00-82450e6b9866",
+  "id": "d9b71541-008c-4987-a1b1-dbdf78f79afc",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

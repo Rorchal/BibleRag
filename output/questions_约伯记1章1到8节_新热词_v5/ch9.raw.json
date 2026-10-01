@@ -10,24 +10,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L968-969\",\"kind\":\"开场过渡\",\"questions\":[\"讲道前先一起祷告，遵照神的话开始查考哪卷书？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L968-969\",\"kind\":\"祷告\",\"questions\":[\"开始查考约伯记之前，祷告里说要遵照什么？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 3.2,
+  "secs": 3.3,
   "usage": {
-   "prompt_tokens": 2122,
-   "completion_tokens": 579,
-   "total_tokens": 2701,
+   "prompt_tokens": 2008,
+   "completion_tokens": 599,
+   "total_tokens": 2607,
    "prompt_tokens_details": {
-    "cached_tokens": 1920
+    "cached_tokens": 1792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 538
+    "reasoning_tokens": 562
    },
-   "prompt_cache_hit_tokens": 1920,
-   "prompt_cache_miss_tokens": 202
+   "prompt_cache_hit_tokens": 1792,
+   "prompt_cache_miss_tokens": 216
   },
-  "id": "64ccb148-ac7d-43cc-becc-c62ede11a875",
+  "id": "384de7c5-6e26-4c7f-8acb-1c4fd9326795",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

@@ -25,24 +25,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L923-928\",\"kind\":\"讲道\",\"questions\":[\"做一件事做得很不顺利，就说明那不是上帝的旨意吗？\",\"“越不顺越是上帝的意思”这种看法为什么也不可取？\"]},{\"id\":\"L929-936\",\"kind\":\"讲道\",\"questions\":[\"判断上帝旨意的第一标准，为什么是圣经六十六卷而不是环境顺遂？\",\"讲道说的“根基”，是指个人和家庭的遭遇吗？\"]},{\"id\":\"L937-939\",\"kind\":\"讲道\",\"questions\":[\"想知道上帝对自己的真实想法，该靠什么？安全感又该建立在哪里？\"]},{\"id\":\"L940-942\",\"kind\":\"讲道\",\"questions\":[\"人生能遭遇的最大灾祸是什么，为什么不是受苦本身？\",\"“心眼昏迷，不能明白真道”在讲道里说的是什么？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L923-928\",\"kind\":\"讲道\",\"questions\":[\"事情做得很不顺，是不是就说明不是上帝的旨意？\",\"越不顺就越是上帝的意思，这种判断法为什么站不住脚？\"]},{\"id\":\"L929-936\",\"kind\":\"讲道\",\"questions\":[\"辨别上帝旨意的第一标准若不是环境顺遂，那到底是什么？\",\"为什么说上帝怎么说才是行动的根基，而不是你的遭遇？\"]},{\"id\":\"L937-939\",\"kind\":\"讲道\",\"questions\":[\"人靠什么知道上帝对自己真实的看法？\",\"信徒的安全感应该建立在哪里？\"]},{\"id\":\"L940-942\",\"kind\":\"讲道\",\"questions\":[\"为什么说心眼昏迷、不能明白真道是人生最大的灾祸？\",\"人生最大的祝福是什么？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 4.5,
+  "secs": 3.1,
   "usage": {
-   "prompt_tokens": 2549,
-   "completion_tokens": 785,
-   "total_tokens": 3334,
+   "prompt_tokens": 2435,
+   "completion_tokens": 461,
+   "total_tokens": 2896,
    "prompt_tokens_details": {
-    "cached_tokens": 2048
+    "cached_tokens": 1792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 603
+    "reasoning_tokens": 292
    },
-   "prompt_cache_hit_tokens": 2048,
-   "prompt_cache_miss_tokens": 501
+   "prompt_cache_hit_tokens": 1792,
+   "prompt_cache_miss_tokens": 643
   },
-  "id": "93a25374-e399-4f25-b5d4-f7869496d791",
+  "id": "3503cea2-7dbb-4fa9-9637-50247b34a524",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

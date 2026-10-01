@@ -10,7 +10,7 @@
   output/questions_<tag>/ch<章号>.raw.json        每章的原始返回与 usage
   切分结果/<名字>/问题.json                      结构.json + 每段 kind、questions
   切分结果/<名字>/问题.md                        可读版
-校验（只记录，不重跑）：每段 id 都要出现；每段 1~2 条问题；8~35 字、以问号结尾；
+校验（只记录，不重跑）：每段 id 都要出现；讲道/经文诵读段 2 条问题，其余 1~2 条；8~35 字、以问号结尾；
   不含 这段/本段/上文/这一节；与原文连续相同的字不超过 6 个（引号内除外）。
 
 用法：
@@ -66,8 +66,9 @@ def longest_overlap(q: str, text: str) -> int:
 def check(p: dict, text: str) -> list[str]:
     out = []
     qs = p.get("questions") or []
-    if not 1 <= len(qs) <= 2:
-        out.append(f"问题数 {len(qs)}")
+    need = 2 if p.get("kind") in ("讲道", "经文诵读") and len(text) >= 60 else 1
+    if not need <= len(qs) <= 2:
+        out.append(f"问题数 {len(qs)}（kind {p.get('kind')} 应为 {need}~2）")
     if p.get("kind") not in KINDS:
         out.append(f"kind 不在四选一: {p.get('kind')}")
     for q in qs:
@@ -90,7 +91,7 @@ def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", required=True, help="切分结果/ 下的目录名")
-    ap.add_argument("--prompt", default="段问题_v5")
+    ap.add_argument("--prompt", default="段问题_v6")
     ap.add_argument("--effort", default=None, choices=["low", "high", "max"])
     ap.add_argument("--temperature", type=float, default=0.3)
     ap.add_argument("--max-tokens", type=int, default=64000)
