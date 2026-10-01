@@ -1,0 +1,34 @@
+{
+ "payload": {
+  "讲道": "约伯记1章1到8节",
+  "主经文": "约伯记1章1到8节",
+  "paragraphs": [
+   {
+    "id": "L963-967",
+    "title": "生来瞎眼这件事从头到尾与罪无关，而与神的作为有关；人思考时常限定了上帝的回答，问上帝问题时只给他一个选择题，非要他在父母的罪和儿子的罪之间二选一，后来发现两个都不是，因此对祸福与罪恶过去想当然的认知需要做调整",
+    "text": "原来与罪无关，原来与神的作为有关。当你去思考的时候，有的时候你限定了上帝的回答。你问上帝问题，你只给了上帝一个选择题，A 与 B 你回答我，到底是父母的罪还是儿子的罪？后来你发现两个都不是，原来与神的作为有关，这件事从头到尾与罪无关。这就是圣经告诉我们的，祸福罪恶到底是不是我们以前这么想当然的认知的，我们需要做个调整，好吗？"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L963-967\",\"kind\":\"讲道\",\"questions\":[\"生来瞎眼与罪无关，那到底跟什么有关？\",\"问上帝是父母犯罪还是本人犯罪，讲道说这个二选一的答案是什么？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 8.5,
+  "usage": {
+   "prompt_tokens": 1855,
+   "completion_tokens": 1550,
+   "total_tokens": 3405,
+   "prompt_tokens_details": {
+    "cached_tokens": 1664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1492
+   },
+   "prompt_cache_hit_tokens": 1664,
+   "prompt_cache_miss_tokens": 191
+  },
+  "id": "b24cfad0-fcc1-4119-8017-115ae50f5fdb",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}

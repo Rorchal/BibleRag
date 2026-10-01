@@ -1,0 +1,39 @@
+{
+ "payload": {
+  "讲道": "约伯记1章1到8节",
+  "主经文": "约伯记1章1到8节",
+  "paragraphs": [
+   {
+    "id": "L937-939",
+    "title": "人靠什么知道上帝对自己的真实想法？答案仍是这卷书，因此信徒的安全感应当建立在圣经之上",
+    "text": "我们靠什么知道上帝对你的真实想法？也是这卷书啊。所以我希望大家的安全感能够在这个之上。"
+   },
+   {
+    "id": "L940-942",
+    "title": "人生所能遭遇的最大灾祸，是心眼昏迷、不能明白真道；所能遭遇的最大祝福，则是上帝带领人进入真理，并赐下永恒的福乐",
+    "text": "当然了，所能遭遇的最大灾祸。我觉得还是心眼昏迷，不能明白真道。所能遭遇的最大祝福，也是上帝带你进入真理，并且给你永恒的福乐。"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L937-939\",\"kind\":\"讲道\",\"questions\":[\"人怎么才能知道神对自己真实的心意？\",\"牧师说基督徒的安全感应当立在哪里？\"]},{\"id\":\"L940-942\",\"kind\":\"讲道\",\"questions\":[\"人一生能遭遇的最大灾祸和最大祝福分别是什么？\",\"牧师用“心眼昏迷”形容的是哪种光景？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 3.2,
+  "usage": {
+   "prompt_tokens": 1830,
+   "completion_tokens": 512,
+   "total_tokens": 2342,
+   "prompt_tokens_details": {
+    "cached_tokens": 1664
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 425
+   },
+   "prompt_cache_hit_tokens": 1664,
+   "prompt_cache_miss_tokens": 166
+  },
+  "id": "7261db0f-b4dc-4681-8d43-921ccb54ec69",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}
