@@ -1,0 +1,39 @@
+{
+ "payload": {
+  "讲道": "约伯记1章9到22节",
+  "主经文": "约伯记1章9到22节",
+  "paragraphs": [
+   {
+    "id": "L27-28",
+    "title": "开始祷告，求神使众人能够客观地看约伯的故事。",
+    "text": "啊，我们一起来祷告。主，我们要客观的看约伯的故事。"
+   },
+   {
+    "id": "L29-32",
+    "title": "求神在圣卷的一切律例典章上指示众儿女，使他们切实地在根基上得以建立，让约伯记所托付的得救智慧与真知识充满弟兄姊妹，求圣灵引导进入这古旧的真理，并垂听祷告。",
+    "text": "愿你在你的话语，在圣卷上一切的律例典章上，指示我们的众儿女，使我们切实在根基上得以建立。让约伯记所托付的一切得救的智慧和一切真知识能够切实的充满弟兄姊妹。愿圣灵引导我们，带我们进入这古旧的真理。求垂听我们祷告，奉耶稣基督的圣名祈求。"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L27-28\",\"kind\":\"祷告\",\"questions\":[\"讲道开头求神让众人能客观看约伯的故事，这个祷告怎么求的？\"]},{\"id\":\"L29-32\",\"kind\":\"祷告\",\"questions\":[\"祷告求神在圣卷的律例典章上指示众儿女，好让他们在哪里得以建立？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 7.3,
+  "usage": {
+   "prompt_tokens": 2276,
+   "completion_tokens": 1428,
+   "total_tokens": 3704,
+   "prompt_tokens_details": {
+    "cached_tokens": 2048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1347
+   },
+   "prompt_cache_hit_tokens": 2048,
+   "prompt_cache_miss_tokens": 228
+  },
+  "id": "cb4b9954-fed7-4300-b6d7-73cff6be6198",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}

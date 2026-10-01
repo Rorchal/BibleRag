@@ -1,0 +1,34 @@
+{
+ "payload": {
+  "讲道": "约伯记2章1到6节",
+  "主经文": "约伯记2章1到6节",
+  "paragraphs": [
+   {
+    "id": "L14-18",
+    "title": "第二幕开场的祷告：求主藉约伯记所记古旧的圣道与圣灵开通耳朵，使众圣徒得着并明白这圣卷上一切古旧的律例典章，又愿这福音不致失落、救恩的果效在此生发，末了奉耶稣基督的圣名祈求",
+    "text": "好，这是第二幕，我们一起来祷告。主啊，遵照约伯记的，你记在圣经上的教导，愿这古旧的圣道和其中蕴含的一切的福音的智慧，被众圣徒得着而听到。但愿你的圣灵自己带领我们，开通我们的耳朵，使我们知道这圣卷上一切古旧的律例典章。愿这福音不致失落，也愿救恩的果效在这里生发。奉耶稣基督的圣名祈求。"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L14-18\",\"kind\":\"祷告\",\"questions\":[\"开场祷告求主借着圣灵开通耳朵，使人明白什么？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 3.0,
+  "usage": {
+   "prompt_tokens": 2261,
+   "completion_tokens": 435,
+   "total_tokens": 2696,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 398
+   },
+   "prompt_cache_hit_tokens": 1920,
+   "prompt_cache_miss_tokens": 341
+  },
+  "id": "5af0515b-a494-47df-95f4-9fdb251321f0",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}

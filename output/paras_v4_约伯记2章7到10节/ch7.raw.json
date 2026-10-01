@@ -1,0 +1,32 @@
+{
+ "id": "585e03ba-f89b-44fb-a58a-9d9abb20bc38",
+ "object": "chat.completion",
+ "created": 1790850989,
+ "model": "deepseek-flash",
+ "choices": [
+  {
+   "index": 0,
+   "message": {
+    "role": "assistant",
+    "content": "{\"chapter\": 7, \"sections\": [{\"section\": \"7.1\", \"cuts\": [771], \"paragraphs\": [{\"start\": 771, \"end\": 772, \"ending\": \"收束于共勉，并进入祷告，祷告的开头是遵照神留在约伯记上的话\", \"title\": \"以最简单的话作为共勉收束，勉励众人稳固坚固，并一同祷告，祷告中愿遵照神留在约伯记上的话而行\"}], \"uncertain\": []}]}",
+    "reasoning_content": "本节只有2行，不足6行，整节就是1段。cuts: [771]，end 772。\n\n标题：共勉希望众人稳固坚固，并进入遵照约伯记所留之话的祷告。\n\n内容：第一行是共勉+一起祷告；第二行是祷告开头「说我们遵照你留在约伯记上面的话」。\n\n标题要通顺，不含人称「我们」「你们」。改成「希望众人稳固坚固」。\n\n标题：以最简单的共勉收束，勉励众人稳固坚固，并一同祷告，求遵照神留在约伯记上的话。\n\n注意禁用人称。原文「我们一起来祷告」「我们遵照你留在约伯记上面的话」——「你」指神。改成「一同祷告，遵行神留在约伯记上的话」。\n\nending：两行落在祷告的开头，即遵照神留在约伯记上的话。\n\n好。输出。"
+   },
+   "logprobs": null,
+   "finish_reason": "stop"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 7823,
+  "completion_tokens": 302,
+  "total_tokens": 8125,
+  "prompt_tokens_details": {
+   "cached_tokens": 7424
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 188
+  },
+  "prompt_cache_hit_tokens": 7424,
+  "prompt_cache_miss_tokens": 399
+ },
+ "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

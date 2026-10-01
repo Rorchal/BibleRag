@@ -1,0 +1,34 @@
+{
+ "payload": {
+  "讲道": "约伯记1章9到22节",
+  "主经文": "约伯记1章9到22节",
+  "paragraphs": [
+   {
+    "id": "L1-3",
+    "title": "主日平安的问候之后，交代本周证道的安排：接着把约伯记讲完，把开篇的第一个场景都讲掉，之后再视情况选读一些较为乐观的经文",
+    "text": "好，各位弟兄姊妹，主日平安。好，我们来看这周证道的经文哈，我们这周接着把约伯记讲完。约伯记开篇的第一个场景，我想都讲掉，然后我们再看看要不要放松一下，看一些乐观的经文哈。"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L1-3\",\"kind\":\"开场过渡\",\"questions\":[\"约伯记开篇第一个场景，这次讲道打算全都讲掉吗？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 3.2,
+  "usage": {
+   "prompt_tokens": 2190,
+   "completion_tokens": 387,
+   "total_tokens": 2577,
+   "prompt_tokens_details": {
+    "cached_tokens": 2048
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 346
+   },
+   "prompt_cache_hit_tokens": 2048,
+   "prompt_cache_miss_tokens": 142
+  },
+  "id": "38ef779d-6827-4807-a417-4377980df667",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}

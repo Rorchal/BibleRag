@@ -52,6 +52,38 @@
       "count": 1
     },
     {
+      "line": 71,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 72,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 84,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 88,
+      "wrong": "势力",
+      "right": "侍立",
+      "source": "output/约伯记2章1到6节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
       "line": 93,
       "wrong": "受到",
       "right": "受造",
@@ -140,17 +172,9 @@
       "count": 1
     },
     {
-      "line": 336,
-      "wrong": "支持性",
-      "right": "知识性",
-      "source": "output/约伯记2章1到6节_typos_0_规则.json",
-      "section": null,
-      "count": 1
-    },
-    {
-      "line": 449,
-      "wrong": "支持性",
-      "right": "知识性",
+      "line": 333,
+      "wrong": "身战",
+      "right": "争战",
       "source": "output/约伯记2章1到6节_typos_0_规则.json",
       "section": null,
       "count": 1
@@ -164,9 +188,9 @@
       "count": 1
     },
     {
-      "line": 644,
-      "wrong": "货换算",
-      "right": "祸患算",
+      "line": 647,
+      "wrong": "教育",
+      "right": "教义",
       "source": "output/约伯记2章1到6节_typos_0_规则.json",
       "section": null,
       "count": 1
@@ -226,28 +250,13 @@
       "source": "output/约伯记2章1到6节_typos_0_规则.json",
       "section": null,
       "count": 1
-    },
-    {
-      "line": 778,
-      "wrong": "个人",
-      "right": "各人",
-      "source": "output/约伯记2章1到6节_typos_0_规则.json",
-      "section": null,
-      "count": 1
     }
   ],
   "rejected": [],
   "hotwords_added": [
     "变节",
-    "救恩",
-    "火马",
     "查看",
-    "诡计",
-    "知识性",
-    "受祸",
-    "祸患算",
-    "愚顽",
-    "相信",
-    "各人"
+    "争战",
+    "相信"
   ]
 }

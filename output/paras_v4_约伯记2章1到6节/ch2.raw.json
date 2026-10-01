@@ -1,32 +1,32 @@
 {
- "id": "5b30a28b-2011-4fd6-a84c-dfed9320488f",
+ "id": "44f5fef8-cfd5-4d5f-be7d-cc8726920225",
  "object": "chat.completion",
- "created": 1790513227,
+ "created": 1790850263,
  "model": "deepseek-flash",
  "choices": [
   {
    "index": 0,
    "message": {
     "role": "assistant",
-    "content": "{\"chapter\": 2, \"sections\": [{\"section\": \"2.1\", \"cuts\": [14], \"paragraphs\": [{\"start\": 14, \"end\": 18, \"ending\": \"以奉耶稣基督的圣名祈求收尾\", \"title\": \"第二幕的开场祷告：求主使约伯记这古旧圣道及其蕴含的福音智慧被众圣徒得着听见，求圣灵亲自带领、开通耳朵，使人明白这圣卷上一切古旧的律例典章，并求福音不致失落、救恩的果效在此生发\"}], \"uncertain\": []}]}",
-    "reasoning_content": "本节只有5行，不足6行，允许整节就是1段。cuts=[14]，一段 14-18。\n\n标题：这是一段祷告，求圣灵开通耳朵，使约伯记的古旧圣道和福音智慧被众圣徒得着，救恩果效生发。字数约80。\n\nending：以奉耶稣基督圣名祈求收尾。\n\n不要写「讲者」等。祷告是讲道人的祷告，可以写「开场祷告中……」或直接写祈求内容。「我们」要改写。\n\n标题：第二幕开场祷告，求主使约伯记这古旧圣道及其所蕴含的福音智慧被众圣徒得着听见，并求圣灵开通耳朵，使福音不失落、救恩的果效在此生发，最后奉耶稣基督圣名祈求。\n\n约100字，可以。稍微精简。"
+    "content": "{\"chapter\": 2, \"sections\": [{\"section\": \"2.1\", \"cuts\": [14], \"paragraphs\": [{\"start\": 14, \"end\": 18, \"ending\": \"末句奉耶稣基督的圣名祈求\", \"title\": \"第二幕开场的祷告：求主藉约伯记所记古旧的圣道与圣灵开通耳朵，使众圣徒得着并明白这圣卷上一切古旧的律例典章，又愿这福音不致失落、救恩的果效在此生发，末了奉耶稣基督的圣名祈求\"}], \"uncertain\": []}]}",
+    "reasoning_content": "这是一节祷告，5行，不足6行，允许整节1段。cuts = [14]，end = 18。\n\n标题：祷告求主藉圣道与圣灵开通耳朵，使众圣徒明白约伯记中古旧的律例典章，愿福音不失落、救恩生发，奉耶稣基督圣名祈求。\n\n需要避免人称？祷告内容里有「我们」「我们的」，但这是祷告的直接内容……不过标题禁用词说不用第一、二人称。可以写成「求主开通众圣徒的耳朵」这样转写。但祷告本身是讲道者带领会众的祷告。写成：「第二幕开场的祷告，求主藉古旧的圣道与圣灵开通耳朵，使众圣徒明白约伯记中一切古旧的律例典章，愿福音不致失落、救恩的果效生发，末了奉耶稣基督的圣名祈求。」\n\n字数大概80左右，可以。"
    },
    "logprobs": null,
    "finish_reason": "stop"
   }
  ],
  "usage": {
-  "prompt_tokens": 7919,
-  "completion_tokens": 320,
-  "total_tokens": 8239,
+  "prompt_tokens": 7923,
+  "completion_tokens": 339,
+  "total_tokens": 8262,
   "prompt_tokens_details": {
    "cached_tokens": 7424
   },
   "completion_tokens_details": {
-   "reasoning_tokens": 182
+   "reasoning_tokens": 200
   },
   "prompt_cache_hit_tokens": 7424,
-  "prompt_cache_miss_tokens": 495
+  "prompt_cache_miss_tokens": 499
  },
  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
 }

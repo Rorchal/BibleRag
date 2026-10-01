@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "pipeline": "se_v2_chapter",
+    "tag": "约伯记2章7到10节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "tokens": {
+      "prompt": 34109,
+      "completion": 9249
+    },
+    "calls": [
+      {
+        "usage": {
+          "prompt_tokens": 3139,
+          "completion_tokens": 321,
+          "total_tokens": 3460,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 207
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 451
+        },
+        "secs": 2.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 1
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3097,
+          "completion_tokens": 89,
+          "total_tokens": 3186,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 30
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 409
+        },
+        "secs": 1.5,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 2
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3628,
+          "completion_tokens": 764,
+          "total_tokens": 4392,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 558
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 940
+        },
+        "secs": 4.8,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 3
+      },
+      {
+        "usage": {
+          "prompt_tokens": 10582,
+          "completion_tokens": 5617,
+          "total_tokens": 16199,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 4710
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 7894
+        },
+        "secs": 27.2,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 4
+      },
+      {
+        "usage": {
+          "prompt_tokens": 7407,
+          "completion_tokens": 1900,
+          "total_tokens": 9307,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1450
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 4719
+        },
+        "secs": 10.1,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 5
+      },
+      {
+        "usage": {
+          "prompt_tokens": 3283,
+          "completion_tokens": 472,
+          "total_tokens": 3755,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 356
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 595
+        },
+        "secs": 3.6,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 6
+      },
+      {
+        "usage": {
+          "prompt_tokens": 2973,
+          "completion_tokens": 86,
+          "total_tokens": 3059,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 40
+          },
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 285
+        },
+        "secs": 1.9,
+        "finish_reason": "stop",
+        "error": null,
+        "chapter": 7
+      }
+    ]
+  },
+  "issues": [],
+  "chapters": [
+    {
+      "no": 1,
+      "start": 1,
+      "end": 12,
+      "title": "诵读证道经文:约伯记二章七至十节,约伯身受毒疮仍不以口犯罪"
+    },
+    {
+      "no": 2,
+      "start": 13,
+      "end": 21,
+      "title": "开场祷告:求圣灵向今时圣徒显明圣经,使人因信得救"
+    },
+    {
+      "no": 3,
+      "start": 22,
+      "end": 61,
+      "title": "引言:约伯记二章分两层讲解,提出谁愚拙谁智慧与信仰是否遭质疑"
+    },
+    {
+      "no": 4,
+      "start": 62,
+      "end": 491,
+      "title": "第一部分:约伯连身内之物都失去,显明世人不能明白的得救智慧(7~8节)"
+    },
+    {
+      "no": 5,
+      "start": 492,
+      "end": 747,
+      "title": "第二部分:纯正并非广受好评,约伯妻子的质疑与三友误判之别(9~10节)"
+    },
+    {
+      "no": 6,
+      "start": 748,
+      "end": 770,
+      "title": "总结:得救智慧被世人看为愚拙,须听神的话并将自我评价建立在基督话语上"
+    },
+    {
+      "no": 7,
+      "start": 771,
+      "end": 772,
+      "title": "收尾祷告:求主照着留在约伯记上的话坚固会众的信仰"
+    }
+  ],
+  "sections": [
+    {
+      "no": "1.1",
+      "start": 1,
+      "end": 9,
+      "title": "诵读约伯记2章7至10节：撒但击打约伯长毒疮，妻子劝其弃掉神，约伯答从神手里得福也受祸，并不以口犯罪",
+      "chapter": 1
+    },
+    {
+      "no": "1.2",
+      "start": 10,
+      "end": 12,
+      "title": "第二幕以约伯站得稳结束，但不止于结论，还要梳理细节并按圣经向今天说话",
+      "chapter": 1
+    },
+    {
+      "no": "2.1",
+      "start": 13,
+      "end": 21,
+      "title": "开场祷告：求圣灵藉圣经向今时圣徒显明真理，使人认识神、因信得救，并保守会场敬拜蒙悦纳",
+      "chapter": 2
+    },
+    {
+      "no": "3.1",
+      "start": 22,
+      "end": 41,
+      "title": "约伯记7至8节约伯连身内之物也失去，从脚掌到头顶长毒疮，在炉灰中用瓦片刮身，加倍痛苦却仍活着",
+      "chapter": 3
+    },
+    {
+      "no": "3.2",
+      "start": 42,
+      "end": 46,
+      "title": "约伯记9至10节约伯的妻子出场，约伯的苦难除灵界击打外也来自具体之人，第一句伤害出自妻子",
+      "chapter": 3
+    },
+    {
+      "no": "3.3",
+      "start": 47,
+      "end": 55,
+      "title": "第一个问题：约伯与约伯嫂对这苦难谁愚拙谁智慧，抛开政治正确的标准答案客观比较",
+      "chapter": 3
+    },
+    {
+      "no": "3.4",
+      "start": 56,
+      "end": 61,
+      "title": "第二个问题：拥有纯正信仰的人遭受更多的是质疑还是称赞，借约伯记对今天弟兄姊妹分享",
+      "chapter": 3
+    },
+    {
+      "no": "4.1",
+      "start": 62,
+      "end": 82,
+      "title": "约伯记第二章7-8节的主题：世人不能明白的智慧；第二场灾难的考题是圣徒对神的敬畏能否超脱病痛死亡这种人类共受的患难",
+      "chapter": 4
+    },
+    {
+      "no": "4.2",
+      "start": 83,
+      "end": 101,
+      "title": "圣经的启示反一切宗教常识，约伯记否定信神为得福的宗教理由；到第二章正常人大可不再信神，继续持守必出于超自然保守",
+      "chapter": 4
+    },
+    {
+      "no": "4.3",
+      "start": 102,
+      "end": 118,
+      "title": "约伯记是智慧书，持守纯正是被世人当做愚拙的智慧，只有上帝看为智慧，苦难只是表象",
+      "chapter": 4
+    },
+    {
+      "no": "4.4",
+      "start": 119,
+      "end": 148,
+      "title": "愚拙智慧的最高峰体现在十字架，即哥林多前书一章18至21节使徒保罗所说的得救的智慧",
+      "chapter": 4
+    },
+    {
+      "no": "4.5",
+      "start": 149,
+      "end": 201,
+      "title": "回到约伯记的真实情况：约伯持守纯正后非但没有回报，反而遭遇7至8节更惨的下场，让人迷茫",
+      "chapter": 4
+    },
+    {
+      "no": "4.6",
+      "start": 202,
+      "end": 208,
+      "title": "读经不要开上帝视角，预先知道结局会忽略当事人细节、无法代入",
+      "chapter": 4
+    },
+    {
+      "no": "4.7",
+      "start": 209,
+      "end": 257,
+      "title": "约伯不知天上耶和华与撒但的对话；若今天身边有人如此虔诚却遭难，人会如何设想他的未来，讲者以陈社炳自比，人总以为必有善报",
+      "chapter": 4
+    },
+    {
+      "no": "4.8",
+      "start": 258,
+      "end": 304,
+      "title": "身边的人不会称赞反而厌恶，约伯的妻子就极其反感；人对虔诚的赞誉往往来自看到虔诚带来的收益",
+      "chapter": 4
+    },
+    {
+      "no": "4.9",
+      "start": 305,
+      "end": 341,
+      "title": "智慧书提醒不要从结果反推原因，须从神启示的话语直接认定始因；以约翰福音中生来瞎眼的人为例",
+      "chapter": 4
+    },
+    {
+      "no": "4.10",
+      "start": 342,
+      "end": 355,
+      "title": "从果推因的思维传统充斥许多地方的教会，也伴随讲者从2017年至今的传道生涯",
+      "chapter": 4
+    },
+    {
+      "no": "4.11",
+      "start": 356,
+      "end": 368,
+      "title": "求智慧要胜过求黄金，不可只揪着生命改变；基督徒的灵性更新与生命改变都包括智慧的更新",
+      "chapter": 4
+    },
+    {
+      "no": "4.12",
+      "start": 369,
+      "end": 400,
+      "title": "约伯称妻子为愚妄妇人，引出谁智慧谁愚昧的标准问题；标准在于神的话，不可用社会的既定标准去衡量",
+      "chapter": 4
+    },
+    {
+      "no": "4.13",
+      "start": 401,
+      "end": 439,
+      "title": "敬畏耶和华是智慧与知识的开端，具体即遵行神一切的诫命律例典章，见箴言1章7节、9章10节与申命记6章",
+      "chapter": 4
+    },
+    {
+      "no": "4.14",
+      "start": 440,
+      "end": 486,
+      "title": "得智慧的渠道不是哲学思辨、天人感应或生活阅历，而是首先听耶和华的训诲，其次才是生活阅历与书本知识",
+      "chapter": 4
+    },
+    {
+      "no": "4.15",
+      "start": 487,
+      "end": 491,
+      "title": "约伯在炉灰中仍持守纯正，世人包括他的妻子看为愚拙，这才是真正的智慧",
+      "chapter": 4
+    },
+    {
+      "no": "5.1",
+      "start": 492,
+      "end": 503,
+      "title": "纯正并非广受好评：听从神的话所生的决定在世人看来极其愚拙，基督徒是因信而非因思考行事",
+      "chapter": 5
+    },
+    {
+      "no": "5.2",
+      "start": 504,
+      "end": 567,
+      "title": "约伯记1章9节约伯妻子在第二轮灾祸中质疑约伯仍持守纯正，妻子能接受失去身外之物却无法接受身内受祸",
+      "chapter": 5
+    },
+    {
+      "no": "5.3",
+      "start": 568,
+      "end": 627,
+      "title": "约伯妻子与三个朋友的差异：三友不知约伯纯正而指责他，妻子深知约伯纯正却同样质疑他，约伯受属灵霸凌",
+      "chapter": 5
+    },
+    {
+      "no": "5.4",
+      "start": 628,
+      "end": 665,
+      "title": "约伯记1章10节约伯的纯正即承认从神手里得福也受祸，海德堡要理问答上帝护理包含得福受祸，约伯不认为病会好只信救赎主活着",
+      "chapter": 5
+    },
+    {
+      "no": "5.5",
+      "start": 666,
+      "end": 710,
+      "title": "要把信仰和自我的价值建立在上帝自己身上，不建立在别人的评价上，以上帝话语看待自己，约伯在谬论拉扯中持守纯正得耶和华称赞",
+      "chapter": 5
+    },
+    {
+      "no": "5.6",
+      "start": 711,
+      "end": 747,
+      "title": "马太福音七章13-14节窄门宽门：宽门人多通向灭亡、窄门人少通向永生，真道掌握在少数人手中，这正是十字架愚拙的道理与上帝的智慧",
+      "chapter": 5
+    },
+    {
+      "no": "6.1",
+      "start": 748,
+      "end": 765,
+      "title": "约伯与妻子的对话显出愚拙与智慧的分别：不要用世上标准评价信仰，得救的智慧在聪明人看来为愚拙，当听上帝的道而得智慧",
+      "chapter": 6
+    },
+    {
+      "no": "6.2",
+      "start": 766,
+      "end": 770,
+      "title": "纯真的信仰未必得夸赞，反会受质疑厌恶，须用圣道军装坚固自己，把对自己的评价建立在基督话语的根基上",
+      "chapter": 6
+    },
+    {
+      "no": "7.1",
+      "start": 771,
+      "end": 772,
+      "title": "以求稳固坚固的共勉收束，并进入遵照约伯记所留之话的祷告",
+      "chapter": 7
+    }
+  ],
+  "uncertain": [
+    {
+      "line": 202,
+      "reason": "「读经不要开上帝视角」像是插入的读经方法论，独立成节仅7行，也可能应并入209起的约伯不知天上对话一段"
+    },
+    {
+      "line": 692,
+      "reason": "「具体的方式是什么呢」是在回答上文如何不建立在别人评价上，可能是5.5内部的推进，也可能另起一节讲以上帝话语看待自己"
+    }
+  ]
+}

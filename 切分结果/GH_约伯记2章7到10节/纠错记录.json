@@ -1,0 +1,232 @@
+{
+  "src": "output/work/GH_约伯记2章7到10节/0_规则.txt",
+  "out": "output/work/GH_约伯记2章7到10节/1_校对后.txt",
+  "reported": 24,
+  "applied": [
+    {
+      "line": 35,
+      "wrong": "肾内周",
+      "right": "身内之物",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 132,
+      "wrong": "纯的",
+      "right": "蠢的",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 158,
+      "wrong": "东方自自大",
+      "right": "东方至大",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 195,
+      "wrong": "气掉神",
+      "right": "弃掉神",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 215,
+      "wrong": "陈色饼",
+      "right": "陈社炳",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 219,
+      "wrong": "陈色比",
+      "right": "陈社炳",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 312,
+      "wrong": "反对到",
+      "right": "反推到",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 320,
+      "wrong": "死因",
+      "right": "始因",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 359,
+      "wrong": "陈涉平",
+      "right": "陈社炳",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 360,
+      "wrong": "真言",
+      "right": "箴言",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 366,
+      "wrong": "宅出去",
+      "right": "摘出去",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 370,
+      "wrong": "去掉神",
+      "right": "弃掉神",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 372,
+      "wrong": "富人",
+      "right": "妇人",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 379,
+      "wrong": "标志",
+      "right": "标准",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 408,
+      "wrong": "制胜者",
+      "right": "至圣者",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 423,
+      "wrong": "制胜者",
+      "right": "至圣者",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 418,
+      "wrong": "生命记",
+      "right": "申命记",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 541,
+      "wrong": "收货",
+      "right": "受祸",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 555,
+      "wrong": "刺身",
+      "right": "赤身",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 578,
+      "wrong": "苏亚",
+      "right": "书亚",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 581,
+      "wrong": "芦灰",
+      "right": "炉灰",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 2
+    },
+    {
+      "line": 585,
+      "wrong": "自意",
+      "right": "自义",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 616,
+      "wrong": "气掉了神",
+      "right": "弃掉了神",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 721,
+      "wrong": "门框",
+      "right": "门宽",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 722,
+      "wrong": "门框",
+      "right": "门宽",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    },
+    {
+      "line": 768,
+      "wrong": "兼顾",
+      "right": "坚固",
+      "source": "output/约伯记2章7到10节_typos_0_规则.json",
+      "section": null,
+      "count": 1
+    }
+  ],
+  "rejected": [],
+  "hotwords_added": [
+    "身内之物",
+    "蠢的",
+    "弃掉神",
+    "反推到",
+    "始因",
+    "摘出去",
+    "妇人",
+    "标准",
+    "至圣者",
+    "书亚",
+    "自义",
+    "弃掉了神",
+    "门宽",
+    "坚固"
+  ]
+}

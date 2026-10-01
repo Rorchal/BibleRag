@@ -7,19 +7,19 @@
     "temperature": 0.2,
     "effort": "low",
     "usage": {
-      "prompt_tokens": 15595,
-      "completion_tokens": 4757,
-      "total_tokens": 20352,
+      "prompt_tokens": 15597,
+      "completion_tokens": 1985,
+      "total_tokens": 17582,
       "prompt_tokens_details": {
-        "cached_tokens": 1536
+        "cached_tokens": 2688
       },
       "completion_tokens_details": {
-        "reasoning_tokens": 3898
+        "reasoning_tokens": 1138
       },
-      "prompt_cache_hit_tokens": 1536,
-      "prompt_cache_miss_tokens": 14059
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 12909
     },
-    "secs": 20.8,
+    "secs": 9.3,
     "finish_reason": "stop"
   },
   "issues": [],
@@ -28,83 +28,78 @@
       "no": 1,
       "start": 1,
       "end": 13,
-      "title": "诵读约伯记2章1~5节:天上第二幕,撒但再获授权攻击约伯的骨与肉",
+      "title": "诵读约伯记2章1~5节：天上第二幕，撒但再次控告约伯",
       "trigger": "C",
-      "evidence": "行1「大家来诵读这周证道的经文」—— 由问候转为诵读经文",
-      "confidence": 0.93
+      "evidence": "行1「大家来诵读这周证道的经文」—— 由开场转入经文诵读",
+      "confidence": 0.95
     },
     {
       "no": 2,
       "start": 14,
       "end": 18,
-      "title": "祷告:求圣灵开通耳朵,使约伯记古旧圣道中的福音果效生发",
+      "title": "诵读后的开场祷告：求圣灵开通耳朵，使圣道生发果效",
       "trigger": "A",
-      "evidence": "行14「我们一起来祷告」—— 显式宣告转为祷告",
-      "confidence": 0.95
+      "evidence": "行14「好，这是第二幕，我们一起来祷告」—— 显式宣告转为祷告",
+      "confidence": 0.96
     },
     {
       "no": 3,
       "start": 19,
       "end": 34,
-      "title": "讲道引言:本周分两层讲,1~3节论属灵征战,4~6节论约伯的肉体灾难",
+      "title": "引言与讲道框架：本段分1~3节与4~6节两个层次",
       "trigger": "A",
-      "evidence": "行19「还是分两个方面来讲啊」—— 显式宣告全篇框架",
-      "confidence": 0.92
+      "evidence": "行19「我们这一段哈，我们来讲的细一点，还是分两个方面来讲」—— 显式宣告框架",
+      "confidence": 0.93
     },
     {
       "no": 4,
       "start": 35,
       "end": 486,
-      "title": "第一层讲解1~3节:约伯持守纯正,属灵征战的实质与以弗所书的全副军装",
+      "title": "讲道第一部分：约伯1~3节的得胜，属灵征战的实质与以弗所书六章全副军装",
       "trigger": "A",
-      "evidence": "行35「第一层」—— 宣告进入第一部分",
+      "evidence": "行35「第一层。」—— 承接引言宣告进入第一层讲解",
       "confidence": 0.9
     },
     {
       "no": 5,
       "start": 487,
-      "end": 611,
-      "title": "第二层讲解4~6节:撒但以皮代皮控告,约伯骨肉受苦与上帝存留其性命的授权",
+      "end": 739,
+      "title": "讲道第二部分：约伯记2章4~6节，撒但攻击皮与骨，上帝的护理包括荒年疾病贫穷",
       "trigger": "A",
-      "evidence": "行487「接下来我们要逐步开始看4~6节」—— 转入第二层",
+      "evidence": "行487「接下来我们要逐步开始看4~6节，也就第二层，第二步」—— 显式宣告进入第二层",
       "confidence": 0.9
     },
     {
       "no": 6,
-      "start": 612,
-      "end": 740,
-      "title": "上帝的护理:海德堡要理问答27、28问指出丰年荒年、健康疾病、富足贫穷皆出于神",
-      "trigger": "B",
-      "evidence": "行612「能够给现实生活中的圣徒带来多大的安慰呢」—— 由约伯解经转向护理教义",
+      "start": 740,
+      "end": 793,
+      "title": "结尾劝勉：引耶利米书29章与使徒行传20章，信靠上帝赐平安的意念并回到使徒的道",
+      "trigger": "A",
+      "evidence": "行740「因此今天的结尾，大家得记得啊」—— 显式宣告进入结尾",
       "confidence": 0.82
     },
     {
       "no": 7,
-      "start": 741,
-      "end": 793,
-      "title": "结语勉励:信靠上帝不变的意念,回归使徒圣道,引耶利米书29章与使徒行传20章",
-      "trigger": "A",
-      "evidence": "行741「因此今天的结尾」—— 显式宣告进入结尾",
-      "confidence": 0.88
-    },
-    {
-      "no": 8,
       "start": 794,
       "end": 795,
       "title": "结束祷告",
       "trigger": "A",
       "evidence": "行794「我们一起来祷告」—— 显式宣告转为祷告",
-      "confidence": 0.85
+      "confidence": 0.9
     }
   ],
   "uncertain": [
     {
-      "line": 612,
-      "reason": "行612~628是过渡性发问,行629才显式说「就是上帝的护理」;此处可能只是章5内部转向,也可能构成新章"
+      "line": 372,
+      "reason": "「第二部分呢？那军装是啥」看似新的分部宣告，但仍在讲解以弗所书军装这一主题内，属第一次分层的子论题，按宁少勿多归入章4"
     },
     {
-      "line": 794,
-      "reason": "结束祷告仅2行且末行被截断,也可能是章7结尾的一部分而非独立章"
+      "line": 629,
+      "reason": "「第二部分我要跟大家讲清楚一个问题，就是上帝的护理」似为新的部分宣告，但讲者自487行起已在讲4~6节，此处属该部分内的论题推进，归入章5"
+    },
+    {
+      "line": 740,
+      "reason": "「今天的结尾」显式宣告结尾，但可能只是章5讲道正文的收束而非独立功能单元，存在切分风险"
     }
   ],
   "typos": []

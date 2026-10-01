@@ -1,0 +1,34 @@
+{
+ "payload": {
+  "讲道": "约伯记2章7到10节",
+  "主经文": "约伯记2章7到10节",
+  "paragraphs": [
+   {
+    "id": "L771-772",
+    "title": "以最简单的话作为共勉收束，勉励众人稳固坚固，并一同祷告，祷告中愿遵照神留在约伯记上的话而行",
+    "text": "这个就是我们最简单的跟大家的共勉，希望你们能够稳固坚固啊，我们一起来祷告。说我们遵照你留在约伯记上面的话。"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L771-772\",\"kind\":\"祷告\",\"questions\":[\"讲道最后用“稳固坚固”作共勉，随后是怎样收尾的？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 2.6,
+  "usage": {
+   "prompt_tokens": 2152,
+   "completion_tokens": 426,
+   "total_tokens": 2578,
+   "prompt_tokens_details": {
+    "cached_tokens": 1920
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 385
+   },
+   "prompt_cache_hit_tokens": 1920,
+   "prompt_cache_miss_tokens": 232
+  },
+  "id": "5cbdcdcb-498e-47f5-93f6-c15ba7624ade",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}

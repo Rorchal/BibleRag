@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "stage": "proofread",
+    "prompt": "校对_v1",
+    "tag": "约伯记2章7到10节",
+    "model": "deepseek-flash",
+    "temperature": 0.2,
+    "effort": "low",
+    "usage": {
+      "prompt_tokens": 18061,
+      "completion_tokens": 13130,
+      "total_tokens": 31191,
+      "prompt_tokens_details": {
+        "cached_tokens": 3584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 12235
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 14477
+    },
+    "secs": 53.3,
+    "finish_reason": "stop"
+  },
+  "typos": [
+    {
+      "wrong": "肾内周",
+      "right": "身内之物",
+      "lines": [
+        35
+      ],
+      "why": "24 行说「连身内之物都失去」"
+    },
+    {
+      "wrong": "纯的",
+      "right": "蠢的",
+      "lines": [
+        132
+      ],
+      "why": "上下文言十字架道理被看为愚拙、蠢的"
+    },
+    {
+      "wrong": "东方自自大",
+      "right": "东方至大",
+      "lines": [
+        158
+      ],
+      "why": "热词表有「东方至大」,255 行也写对"
+    },
+    {
+      "wrong": "气掉神",
+      "right": "弃掉神",
+      "lines": [
+        195
+      ],
+      "why": "6 行「你弃掉神死了吧」"
+    },
+    {
+      "wrong": "陈色饼",
+      "right": "陈社炳",
+      "lines": [
+        215
+      ],
+      "why": "热词表里讲道人叫陈社炳"
+    },
+    {
+      "wrong": "陈色比",
+      "right": "陈社炳",
+      "lines": [
+        219
+      ],
+      "why": "热词表里讲道人叫陈社炳"
+    },
+    {
+      "wrong": "反对到",
+      "right": "反推到",
+      "lines": [
+        312
+      ],
+      "why": "308/315 行都说「反推到因」"
+    },
+    {
+      "wrong": "死因",
+      "right": "始因",
+      "lines": [
+        320
+      ],
+      "why": "312 行说「最开始的始因」"
+    },
+    {
+      "wrong": "陈涉平",
+      "right": "陈社炳",
+      "lines": [
+        359
+      ],
+      "why": "热词表里讲道人叫陈社炳"
+    },
+    {
+      "wrong": "真言",
+      "right": "箴言",
+      "lines": [
+        360
+      ],
+      "why": "下文 402 行引「箴言一章七节」"
+    },
+    {
+      "wrong": "宅出去",
+      "right": "摘出去",
+      "lines": [
+        366
+      ],
+      "why": "368 行「你不要摘出来说」"
+    },
+    {
+      "wrong": "去掉神",
+      "right": "弃掉神",
+      "lines": [
+        370
+      ],
+      "why": "287 行「赶紧弃掉神」"
+    },
+    {
+      "wrong": "富人",
+      "right": "妇人",
+      "lines": [
+        372
+      ],
+      "why": "上文说约伯评妻子像愚顽的妇人"
+    },
+    {
+      "wrong": "标志",
+      "right": "标准",
+      "lines": [
+        379
+      ],
+      "why": "380 行紧接着问「标准是什么」"
+    },
+    {
+      "wrong": "制胜者",
+      "right": "至圣者",
+      "lines": [
+        408,
+        423
+      ],
+      "why": "407 行「认识至圣者便是聪明」"
+    },
+    {
+      "wrong": "生命记",
+      "right": "申命记",
+      "lines": [
+        418
+      ],
+      "why": "引摩西妥拉申命记 6:1-2"
+    },
+    {
+      "wrong": "收货",
+      "right": "受祸",
+      "lines": [
+        541
+      ],
+      "why": "536 行「直接从他那里受祸」"
+    },
+    {
+      "wrong": "刺身",
+      "right": "赤身",
+      "lines": [
+        555
+      ],
+      "why": "552/553 行「赤身归回」「就是赤身」"
+    },
+    {
+      "wrong": "苏亚",
+      "right": "书亚",
+      "lines": [
+        578
+      ],
+      "why": "书亚人比勒达,热词表地名"
+    },
+    {
+      "wrong": "芦灰",
+      "right": "炉灰",
+      "lines": [
+        581
+      ],
+      "why": "239/240/244 行均作「炉灰」"
+    },
+    {
+      "wrong": "自意",
+      "right": "自义",
+      "lines": [
+        585
+      ],
+      "why": "上下文指约伯自以为是、自义"
+    },
+    {
+      "wrong": "气掉了神",
+      "right": "弃掉了神",
+      "lines": [
+        616
+      ],
+      "why": "同篇多次说「弃掉神」"
+    },
+    {
+      "wrong": "门框",
+      "right": "门宽",
+      "lines": [
+        721,
+        722
+      ],
+      "why": "724 行对照说「门窄人少」"
+    },
+    {
+      "wrong": "兼顾",
+      "right": "坚固",
+      "lines": [
+        768
+      ],
+      "why": "700 行「心智不移动的坚固」"
+    }
+  ]
+}
