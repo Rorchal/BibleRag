@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""按段生成检索用问题：读 切分结果/<名字>/结构.json，每一节调一次模型，不重试。
+"""按段生成检索用问题：读 切分结果/<名字>/结构.json，每一章调一次模型（这一章的所有段放进同一批），不重试；最后把各章结果合并。
 
 提示词 prompts/段问题_v4.md（<<<SYSTEM>>> / <<<USER>>> 两段，USER 里的 {payload} 换成这一节的 JSON）：
   {"讲道": "约伯记1章1到8节", "主经文": "约伯记1章1到8节",
@@ -7,7 +7,7 @@
 模型返回 {"paragraphs": [{"id", "kind", "questions": [2 条]}]}。
 
 输出：
-  output/questions_<tag>/<节号>.raw.json          每节的原始返回与 usage
+  output/questions_<tag>/ch<章号>.raw.json        每章的原始返回与 usage
   切分结果/<名字>/问题.json                      结构.json + 每段 kind、questions
   切分结果/<名字>/问题.md                        可读版
 校验（只记录，不重跑）：每段 id 都要出现；每段 2 条问题；8~35 字、以问号结尾；
@@ -46,11 +46,11 @@ def sermon_title(name: str) -> str:
     return t.replace("伯", "约伯记") if t.startswith("伯") else t
 
 
-def payload(sermon: str, sec: dict, lines: list[str]) -> dict:
+def payload(sermon: str, paras: list[dict], lines: list[str]) -> dict:
     return {"讲道": sermon, "主经文": sermon,
             "paragraphs": [{"id": f"L{p['start']}-{p['end']}", "title": p.get("title", ""),
                             "text": "".join(lines[p["start"] - 1:p["end"]])}
-                           for p in sec["paragraphs"]]}
+                           for p in paras]}
 
 
 def longest_overlap(q: str, text: str) -> int:
@@ -93,7 +93,7 @@ def main() -> int:
     ap.add_argument("--prompt", default="段问题_v4")
     ap.add_argument("--effort", default=None, choices=["low", "high", "max"])
     ap.add_argument("--temperature", type=float, default=0.3)
-    ap.add_argument("--max-tokens", type=int, default=8000)
+    ap.add_argument("--max-tokens", type=int, default=64000)
     ap.add_argument("--chapters", default=None, help="只跑这些章，如 1,2")
     a = ap.parse_args()
 
@@ -116,41 +116,41 @@ def main() -> int:
     for ch in struct["chapters"]:
         if only and ch["no"] not in only:
             continue
-        for sec in ch["sections"]:
-            pl = payload(sermon, sec, lines)
-            user = user_tpl.replace("{payload}", json.dumps(pl, ensure_ascii=False))
-            content, meta = ds.chat(system, user, max_tokens=a.max_tokens, temperature=a.temperature,
-                                    timeout=600, ctx={"name": a.name, "stage": "questions", "section": sec["no"]},
-                                    reasoning_effort=a.effort)
-            n_calls += 1
-            io.open(os.path.join(odir, f"{sec['no']}.raw.json"), "w", encoding="utf-8").write(
-                json.dumps({"payload": pl, "content": content, "meta": meta}, ensure_ascii=False, indent=1))
-            u = meta.get("usage") or {}
-            for k in usage_sum:
-                usage_sum[k] += u.get(k) or 0
-            data = ds.parse_json(content) if content else None
-            got = {}
-            for p in ((data or {}).get("paragraphs") or []) if isinstance(data, dict) else []:
-                if isinstance(p, dict) and p.get("id"):
-                    got[str(p["id"])] = p
-            sec_q = 0
-            for p, pin in zip(sec["paragraphs"], pl["paragraphs"]):
-                r = got.pop(pin["id"], None)
-                if r is None:
-                    problems.append(f"节{sec['no']} {pin['id']}：输出里没有这一段")
-                    r = {"kind": None, "questions": []}
-                for why in check(r, pin["text"]):
-                    problems.append(f"节{sec['no']} {pin['id']}：{why}")
-                p["kind"] = r.get("kind")
-                p["questions"] = [str(q).strip() for q in (r.get("questions") or [])]
-                n_paras += 1
-                sec_q += len(p["questions"])
-            for k in got:
-                problems.append(f"节{sec['no']}：输出多出 {k}")
-            n_q += sec_q
-            print(f"节{sec['no']:<5} {len(sec['paragraphs'])} 段 → {sec_q} 问  {meta.get('secs')}s  "
-                  f"入 {u.get('prompt_tokens')}（缓存命中 {u.get('prompt_cache_hit_tokens')}） 出 {u.get('completion_tokens')}"
-                  + ("" if meta.get("ok") else f"  失败: {meta.get('error')}"), flush=True)
+        paras = [p for sec in ch["sections"] for p in sec["paragraphs"]]
+        pl = payload(sermon, paras, lines)
+        user = user_tpl.replace("{payload}", json.dumps(pl, ensure_ascii=False))
+        content, meta = ds.chat(system, user, max_tokens=a.max_tokens, temperature=a.temperature,
+                                timeout=1800, ctx={"name": a.name, "stage": "questions", "chapter": ch["no"]},
+                                reasoning_effort=a.effort)
+        n_calls += 1
+        io.open(os.path.join(odir, f"ch{ch['no']}.raw.json"), "w", encoding="utf-8").write(
+            json.dumps({"payload": pl, "content": content, "meta": meta}, ensure_ascii=False, indent=1))
+        u = meta.get("usage") or {}
+        for k in usage_sum:
+            usage_sum[k] += u.get(k) or 0
+        data = ds.parse_json(content) if content else None
+        got = {}
+        for p in ((data or {}).get("paragraphs") or []) if isinstance(data, dict) else []:
+            if isinstance(p, dict) and p.get("id"):
+                got[str(p["id"])] = p
+        ch_q = 0
+        for p, pin in zip(paras, pl["paragraphs"]):
+            r = got.pop(pin["id"], None)
+            if r is None:
+                problems.append(f"第{ch['no']}章 {pin['id']}：输出里没有这一段")
+                r = {"kind": None, "questions": []}
+            for why in check(r, pin["text"]):
+                problems.append(f"第{ch['no']}章 {pin['id']}：{why}")
+            p["kind"] = r.get("kind")
+            p["questions"] = [str(q).strip() for q in (r.get("questions") or [])]
+            n_paras += 1
+            ch_q += len(p["questions"])
+        for k in got:
+            problems.append(f"第{ch['no']}章：输出多出 {k}")
+        n_q += ch_q
+        print(f"第{ch['no']}章  {len(paras)} 段 → {ch_q} 问  {meta.get('secs')}s  "
+              f"入 {u.get('prompt_tokens')}（缓存命中 {u.get('prompt_cache_hit_tokens')}） 出 {u.get('completion_tokens')}"
+              f"  finish={meta.get('finish_reason')}" + ("" if meta.get("ok") else f"  失败: {meta.get('error')}"), flush=True)
 
     struct["questions"] = {"prompt": a.prompt, "model": ds.MODEL, "effort": a.effort,
                            "temperature": a.temperature, "calls": n_calls, "usage": usage_sum, "problems": problems}
@@ -158,7 +158,7 @@ def main() -> int:
         json.dumps(struct, ensure_ascii=False, indent=1))
 
     md = [f"# {a.name} · 按段生成的检索问题", "",
-          f"- {n_paras} 段 / {n_q} 问；{a.prompt} · {ds.MODEL} · effort {a.effort} · 每节一次调用，共 {n_calls} 次",
+          f"- {n_paras} 段 / {n_q} 问；{a.prompt} · {ds.MODEL} · effort {a.effort} · 每章一次调用，共 {n_calls} 次",
           f"- 校验问题 {len(problems)} 条（见 问题.json 的 problems）", "", "---", ""]
     for ch in struct["chapters"]:
         if only and ch["no"] not in only:

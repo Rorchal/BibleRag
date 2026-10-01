@@ -1,0 +1,34 @@
+{
+ "payload": {
+  "讲道": "约伯记1章1到8节",
+  "主经文": "约伯记1章1到8节",
+  "paragraphs": [
+   {
+    "id": "L968-969",
+    "title": "祷告后遵照神的话，预备开始查考约伯记",
+    "text": "好，我们一起来祷告。所以我们遵照你的话，要开始看约伯的"
+   }
+  ]
+ },
+ "content": "{\"paragraphs\":[{\"id\":\"L968-969\",\"kind\":\"祷告\",\"questions\":[\"牧师带领祷告后，准备开始查考哪一卷圣经？\",\"讲道开始前的祷告里说，要遵照什么来查考？\"]}]}",
+ "meta": {
+  "ok": true,
+  "secs": 3.8,
+  "usage": {
+   "prompt_tokens": 1727,
+   "completion_tokens": 566,
+   "total_tokens": 2293,
+   "prompt_tokens_details": {
+    "cached_tokens": 1536
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 514
+   },
+   "prompt_cache_hit_tokens": 1536,
+   "prompt_cache_miss_tokens": 191
+  },
+  "id": "27b98034-28d2-473a-b564-ec6964a42d72",
+  "reasoning_effort": "low",
+  "finish_reason": "stop"
+ }
+}
