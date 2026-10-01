@@ -10,24 +10,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L1-3\",\"kind\":\"开场过渡\",\"questions\":[\"讲员说“帮助不敢当”，那他讲道真正想让人得着什么？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L1-3\",\"kind\":\"开场过渡\",\"questions\":[\"牧师为什么说自己不敢当「帮助」这个说法？\",\"牧师说他只是把神的话用什么方式讲给会众听？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 2.1,
+  "secs": 6.0,
   "usage": {
-   "prompt_tokens": 2056,
-   "completion_tokens": 164,
-   "total_tokens": 2220,
+   "prompt_tokens": 1775,
+   "completion_tokens": 1005,
+   "total_tokens": 2780,
    "prompt_tokens_details": {
-    "cached_tokens": 0
+    "cached_tokens": 1536
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 123
+    "reasoning_tokens": 955
    },
-   "prompt_cache_hit_tokens": 0,
-   "prompt_cache_miss_tokens": 2056
+   "prompt_cache_hit_tokens": 1536,
+   "prompt_cache_miss_tokens": 239
   },
-  "id": "ca7e68ea-be10-40a8-8f81-e4060f39fd81",
+  "id": "1934caa2-0d31-441d-8cc8-8810d62d3e87",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

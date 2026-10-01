@@ -25,24 +25,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L943-947\",\"kind\":\"讲道\",\"questions\":[\"上帝认可的人既不管教也不试炼，为什么还允许他受祸？\"]},{\"id\":\"L948-959\",\"kind\":\"讲道\",\"questions\":[\"门徒看见生来瞎眼的人，为什么认定一定是罪造成的？\",\"门徒问「是这人犯罪还是他父母犯罪」，他们给耶稣限定了什么？\"]},{\"id\":\"L960-962\",\"kind\":\"讲道\",\"questions\":[\"生来瞎眼既不是这人犯罪也不是父母犯罪，耶稣说是为了什么？\"]},{\"id\":\"L963-967\",\"kind\":\"讲道\",\"questions\":[\"问上帝问题时只给他「父母的罪还是儿子的罪」这种选择题，问题出在哪？\",\"祸福和罪恶的关系，圣经要我们做什么调整？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L943-947\",\"kind\":\"讲道\",\"questions\":[\"既然神不刑罚、不管教也不试炼，为什么还让他所认可的人遭祸？\",\"讲员说最后要用一段经文来结束，这段经文是为解答什么疑问？\"]},{\"id\":\"L948-959\",\"kind\":\"讲道\",\"questions\":[\"门徒看见生来瞎眼的人，为什么一口断定一定跟罪有关？\",\"门徒让耶稣二选一的那道选择题是什么？\"]},{\"id\":\"L960-962\",\"kind\":\"讲道\",\"questions\":[\"耶稣说那人生来瞎眼，真正的原因是什么？\",\"耶稣把“这人犯罪”和“他父母犯罪”这两种猜测都否定了吗？\"]},{\"id\":\"L963-967\",\"kind\":\"讲道\",\"questions\":[\"为什么不能把一个人遭祸一概看成他犯了罪？\",\"人向上帝提问时，常常只给他什么，以致限制了他的回答？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 6.5,
+  "secs": 8.2,
   "usage": {
-   "prompt_tokens": 2568,
-   "completion_tokens": 1123,
-   "total_tokens": 3691,
+   "prompt_tokens": 2287,
+   "completion_tokens": 1382,
+   "total_tokens": 3669,
    "prompt_tokens_details": {
-    "cached_tokens": 1792
+    "cached_tokens": 2048
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 947
+    "reasoning_tokens": 1178
    },
-   "prompt_cache_hit_tokens": 1792,
-   "prompt_cache_miss_tokens": 776
+   "prompt_cache_hit_tokens": 2048,
+   "prompt_cache_miss_tokens": 239
   },
-  "id": "6d8c55b2-0145-4e29-b38a-37a7814c7075",
+  "id": "b599f463-fbd5-421d-9dd0-99e3b233b12a",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

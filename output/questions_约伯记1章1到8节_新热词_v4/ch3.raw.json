@@ -15,24 +15,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L26-28\",\"kind\":\"祷告\",\"questions\":[\"开场祷告求神让会众继续以他的话语为根基来敬拜，还求什么？\"]},{\"id\":\"L29-33\",\"kind\":\"祷告\",\"questions\":[\"祷告里说“凡有耳的都应该听”，是要弟兄姊妹领受什么？\",\"祷告求神赐人通达灵敏以致认识神、一次得救，还求真信心怎样？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L26-28\",\"kind\":\"祷告\",\"questions\":[\"讲道开始前的祷告，求神让会众怎样来敬拜他？\",\"开场祷告里，牧师求神在自己百姓中间得着什么？\"]},{\"id\":\"L29-33\",\"kind\":\"祷告\",\"questions\":[\"祷告求神开通耳朵，让弟兄姊妹听见什么？\",\"祷告求神赐下通达灵敏，为要叫会众得着什么？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 5.2,
+  "secs": 3.3,
   "usage": {
-   "prompt_tokens": 2215,
-   "completion_tokens": 930,
-   "total_tokens": 3145,
+   "prompt_tokens": 1934,
+   "completion_tokens": 512,
+   "total_tokens": 2446,
    "prompt_tokens_details": {
     "cached_tokens": 1792
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 832
+    "reasoning_tokens": 413
    },
    "prompt_cache_hit_tokens": 1792,
-   "prompt_cache_miss_tokens": 423
+   "prompt_cache_miss_tokens": 142
   },
-  "id": "d9b71541-008c-4987-a1b1-dbdf78f79afc",
+  "id": "17766a1b-d7a6-400c-b8e8-333e5b426fde",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

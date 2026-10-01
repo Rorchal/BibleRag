@@ -10,24 +10,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L968-969\",\"kind\":\"祷告\",\"questions\":[\"开始查考约伯记之前，祷告里说要遵照什么？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L968-969\",\"kind\":\"祷告\",\"questions\":[\"牧师带领祷告后，准备开始查考哪一卷圣经？\",\"讲道开始前的祷告里说，要遵照什么来查考？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 3.3,
+  "secs": 3.8,
   "usage": {
-   "prompt_tokens": 2008,
-   "completion_tokens": 599,
-   "total_tokens": 2607,
+   "prompt_tokens": 1727,
+   "completion_tokens": 566,
+   "total_tokens": 2293,
    "prompt_tokens_details": {
-    "cached_tokens": 1792
+    "cached_tokens": 1536
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 562
+    "reasoning_tokens": 514
    },
-   "prompt_cache_hit_tokens": 1792,
-   "prompt_cache_miss_tokens": 216
+   "prompt_cache_hit_tokens": 1536,
+   "prompt_cache_miss_tokens": 191
   },
-  "id": "384de7c5-6e26-4c7f-8acb-1c4fd9326795",
+  "id": "27b98034-28d2-473a-b564-ec6964a42d72",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }

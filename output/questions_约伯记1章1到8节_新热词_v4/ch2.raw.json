@@ -30,24 +30,24 @@
    }
   ]
  },
- "content": "{\"paragraphs\":[{\"id\":\"L4-8\",\"kind\":\"开场过渡\",\"questions\":[\"这周正道诵读的是哪一处经文，难解的地方怎么处理？\"]},{\"id\":\"L9-13\",\"kind\":\"经文诵读\",\"questions\":[\"约伯的家产有七千羊、三千骆驼，他在东方人中是什么地位？\",\"乌斯地的约伯是怎样一个人，讲道怎么形容他？\"]},{\"id\":\"L14-18\",\"kind\":\"经文诵读\",\"questions\":[\"约伯为什么清早起来，按着儿子们的数目献燔祭？\",\"约伯担心儿子犯了罪、心中弃掉神，就常常做什么？\"]},{\"id\":\"L19-22\",\"kind\":\"经文诵读\",\"questions\":[\"撒但来到神的众子中间，耶和华问它从哪里来，它怎么回答？\"]},{\"id\":\"L23-25\",\"kind\":\"经文诵读\",\"questions\":[\"耶和华怎样向撒但评价他的仆人约伯？\",\"“地上再没有人像他完全正直”，这话是对谁说的？\"]}]}",
+ "content": "{\"paragraphs\":[{\"id\":\"L4-8\",\"kind\":\"开场过渡\",\"questions\":[\"这周正道要宣读的经文是哪一处？\",\"讲员说遇到难懂的经文会怎么处理？\"]},{\"id\":\"L9-13\",\"kind\":\"经文诵读\",\"questions\":[\"约伯记1章里，约伯在东方人中是什么地位？\",\"约伯有多少牲畜、仆婢和儿女？\"]},{\"id\":\"L14-18\",\"kind\":\"经文诵读\",\"questions\":[\"筵席的日子一过，约伯叫儿子们做什么？\",\"约伯担心儿子犯罪心里弃掉神，就常常怎样行？\"]},{\"id\":\"L19-22\",\"kind\":\"经文诵读\",\"questions\":[\"神的众子侍立在耶和华面前时，谁也一同来了？\",\"撒但回答耶和华，说自己在世上做什么？\"]},{\"id\":\"L23-25\",\"kind\":\"经文诵读\",\"questions\":[\"耶和华要撒但去查看谁，怎么形容他？\",\"这一周的讲道分享到约伯记1章的哪里就停了？\"]}]}",
  "meta": {
   "ok": true,
-  "secs": 8.1,
+  "secs": 7.0,
   "usage": {
-   "prompt_tokens": 2543,
-   "completion_tokens": 1450,
-   "total_tokens": 3993,
+   "prompt_tokens": 2262,
+   "completion_tokens": 1234,
+   "total_tokens": 3496,
    "prompt_tokens_details": {
-    "cached_tokens": 1792
+    "cached_tokens": 1664
    },
    "completion_tokens_details": {
-    "reasoning_tokens": 1230
+    "reasoning_tokens": 1010
    },
-   "prompt_cache_hit_tokens": 1792,
-   "prompt_cache_miss_tokens": 751
+   "prompt_cache_hit_tokens": 1664,
+   "prompt_cache_miss_tokens": 598
   },
-  "id": "316584a2-682e-413a-a292-2a9a41f2bc0c",
+  "id": "e6ea97bd-9623-48a5-8197-809ad02cd80a",
   "reasoning_effort": "low",
   "finish_reason": "stop"
  }
