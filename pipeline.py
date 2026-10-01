@@ -10,8 +10,10 @@
   第 5 步  切节        同一份原文，逐章切（prompts/切节_v2.md）
   第 6 步  切段        同一份原文，逐章切（prompts/切段_v4.md）
   第 7 步  导出        切分结果/<名字>/：切分效果.md、结构.json、校对后原文.txt、纠错记录.json
+  第 8 步  生成问题    按章调用（prompts/段问题_v6.md），给每段写 1~2 个检索用问题 → 问题.md、问题.json
 
 切分的三步都不再报错字，看到的都是同一份校对后原文。每一步只调一次模型、不重试。
+第 8 步的提示词固定用 段问题_v6（按章一批、每段 1~2 问、抓手写进问题），不要换回 v4/v5。
 第 2、3 步由 typo_fix.py apply 一条命令完成（先校验，再补热词，再替换）。
 
 中间文件在 output/work/<名字>/：
@@ -22,6 +24,7 @@
     export DEEPSEEK_API_KEY=<密钥>
     python pipeline.py 识别结果/豆包2.0/GH_约伯记2章1到6节_热词识别.txt --name GH_约伯记2章1到6节 --effort low
     python pipeline.py ... --only-proofread      # 只做第 1~3 步，先看错字清单
+    python pipeline.py ... --skip-questions      # 不做第 8 步
 """
 from __future__ import annotations
 
@@ -53,6 +56,8 @@ def main() -> int:
     ap.add_argument("--proofread-prompt", default="校对_v1")
     ap.add_argument("--chapter-prompt", default="切章")
     ap.add_argument("--para-prompt", default="v4")
+    ap.add_argument("--question-prompt", default="段问题_v6")
+    ap.add_argument("--skip-questions", action="store_true", help="不做第 8 步（生成问题）")
     ap.add_argument("--only-proofread", action="store_true", help="只做第 1~3 步（检验错字、补热词、更新文本）")
     a = ap.parse_args()
 
@@ -97,6 +102,10 @@ def main() -> int:
     out = os.path.join(HERE, "切分结果", a.name)
     shutil.copy(t1, os.path.join(out, "校对后原文.txt"))
     shutil.copy(log, os.path.join(out, "纠错记录.json"))
+
+    # 第 8 步：按章生成检索用问题（每章一次调用）
+    if not a.skip_questions:
+        run(["gen_questions.py", "--name", a.name, "--prompt", a.question_prompt, "--effort", a.effort], env)
     print(f"\n完成 → {os.path.relpath(out, HERE)}/")
     return 0
 
